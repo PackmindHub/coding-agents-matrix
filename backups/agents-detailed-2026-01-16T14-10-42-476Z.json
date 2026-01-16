@@ -1,0 +1,508 @@
+[
+  {
+    "name": "Aider",
+    "type": "Open Source",
+    "github": {
+      "value": "https://github.com/Aider-AI/aider",
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": null },
+    "dedicatedIde": { "value": "no", "detail": null },
+    "byoLlm": { "value": "yes", "detail": "Supports connecting to OpenAI, Anthropic or local models via API keys" },
+    "mcpSupport": { "value": "no", "detail": "No built-in MCP client; can be extended via external MCP server integrations" },
+    "customRules": { "value": "no", "detail": "No explicit project rules file support beyond user prompts" },
+    "agentsMdSupport": { "value": "no", "detail": null },
+    "agentSkillsSupport": { "value": "no", "detail": null },
+    "commandsReusablePrompts": { "value": "no", "detail": "All instructions given via natural language chat" },
+    "subagentsSupport": { "value": "no", "detail": null },
+    "additionalInfo": "Integrates with Git (auto-commits changes with messages); voice input and image context support"
+  },
+  {
+    "name": "Amp",
+    "type": "Proprietary",
+    "github": {
+      "value": null,
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Terminal agent and VS Code plugin available" },
+    "dedicatedIde": { "value": "no", "detail": null },
+    "byoLlm": { "value": "yes", "detail": "Supports leading models via user's API credentials or sponsor-provided access" },
+    "mcpSupport": { "value": "yes", "detail": "Uses tool integrations; capable of running compilers, tests, etc. autonomously" },
+    "customRules": { "value": "yes", "detail": "Compatible with AGENTS.md and other standard instruction files" },
+    "agentsMdSupport": { "value": "yes", "detail": "Accepts AGENTS.md for project instructions to guide the agent" },
+    "agentSkillsSupport": { "value": "no", "detail": "No separate skills modules exposed" },
+    "commandsReusablePrompts": { "value": "no", "detail": "Agent operates via natural language; no special slash commands needed" },
+    "subagentsSupport": { "value": "no", "detail": "Operates as a single junior developer agent per session" },
+    "additionalInfo": "Agent toolkit includes automated code review and issue integration"
+  },
+  {
+    "name": "Antigravity",
+    "type": "Proprietary",
+    "github": {
+      "value": null,
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "no", "detail": "Provided as a standalone IDE application" },
+    "dedicatedIde": { "value": "yes", "detail": "Google's AI-powered Antigravity IDE" },
+    "byoLlm": { "value": "no", "detail": "Powered by Google's Gemini models" },
+    "mcpSupport": { "value": "yes", "detail": "Supports MCP for connecting to tools and data sources in agent mode" },
+    "customRules": { "value": "yes", "detail": "Uses global and workspace rules: e.g. `~/.gemini/GEMINI.md` for global, `.agent/rules/` in project" },
+    "agentsMdSupport": { "value": "no", "detail": "Expects rules via its own .agent/rules files; AGENTS.md must be manually loaded via a rule if needed" },
+    "agentSkillsSupport": { "value": "no", "detail": "Focuses on built-in planning and execution workflows instead of modular skills" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Supports user-defined workflows (Workflows) that can be executed to automate tasks" },
+    "subagentsSupport": { "value": "no", "detail": "Single agent executes plan; no parallel subagent concept" },
+    "additionalInfo": "Supports Workflows (predefined multi-step task sequences) and Agent Manager UI"
+  },
+  {
+    "name": "AugmentCode",
+    "type": "Proprietary",
+    "github": {
+      "value": null,
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Auggie CLI for terminal" },
+    "dedicatedIde": { "value": "no", "detail": "Integrates with VS Code, JetBrains, Vim, etc. via extensions" },
+    "byoLlm": { "value": "no", "detail": "Uses provided model endpoints; no arbitrary model configuration for individual users" },
+    "mcpSupport": { "value": "yes", "detail": "Integrates Model Context Protocol tools for retrieval and actions" },
+    "customRules": { "value": "yes", "detail": "Extensive rules system with hierarchy; supports user-level and workspace-level rules files" },
+    "agentsMdSupport": { "value": "yes", "detail": "Automatically loads AGENTS.md if present" },
+    "agentSkillsSupport": { "value": "yes", "detail": "Supports Subagents and skill-like agent extensions for specific tasks" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Supports custom commands/macros in CLI" },
+    "subagentsSupport": { "value": "yes", "detail": "Can spawn subordinate autonomous agents for parallel tasks" },
+    "additionalInfo": "Integrations with Slack/Teams; smart hooks for pre/post command automation"
+  },
+  {
+    "name": "Claude Code",
+    "type": "Proprietary",
+    "github": {
+      "value": null,
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Claude Code CLI and interactive terminal mode" },
+    "dedicatedIde": { "value": "no", "detail": "Available via web interface and editor integrations" },
+    "byoLlm": { "value": "no", "detail": "Tied to Anthropic's Claude models" },
+    "mcpSupport": { "value": "yes", "detail": "Native support for MCP to connect tools; e.g. can use Figma plugin via MCP" },
+    "customRules": { "value": "yes", "detail": "Supports custom rules via `.claude/rules/` directory and CLAUDE.md for project conventions" },
+    "agentsMdSupport": { "value": "no", "detail": "Uses CLAUDE.md for similar purpose; AGENTS.md is not natively used by Claude Code" },
+    "agentSkillsSupport": { "value": "yes", "detail": "Supports specialized agents and skills through its plugin system" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Supports slash commands for common actions in the editor/CLI, e.g. `/explain`, `/test`" },
+    "subagentsSupport": { "value": "yes", "detail": "Can spawn autonomous sub-agents to handle subtasks" },
+    "additionalInfo": "Supports Hooks (automated event-driven scripts) and Plugins to extend with new capabilities"
+  },
+  {
+    "name": "Continue",
+    "type": "Open Source",
+    "github": {
+      "value": "https://github.com/continuedev/continue",
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Has a CLI/TUI mode for agentic operations" },
+    "dedicatedIde": { "value": "no", "detail": "Primarily a VS Code extension" },
+    "byoLlm": { "value": "yes", "detail": "Supports multiple model providers via configuration" },
+    "mcpSupport": { "value": "yes", "detail": "Allows adding MCP tools for the agent to use" },
+    "customRules": { "value": "yes", "detail": "Supports rules in markdown with YAML frontmatter to guide agent behavior" },
+    "agentsMdSupport": { "value": "yes", "detail": "Recognizes AGENTS.md as a source of project instructions" },
+    "agentSkillsSupport": { "value": "no", "detail": "No specific modular skills system, focuses on tools and modes" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Offers multiple modes like Chat, Agent mode for automated changes; mode switching via UI" },
+    "subagentsSupport": { "value": "no", "detail": "Single agent process, though can run background/CI agents in headless mode" },
+    "additionalInfo": "Provides Mission Control UI to manage agent tasks; cloud agent support for CI/CD"
+  },
+  {
+    "name": "Crush",
+    "type": "Open Source",
+    "github": {
+      "value": "https://github.com/charmbracelet/crush",
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Terminal CLI with TUI interface" },
+    "dedicatedIde": { "value": "no", "detail": null },
+    "byoLlm": { "value": "yes", "detail": "Supports multiple models and multi-model configs" },
+    "mcpSupport": { "value": "yes", "detail": "Built-in support for connecting to MCP servers over stdio/http/SSE" },
+    "customRules": { "value": "yes", "detail": "Creates AGENTS.md on project initialization by default to store context" },
+    "agentsMdSupport": { "value": "yes", "detail": "Uses AGENTS.md as the project context file; can be renamed via config" },
+    "agentSkillsSupport": { "value": "yes", "detail": "Supports the Agent Skills open standard; discovers skills from `skills/` directories with SKILL.md" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Some special CLI flags and commands, e.g. `--yolo` to bypass confirmations; otherwise natural language in TUI" },
+    "subagentsSupport": { "value": "no", "detail": "Single agent performs tasks sequentially, though it can orchestrate multi-step workflows internally" },
+    "additionalInfo": "Configurable JSON config (crush.json); .crushignore to exclude files; permission management"
+  },
+  {
+    "name": "Cursor",
+    "type": "Proprietary",
+    "github": {
+      "value": null,
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "partial", "detail": "Offers a CLI to run agent in terminal, primarily used via the GUI editor" },
+    "dedicatedIde": { "value": "yes", "detail": "Cursor is a standalone VS Code-fork IDE" },
+    "byoLlm": { "value": "no", "detail": "Bundled with supported model endpoints; no arbitrary model plug-in" },
+    "mcpSupport": { "value": "yes", "detail": "Supports connecting to MCP servers for tools; can configure MCP tools in settings" },
+    "customRules": { "value": "yes", "detail": "Has Cursor Rules – project-specific `.cursor/rules/*.md` files for instructions" },
+    "agentsMdSupport": { "value": "yes", "detail": "Treats AGENTS.md as equivalent to its rules format for compatibility" },
+    "agentSkillsSupport": { "value": "yes", "detail": "Supports Skills that extend agent capabilities" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Provides an in-IDE Agent chat; supports multi-step plans via Plan/Act modes automatically, no manual slash commands needed" },
+    "subagentsSupport": { "value": "no", "detail": "The agent handles tasks in one thread, though it can run background analysis as background agents for suggestions" },
+    "additionalInfo": "VS Code fork IDE; supports background agents for suggestions; Cursor Rules for instructions"
+  },
+  {
+    "name": "Factory",
+    "type": "Proprietary",
+    "github": {
+      "value": null,
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Factory CLI to interact with Droids in terminal" },
+    "dedicatedIde": { "value": "no", "detail": "Integrates into existing editors via plugins; no separate IDE" },
+    "byoLlm": { "value": "yes", "detail": "Model-agnostic: supports GPT-4/5, Claude, etc., via user's API keys or Factory's provided access" },
+    "mcpSupport": { "value": "yes", "detail": "Extensive tool integrations, effectively using MCP to connect to code, logs, docs, tickets, etc." },
+    "customRules": { "value": "yes", "detail": "Central use of AGENTS.md files at root and per-folder for project conventions; also uses Org/User memory stores for persistent guidelines" },
+    "agentsMdSupport": { "value": "yes", "detail": "Integral to context – supports multiple AGENTS.md for different project parts" },
+    "agentSkillsSupport": { "value": "no", "detail": "Relies on Droids handling tasks; no separate skill plugin system exposed" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Supports @-mentioning files or contexts in chat; provides some predefined command triggers like `@workspace` summary" },
+    "subagentsSupport": { "value": "yes", "detail": "Allows multiple specialized Droids – e.g. one might handle coding, others code review – working in concert as a team" },
+    "additionalInfo": "Maintains User and Organization memory; rich third-party integrations (GitHub, Jira, Notion, Datadog)"
+  },
+  {
+    "name": "Gemini CLI",
+    "type": "Open Source",
+    "github": {
+      "value": "https://github.com/google-gemini/gemini-cli",
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Open-source Google Gemini CLI for terminal" },
+    "dedicatedIde": { "value": "no", "detail": "Though it integrates with VS Code and JetBrains via plugins" },
+    "byoLlm": { "value": "no", "detail": "Specifically built to use Google's Gemini model via Google's API" },
+    "mcpSupport": { "value": "yes", "detail": "Supports tool use via the Model Context Protocol as part of its agent capabilities" },
+    "customRules": { "value": "yes", "detail": "Supports AGENTS.md and its own GEMINI.md for project instructions" },
+    "agentsMdSupport": { "value": "yes", "detail": "Loads AGENTS.md as custom instructions if present" },
+    "agentSkillsSupport": { "value": "yes", "detail": "Supports Agent Skills – modular skill directories with SKILL.md" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Allows mode switching and slash-style commands in the CLI; smart actions in IDE UI" },
+    "subagentsSupport": { "value": "no", "detail": "Focuses on one agent, but extensible via skills rather than multiple concurrent agents" },
+    "additionalInfo": "Provides Smart Actions in IDE; integrates LSP for code context; 1000 free requests/day"
+  },
+  {
+    "name": "GitHub Copilot",
+    "type": "Proprietary",
+    "github": {
+      "value": null,
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Copilot CLI available for terminal assistance" },
+    "dedicatedIde": { "value": "no", "detail": "Integrates into popular IDEs/editors as extension" },
+    "byoLlm": { "value": "partial", "detail": "Supports BYOK for certain models – e.g. enterprise can use own Azure OpenAI key – but generally uses GitHub-provided model endpoints" },
+    "mcpSupport": { "value": "yes", "detail": "Microsoft's Copilot ecosystem supports MCP to connect to internal knowledge bases and tools" },
+    "customRules": { "value": "yes", "detail": "Supports custom instructions at user and repo level" },
+    "agentsMdSupport": { "value": "yes", "detail": "Reads AGENTS.md files in the repo for project-specific guidance" },
+    "agentSkillsSupport": { "value": "yes", "detail": "Supports Agent Skills which are modular capabilities for the Copilot agent" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Supports reusable prompts via `.github/copilot-instructions.md`; also offers CLI slash commands for common tasks" },
+    "subagentsSupport": { "value": "no", "detail": "Copilot uses a single agent; no concurrent subagent feature exposed" },
+    "additionalInfo": "Supports BYOK for enterprise; memory features to retain context across sessions"
+  },
+  {
+    "name": "Goose",
+    "type": "Open Source",
+    "github": {
+      "value": "https://github.com/block/goose",
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "CLI and desktop app available" },
+    "dedicatedIde": { "value": "no", "detail": "But provides a desktop GUI option in addition to terminal" },
+    "byoLlm": { "value": "yes", "detail": "Works with any LLM; supports multi-model configurations" },
+    "mcpSupport": { "value": "yes", "detail": "Designed to integrate with MCP servers; can seamlessly use external tools" },
+    "customRules": { "value": "yes", "detail": "Supports AGENTS.md in repositories as briefing/instructions and a `.goosehints` file for additional hints" },
+    "agentsMdSupport": { "value": "yes", "detail": "Uses AGENTS.md for project context if present" },
+    "agentSkillsSupport": { "value": "no", "detail": "Focuses on built-in autonomous capabilities; extensibility is via integrating APIs and tools rather than skill packages" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Provides a command-line companion `goose` with commands to initiate tasks; otherwise natural language instructions in chat" },
+    "subagentsSupport": { "value": "no", "detail": "One primary agent coordinates all actions per session" },
+    "additionalInfo": "Offers Recipes (YAML scripts for multi-step workflows); supports Agent Client Protocol"
+  },
+  {
+    "name": "Jules",
+    "type": "Proprietary",
+    "github": {
+      "value": null,
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Jules Tools CLI to interface with the cloud agent" },
+    "dedicatedIde": { "value": "no", "detail": "Runs asynchronously in cloud; not inside your editor" },
+    "byoLlm": { "value": "no", "detail": "Powered by Google's models on their backend" },
+    "mcpSupport": { "value": "yes", "detail": "Jules uses tools in a sandboxed cloud environment to compile, test, etc., though not user-configurable MCP" },
+    "customRules": { "value": "no", "detail": "No support for AGENTS.md or custom instructions files; agent infers context from repository code and standard config" },
+    "agentsMdSupport": { "value": "no", "detail": null },
+    "agentSkillsSupport": { "value": "no", "detail": null },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Tasks are queued via CLI commands or GitHub comments – e.g. you instruct Jules to fix tests and it works asynchronously" },
+    "subagentsSupport": { "value": "no", "detail": "Jules itself is a single agent per task, operating asynchronously" },
+    "additionalInfo": "Works via GitHub integration; operates asynchronously in secure cloud sandbox"
+  },
+  {
+    "name": "KiloCode",
+    "type": "Open Source",
+    "github": {
+      "value": "https://github.com/Kilo-Org/kilocode",
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Provides a CLI and also editor extensions" },
+    "dedicatedIde": { "value": "no", "detail": "Available as VS Code/JetBrains plugins and CLI; no separate IDE app" },
+    "byoLlm": { "value": "yes", "detail": "Model-agnostic: supports OpenAI, Anthropic, Google Gemini, local Llama2, etc." },
+    "mcpSupport": { "value": "yes", "detail": "Built for tool use; can call compilers, run tests, search documentation via integrated or MCP tools" },
+    "customRules": { "value": "yes", "detail": "Uses a memory bank of markdown files like `context.md`, `brief.md`, `history.md` to persist project knowledge; also compatible with AGENTS.md standard" },
+    "agentsMdSupport": { "value": "yes", "detail": "Fully embraces AGENTS.md as an open standard for project instructions" },
+    "agentSkillsSupport": { "value": "no", "detail": "No separate pluggable skills, instead has built-in development modes covering different tasks" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Operates in distinct modes – Ask, Architect, Code, Debug, Orchestrator – which act as reusable prompt patterns" },
+    "subagentsSupport": { "value": "yes", "detail": "Supports running multiple agents in parallel via git worktrees – e.g. parallel Droids tackling different tasks" },
+    "additionalInfo": "Multi-mode context management; Memory Bank (.kilocode/rules directory); forked from Roo Code"
+  },
+  {
+    "name": "Kiro",
+    "type": "Proprietary",
+    "github": {
+      "value": null,
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Kiro CLI for terminal interaction" },
+    "dedicatedIde": { "value": "no", "detail": "Integrates with existing IDEs and also offers CLI; an IDE plugin exists for VS Code as Kiro agents" },
+    "byoLlm": { "value": "no", "detail": "Uses managed model access, often through Amazon Q or AWS endpoints as Kiro is closely integrated with AWS" },
+    "mcpSupport": { "value": "yes", "detail": "Supports connecting external tools via MCP" },
+    "customRules": { "value": "yes", "detail": "Supports AGENTS.md and its own steering files in `~/.kiro/steering/*.md` for guidelines" },
+    "agentsMdSupport": { "value": "yes", "detail": "Loads AGENTS.md for project instructions" },
+    "agentSkillsSupport": { "value": "yes", "detail": "Allows creating Custom Agents with specialized behavior for workflows" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Supports smart hooks and natural language commands; Kiro CLI can build, test, deploy via NL commands" },
+    "subagentsSupport": { "value": "yes", "detail": "Can deploy multiple specialized agents; Kiro emphasizes multi-agent collaboration for DevOps tasks" },
+    "additionalInfo": "Smart Hooks (pre/post command automation); agent steering configuration; deep code intelligence via LSP"
+  },
+  {
+    "name": "Mistral Vibe CLI",
+    "type": "Open Source",
+    "github": {
+      "value": "https://github.com/mistralai/mistral-vibe",
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Terminal-based Vibe CLI agent from Mistral" },
+    "dedicatedIde": { "value": "no", "detail": "But supports editor integration via Agent Communication Protocol" },
+    "byoLlm": { "value": "yes", "detail": "Optimized for Mistral's open Devstral 2 models, but can be adapted to others since it's open source" },
+    "mcpSupport": { "value": "yes", "detail": "Devstral models are built to use tools; Vibe CLI can run shell commands and use code exploration tools as part of its workflow" },
+    "customRules": { "value": "yes", "detail": "Analyzes project config files and code structure to derive context; can produce an AGENTS.md-like summary on init, and supports standard instruction files via ACP integration" },
+    "agentsMdSupport": { "value": "yes", "detail": "By convention – it will create or update an AGENTS.md with project context on initialization, and respects such files if present" },
+    "agentSkillsSupport": { "value": "no", "detail": "No explicit mention of skills packages; focuses on core tool use and editing capabilities" },
+    "commandsReusablePrompts": { "value": "no", "detail": "Agent works via natural language prompts, focusing on vibe coding with minimal manual commands" },
+    "subagentsSupport": { "value": "no", "detail": "Single agent loop with step-by-step planning and execution, though model can internally plan multi-step solutions" },
+    "additionalInfo": "Deep integration with Mistral's Devstral models; supports ACP to interface with GUI editors like Zed"
+  },
+  {
+    "name": "OpenAI Codex",
+    "type": "Proprietary",
+    "github": {
+      "value": null,
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "no", "detail": "Codex is an API/model, not an interactive tool by itself" },
+    "dedicatedIde": { "value": "no", "detail": "Used via integrations like Copilot or OpenAI Playground" },
+    "byoLlm": { "value": "no", "detail": "Codex itself is the underlying model provided by OpenAI" },
+    "mcpSupport": { "value": "no", "detail": "Codex alone does not have tool use capabilities outside what the calling application provides" },
+    "customRules": { "value": "no", "detail": "No concept of persistent project rules – depends on how it's integrated in a product" },
+    "agentsMdSupport": { "value": "no", "detail": null },
+    "agentSkillsSupport": { "value": "no", "detail": null },
+    "commandsReusablePrompts": { "value": "no", "detail": "Codex is invoked via API calls; any reusable prompt functionality must be implemented by the client application" },
+    "subagentsSupport": { "value": "no", "detail": null },
+    "additionalInfo": "AI code generation model (now succeeded by GitHub Copilot's use of GPT models); API only, not a standalone agent"
+  },
+  {
+    "name": "OpenCode",
+    "type": "Open Source",
+    "github": {
+      "value": "https://github.com/anomalyco/opencode",
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Go-based `opencode` CLI with TUI" },
+    "dedicatedIde": { "value": "yes", "detail": "Offers an OpenCode Desktop app aside from editor plugins" },
+    "byoLlm": { "value": "yes", "detail": "Not tied to any provider; supports OpenAI, Anthropic, local models, etc." },
+    "mcpSupport": { "value": "yes", "detail": "Supports connecting to MCP servers; exposes configuration for MCP tools" },
+    "customRules": { "value": "yes", "detail": "Supports rules files and auto-generates AGENTS.md for project context" },
+    "agentsMdSupport": { "value": "yes", "detail": "Analyzes and creates AGENTS.md to brief the agent on the project" },
+    "agentSkillsSupport": { "value": "yes", "detail": "Supports Agent Skills; configurable via `agentskills.io` standard and `skills` directories" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Interactive TUI with slash commands like `/connect` to configure providers, and other `/` commands for settings; otherwise natural language queries" },
+    "subagentsSupport": { "value": "yes", "detail": "Supports running multiple background agents in headless mode or parallel tasks, and integration with multiple Agent profiles via config" },
+    "additionalInfo": "Highly extensible via plugins and SDK; supports Agent Client Protocol (ACP); opencode share for git integration"
+  },
+  {
+    "name": "RooCode",
+    "type": "Open Source",
+    "github": {
+      "value": "https://github.com/RooCodeInc/Roo-Code",
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "no", "detail": "Primarily a Visual Studio Code extension" },
+    "dedicatedIde": { "value": "no", "detail": "Runs within VS Code" },
+    "byoLlm": { "value": "yes", "detail": "Configurable to use different models via API keys" },
+    "mcpSupport": { "value": "yes", "detail": "Supports tool use like running tests/compilers as part of its autonomous workflow" },
+    "customRules": { "value": "yes", "detail": "Supports project instruction files; originally used modes and could utilize AGENTS.md or similar for context" },
+    "agentsMdSupport": { "value": "yes", "detail": "Compatible with AGENTS.md for repo-level instructions to guide its dev team of agents" },
+    "agentSkillsSupport": { "value": "no", "detail": "Focuses on built-in modes rather than pluggable skills" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Offers multiple modes – Code, Architect, Ask, Debug, etc. – which act as preset prompt styles; user can switch modes to influence agent behavior" },
+    "subagentsSupport": { "value": "yes", "detail": "Marketed as a team of AI agents – uses different internal agent personas for different tasks, coordinated together" },
+    "additionalInfo": "VS Code extension; marketed as team of AI agents; integrated with GitHub issues/PRs; base for Kilo Code"
+  },
+  {
+    "name": "Trae AI",
+    "type": "Open Source",
+    "github": {
+      "value": "https://github.com/bytedance/trae-agent",
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "yes", "detail": "Trae Agent CLI on GitHub; also offers a GUI Trae IDE" },
+    "dedicatedIde": { "value": "yes", "detail": "TraeIDE – an AI-first coding IDE" },
+    "byoLlm": { "value": "yes", "detail": "Supports various models; Bytedance's implementation likely allows plugging different backends" },
+    "mcpSupport": { "value": "yes", "detail": "Built with MCP tool use in mind – can compile, run tests, etc. as part of its agentic tasks" },
+    "customRules": { "value": "yes", "detail": "Supports AGENTS.md or similar rule files for project context, along with Trae-specific config if any" },
+    "agentsMdSupport": { "value": "yes", "detail": "Aims for standardization; likely reads AGENTS.md as project briefing" },
+    "agentSkillsSupport": { "value": "no", "detail": "No separate skill plugin system reported" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Trae can automatically break down tasks; the user can issue high-level natural commands, and the agent handles execution. A command-line companion exists for triggering tasks" },
+    "subagentsSupport": { "value": "yes", "detail": "Trae emphasizes multi-agent collaboration within its IDE – potentially different agents handling different subtasks concurrently" },
+    "additionalInfo": "Deep GitHub integration (opens PRs, comments on issues); multi-agent orchestration; from Bytedance"
+  },
+  {
+    "name": "Warp",
+    "type": "Proprietary",
+    "github": {
+      "value": null,
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "no", "detail": "Warp is a GPU-accelerated terminal application, not a CLI agent itself" },
+    "dedicatedIde": { "value": "no", "detail": "It's a terminal emulator with AI features" },
+    "byoLlm": { "value": "no", "detail": "Warp AI uses built-in model integrations, e.g. OpenAI API provided by Warp" },
+    "mcpSupport": { "value": "no", "detail": "Warp's AI features are focused on shell command assistance, not general tool invocation via MCP" },
+    "customRules": { "value": "no", "detail": "No mechanism for project-specific AI instructions; context is limited to shell history/commands" },
+    "agentsMdSupport": { "value": "no", "detail": null },
+    "agentSkillsSupport": { "value": "no", "detail": null },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Offers AI commands like explaining errors or writing commands – invoked via special UI actions in the terminal" },
+    "subagentsSupport": { "value": "no", "detail": null },
+    "additionalInfo": "GPU-accelerated terminal emulator; AI features for shell command assistance (not a coding agent)"
+  },
+  {
+    "name": "Windsurf",
+    "type": "Proprietary",
+    "github": {
+      "value": null,
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "no", "detail": "Windsurf is a full IDE application, though it has a command palette and can be launched via `windsurf` command" },
+    "dedicatedIde": { "value": "yes", "detail": "Windsurf IDE – a standalone AI-powered editor" },
+    "byoLlm": { "value": "partial", "detail": "Uses integrated models via Codeium/Cognition; users generally use provided models, not arbitrary endpoints" },
+    "mcpSupport": { "value": "yes", "detail": "Native MCP integration to extend agent with external tools" },
+    "customRules": { "value": "yes", "detail": "Supports Memories & Rules – project and user rules to customize agent behavior" },
+    "agentsMdSupport": { "value": "yes", "detail": "Supports reading AGENTS.md files for project instructions" },
+    "agentSkillsSupport": { "value": "yes", "detail": "Has a Skills system for Cascade agent to have specialized capabilities" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Provides a rich command palette and Workflows feature to automate multi-step tasks; also supports `@` mentions in chat for files or prior threads" },
+    "subagentsSupport": { "value": "no", "detail": "One primary agent Cascade per workspace, which handles tasks sequentially" },
+    "additionalInfo": "Supports Cascade Hooks, Worktrees (parallel git worktrees), and visual plugin management; built on Codeium"
+  },
+  {
+    "name": "Zed",
+    "type": "Open Source",
+    "github": {
+      "value": "https://github.com/zed-industries/zed",
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "cli": { "value": "no", "detail": "Zed is a GUI code editor, though it can connect to terminal-based agents via ACP" },
+    "dedicatedIde": { "value": "yes", "detail": "Zed code editor for macOS/Linux/Windows" },
+    "byoLlm": { "value": "yes", "detail": "User can configure which AI provider to use for Zed's agent features" },
+    "mcpSupport": { "value": "yes", "detail": "Via Agent Client Protocol and MCP, Zed can let an agent execute commands and retrieve data; e.g. works with Gemini CLI or Vibe CLI as external agent" },
+    "customRules": { "value": "yes", "detail": "Supports Rules files at project root which are identical in format to AGENTS.md; also supports global/user rules" },
+    "agentsMdSupport": { "value": "yes", "detail": "Project rule files in Zed can simply be AGENTS.md – it treats them equivalently" },
+    "agentSkillsSupport": { "value": "no", "detail": "Zed itself doesn't define a skills system, but can leverage any skills the connected agent has" },
+    "commandsReusablePrompts": { "value": "yes", "detail": "Has an Agent chat panel where you can `@` mention files, symbols, or even prior conversations and rules to include them" },
+    "subagentsSupport": { "value": "no", "detail": "Zed connects to one agent at a time, though that agent can be multi-modal" },
+    "additionalInfo": "Implements Agent Communication Protocol (ACP); flexible provider setup; multi-buffer editing"
+  }
+]
