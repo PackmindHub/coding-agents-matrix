@@ -1,0 +1,64 @@
+name: Update GitHub Stars
+
+on:
+  schedule:
+    # Run every Monday at 00:00 UTC
+    - cron: '0 0 * * 1'
+
+  # Allow manual triggering from Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-stars:
+    name: Update GitHub Star Counts
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Required for committing changes
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Update GitHub star counts
+        run: npm run update-stars
+        continue-on-error: false
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code src/data/agents-detailed.json || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Configure Git
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git add src/data/agents-detailed.json
+          git commit -m "chore: update GitHub star counts [skip ci]
+
+          Automated weekly update of star counts for open-source agents.
+          Updated: $(date -u +"%Y-%m-%d %H:%M UTC")"
+          git push
+
+      - name: Summary
+        run: |
+          echo "### GitHub Stars Update Complete ✓" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Run Date**: $(date -u +"%Y-%m-%d %H:%M UTC")" >> $GITHUB_STEP_SUMMARY
+          echo "**Changes Committed**: ${{ steps.git-check.outputs.changes || 'false' }}" >> $GITHUB_STEP_SUMMARY
