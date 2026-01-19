@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import AgentTable from './components/AgentTable'
 import FilterBar from './components/FilterBar'
+import ChangelogDrawer from './components/ChangelogDrawer'
 import useAgentsData from './hooks/useAgentsData'
 import useFiltering from './hooks/useFiltering'
 import useSorting from './hooks/useSorting'
-import { Sparkles, Github } from 'lucide-react'
+import { Sparkles, Github, History } from 'lucide-react'
 
 function App() {
   const { agents, loading, error } = useAgentsData()
@@ -14,6 +15,7 @@ function App() {
     type: 'all',
     features: {}
   })
+  const [isChangelogOpen, setIsChangelogOpen] = useState(false)
 
   const filteredAgents = useFiltering(agents, filters)
   const sortedAgents = useSorting(filteredAgents, sortConfig)
@@ -54,8 +56,15 @@ function App() {
       <div className="max-w-[120rem] mx-auto">
         {/* Header */}
         <div className="mb-4 relative">
-          {/* GitHub Links - Top Right */}
+          {/* Header Links - Top Right */}
           <div className="absolute top-0 right-0 flex items-center gap-4">
+            <button
+              onClick={() => setIsChangelogOpen(true)}
+              className="btn-header"
+            >
+              <History className="w-4 h-4" />
+              Changelog
+            </button>
             <a
               href="https://github.com/PackmindHub/packmind/issues"
               target="_blank"
@@ -116,6 +125,12 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Changelog Drawer */}
+      <ChangelogDrawer
+        isOpen={isChangelogOpen}
+        onClose={() => setIsChangelogOpen(false)}
+      />
     </div>
   )
 }

@@ -5,8 +5,9 @@ const FilterBar = ({ filters, onChange, totalAgents, filteredCount }) => {
     onChange({ ...filters, searchTerm: e.target.value })
   }
 
-  const handleTypeChange = (e) => {
-    onChange({ ...filters, type: e.target.value })
+  const handleTypeToggle = (typeValue) => {
+    // If clicking the active type, reset to 'all', otherwise set to the clicked type
+    onChange({ ...filters, type: filters.type === typeValue ? 'all' : typeValue })
   }
 
   const handleFeatureToggle = (featureKey) => {
@@ -51,38 +52,38 @@ const FilterBar = ({ filters, onChange, totalAgents, filteredCount }) => {
   return (
     <div className="glass-container p-4 mb-4">
       <div className="space-y-3">
-        {/* Search and Type Filter Row */}
-        <div className="flex flex-col sm:flex-row gap-4">
-          {/* Search Input */}
-          <div className="flex-1 relative group">
-            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-500 w-5 h-5 group-focus-within:text-violet-400 transition-colors" />
-            <input
-              type="text"
-              placeholder="Search agents..."
-              value={filters.searchTerm}
-              onChange={handleSearchChange}
-              className="input-base"
-            />
-          </div>
-
-          {/* Type Filter */}
-          <select
-            value={filters.type}
-            onChange={handleTypeChange}
-            className="select-base"
-          >
-            <option value="all">All Types</option>
-            <option value="Open Source">Open Source</option>
-            <option value="Proprietary">Proprietary</option>
-          </select>
+        {/* Search Row */}
+        <div className="relative group">
+          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-500 w-5 h-5 group-focus-within:text-violet-400 transition-colors" />
+          <input
+            type="text"
+            placeholder="Search agents..."
+            value={filters.searchTerm}
+            onChange={handleSearchChange}
+            className="input-base"
+          />
         </div>
 
-        {/* Feature Filters */}
+        {/* Filters */}
         <div className="flex flex-wrap gap-2 items-center">
           <div className="flex items-center gap-2 text-sm font-medium text-slate-400">
             <Filter className="w-4 h-4" />
             <span className="tracking-wide">Filters:</span>
           </div>
+          {/* Type Filters */}
+          <button
+            onClick={() => handleTypeToggle('Open Source')}
+            className={filters.type === 'Open Source' ? 'btn-filter-active' : 'btn-filter-inactive'}
+          >
+            Open Source
+          </button>
+          <button
+            onClick={() => handleTypeToggle('Proprietary')}
+            className={filters.type === 'Proprietary' ? 'btn-filter-active' : 'btn-filter-inactive'}
+          >
+            Proprietary
+          </button>
+          {/* Feature Filters */}
           {featureOptions.map((feature) => (
             <button
               key={feature.key}
