@@ -1506,12 +1506,12 @@
       "detail": "Last updated: 2026-01-19"
     },
     "website": {
-      "value": "https://zed.dev",
+      "value": "https://zed.dev/",
       "detail": null
     },
     "firstRelease": {
-      "value": "2024-01",
-      "detail": "Public release"
+      "value": "2021-06",
+      "detail": "Initial v0.1 without AI at the time."
     },
     "cli": {
       "value": "no",
@@ -1527,7 +1527,7 @@
     },
     "byoLlm": {
       "value": "yes",
-      "detail": "User can configure which AI provider to use for Zed's agent features"
+      "detail": "See: https://zed.dev/docs/ai/configuration"
     },
     "mcpSupport": {
       "value": "yes",
@@ -1535,7 +1535,7 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Supports Rules files at project root which are identical in format to AGENTS.md; also supports global/user rules"
+      "detail": "See: https://zed.dev/docs/ai/rules?highlight=rules#creating-rules"
     },
     "agentsMdSupport": {
       "value": "yes",
@@ -1547,15 +1547,15 @@
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Has an Agent chat panel where you can `@` mention files, symbols, or even prior conversations and rules to include them"
+      "detail": "Possible to add custom slash commands: https://zed.dev/docs/extensions/slash-commands"
     },
     "subagentsSupport": {
-      "value": "no",
-      "detail": "Zed connects to one agent at a time, though that agent can be multi-modal"
+      "value": "partial",
+      "detail": "But coming soon: https://github.com/zed-industries/zed/pull/46186"
     },
     "planMode": {
-      "value": "yes",
-      "detail": null
+      "value": "no",
+      "detail": "But a PR is opened on that topic: https://github.com/zed-industries/zed/pull/45804"
     },
     "additionalInfo": "Implements Agent Communication Protocol (ACP); flexible provider setup; multi-buffer editing"
   }
