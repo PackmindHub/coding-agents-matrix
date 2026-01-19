@@ -8,48 +8,36 @@ const ValueBadge = ({ value, detail }) => {
 
   const normalizedValue = value.toLowerCase()
 
-  const getBadgeStyle = () => {
+  const getBadgeClass = () => {
     switch (normalizedValue) {
       case 'yes':
         return {
-          bg: 'bg-emerald-500/10',
-          border: 'border-emerald-500/30',
-          text: 'text-emerald-400',
-          glow: 'shadow-emerald-500/20',
+          className: 'badge-success',
           icon: <Check className="w-3.5 h-3.5" />
         }
       case 'no':
         return {
-          bg: 'bg-rose-500/10',
-          border: 'border-rose-500/30',
-          text: 'text-rose-400',
-          glow: 'shadow-rose-500/20',
+          className: 'badge-error',
           icon: <X className="w-3.5 h-3.5" />
         }
       case 'partial':
       case 'limited':
         return {
-          bg: 'bg-amber-500/10',
-          border: 'border-amber-500/30',
-          text: 'text-amber-400',
-          glow: 'shadow-amber-500/20',
+          className: 'badge-warning',
           icon: <CircleDot className="w-3.5 h-3.5" />
         }
       default:
         return {
-          bg: 'bg-slate-500/10',
-          border: 'border-slate-500/30',
-          text: 'text-slate-400',
-          glow: 'shadow-slate-500/20',
+          className: 'badge-neutral',
           icon: null
         }
     }
   }
 
-  const { bg, border, text, glow, icon } = getBadgeStyle()
+  const { className, icon } = getBadgeClass()
 
   const badge = (
-    <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium border backdrop-blur-sm ${bg} ${border} ${text} ${glow} shadow-sm transition-all duration-300 hover:shadow-md hover:scale-105`}>
+    <span className={className}>
       {icon}
       <span className="capitalize tracking-wide">{normalizedValue}</span>
     </span>

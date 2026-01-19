@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {
+      "id": "identity",
+      "label": "Identity",
+      "columns": ["name", "type", "ghStars", "firstRelease"]
+    },
+    {
+      "id": "packages",
+      "label": "Packages",
+      "columns": ["cli", "dedicatedIde"]
+    },
+    {
+      "id": "features",
+      "label": "Features",
+      "columns": ["byoLlm", "mcpSupport", "customRules", "agentsMdSupport", "agentSkillsSupport", "commandsReusablePrompts", "subagentsSupport", "planMode"]
+    }
+  ]
+}

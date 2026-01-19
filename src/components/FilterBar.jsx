@@ -41,7 +41,7 @@ const FilterBar = ({ filters, onChange, totalAgents, filteredCount }) => {
   ]
 
   return (
-    <div className="bg-slate-800/40 backdrop-blur-xl rounded-2xl shadow-2xl border border-slate-700/50 p-4 mb-4 hover:border-slate-600/50 transition-all duration-300">
+    <div className="glass-container p-4 mb-4">
       <div className="space-y-3">
         {/* Search and Type Filter Row */}
         <div className="flex flex-col sm:flex-row gap-4">
@@ -53,7 +53,7 @@ const FilterBar = ({ filters, onChange, totalAgents, filteredCount }) => {
               placeholder="Search agents..."
               value={filters.searchTerm}
               onChange={handleSearchChange}
-              className="w-full pl-12 pr-4 py-2 bg-slate-900/50 border border-slate-600/50 rounded-xl text-slate-200 placeholder-slate-500 focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 outline-none transition-all duration-300"
+              className="input-base"
             />
           </div>
 
@@ -61,7 +61,7 @@ const FilterBar = ({ filters, onChange, totalAgents, filteredCount }) => {
           <select
             value={filters.type}
             onChange={handleTypeChange}
-            className="px-4 py-2 bg-slate-900/50 border border-slate-600/50 rounded-xl text-slate-200 focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 outline-none transition-all duration-300 cursor-pointer hover:bg-slate-900/70"
+            className="select-base"
           >
             <option value="all">All Types</option>
             <option value="Open Source">Open Source</option>
@@ -79,11 +79,7 @@ const FilterBar = ({ filters, onChange, totalAgents, filteredCount }) => {
             <button
               key={feature.key}
               onClick={() => handleFeatureToggle(feature.key)}
-              className={`px-3 py-1.5 rounded-xl text-sm font-medium transition-all duration-300 ${
-                filters.features[feature.key]
-                  ? 'bg-gradient-to-r from-violet-600 to-purple-600 text-white shadow-lg shadow-violet-500/30 scale-105'
-                  : 'bg-slate-700/50 text-slate-300 hover:bg-slate-700 border border-slate-600/50 hover:border-slate-500/50'
-              }`}
+              className={filters.features[feature.key] ? 'btn-filter-active' : 'btn-filter-inactive'}
             >
               {feature.label}
             </button>
@@ -99,7 +95,7 @@ const FilterBar = ({ filters, onChange, totalAgents, filteredCount }) => {
           {hasActiveFilters && (
             <button
               onClick={clearFilters}
-              className="flex items-center gap-2 px-4 py-2 text-sm text-slate-400 hover:text-slate-200 bg-slate-700/30 hover:bg-slate-700/50 rounded-lg transition-all duration-300 border border-slate-600/30 hover:border-slate-500/50"
+              className="btn-clear"
             >
               <X className="w-4 h-4" />
               Clear filters

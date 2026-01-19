@@ -1,7 +1,7 @@
 import { ArrowUp, ArrowDown } from 'lucide-react'
 import Tooltip from './Tooltip'
 
-const TableHeader = ({ columns, sortConfig, onSort }) => {
+const TableHeader = ({ columns, sortConfig, onSort, groups }) => {
   const handleSort = (key) => {
     if (!key) return
 
@@ -27,27 +27,54 @@ const TableHeader = ({ columns, sortConfig, onSort }) => {
       : <ArrowDown className="w-4 h-4 ml-2 text-violet-400" />
   }
 
+  // Build column key set for quick lookup
+  const columnKeys = new Set(columns.map(col => col.key))
+
+  // Calculate colspan for each group based on visible columns
+  const orderedGroups = groups.map(group => {
+    const visibleColumns = group.columns.filter(colKey => columnKeys.has(colKey))
+    return {
+      ...group,
+      colSpan: visibleColumns.length
+    }
+  }).filter(group => group.colSpan > 0)
+
   return (
-    <thead className="bg-slate-900/50 backdrop-blur-sm sticky top-0 z-10 border-b border-slate-700/50">
-      <tr>
-        {columns.map((column) => (
+    <thead className="table-header">
+      {/* Meta-header row */}
+      <tr className="border-b border-slate-700/30">
+        {orderedGroups.map((group, index) => (
           <th
-            key={column.key}
-            onClick={() => column.sortable && handleSort(column.key)}
-            className={`px-4 py-3 text-left text-xs font-semibold text-slate-400 uppercase tracking-widest ${
-              column.sortable ? 'cursor-pointer hover:bg-slate-800/50 select-none transition-all duration-200' : ''
-            }`}
+            key={group.id}
+            colSpan={group.colSpan}
+            className={`px-4 py-2 text-center text-xs font-bold text-slate-300 uppercase tracking-wider bg-slate-800/30${index < orderedGroups.length - 1 ? ' border-r-2 border-slate-600/50' : ''}`}
           >
-            <div className="flex items-center">
-              <Tooltip content={column.tooltip}>
-                <span className={sortConfig.key === column.key ? 'text-violet-400' : ''}>
-                  {column.label}
-                </span>
-              </Tooltip>
-              {column.sortable && getSortIcon(column.key)}
-            </div>
+            {group.label}
           </th>
         ))}
+      </tr>
+
+      {/* Column header row */}
+      <tr className="border-b border-slate-700/50">
+        {columns.map((column, index) => {
+          const tooltipPosition = index === 0 ? 'left' : index === columns.length - 1 ? 'right' : 'center'
+          return (
+            <th
+              key={column.key}
+              onClick={() => column.sortable && handleSort(column.key)}
+              className={`${column.sortable ? 'table-header-cell-sortable' : 'table-header-cell'}${column.isGroupBoundary ? ' border-r-2 border-slate-600/50' : ''}`}
+            >
+              <div className="flex items-center">
+                <Tooltip content={column.tooltip} position={tooltipPosition}>
+                  <span className={sortConfig.key === column.key ? 'text-violet-400' : ''}>
+                    {column.label}
+                  </span>
+                </Tooltip>
+                {column.sortable && getSortIcon(column.key)}
+              </div>
+            </th>
+          )
+        })}
       </tr>
     </thead>
   )

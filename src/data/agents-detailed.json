@@ -10,6 +10,14 @@
       "value": 39874,
       "detail": "Last updated: 2026-01-19"
     },
+    "website": {
+      "value": "https://aider.chat",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2023-05",
+      "detail": null
+    },
     "cli": {
       "value": "yes",
       "detail": null
@@ -46,6 +54,10 @@
       "value": "no",
       "detail": null
     },
+    "planMode": {
+      "value": "no",
+      "detail": null
+    },
     "additionalInfo": "Integrates with Git (auto-commits changes with messages); voice input and image context support"
   },
   {
@@ -57,6 +69,14 @@
     },
     "ghStars": {
       "value": null,
+      "detail": null
+    },
+    "website": {
+      "value": "https://amp.dev",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2024-10",
       "detail": null
     },
     "cli": {
@@ -95,6 +115,10 @@
       "value": "no",
       "detail": "Operates as a single junior developer agent per session"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": null
+    },
     "additionalInfo": "Agent toolkit includes automated code review and issue integration"
   },
   {
@@ -106,6 +130,14 @@
     },
     "ghStars": {
       "value": null,
+      "detail": null
+    },
+    "website": {
+      "value": "https://idx.google.com",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2024-08",
       "detail": null
     },
     "cli": {
@@ -144,6 +176,10 @@
       "value": "no",
       "detail": "Single agent executes plan; no parallel subagent concept"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": "Built-in planning and execution workflow"
+    },
     "additionalInfo": "Supports Workflows (predefined multi-step task sequences) and Agent Manager UI"
   },
   {
@@ -155,6 +191,14 @@
     },
     "ghStars": {
       "value": null,
+      "detail": null
+    },
+    "website": {
+      "value": "https://www.augmentcode.com",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2024-04",
       "detail": null
     },
     "cli": {
@@ -193,6 +237,10 @@
       "value": "yes",
       "detail": "Can spawn subordinate autonomous agents for parallel tasks"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": null
+    },
     "additionalInfo": "Integrations with Slack/Teams; smart hooks for pre/post command automation"
   },
   {
@@ -204,6 +252,14 @@
     },
     "ghStars": {
       "value": null,
+      "detail": null
+    },
+    "website": {
+      "value": "https://claude.ai/claude-code",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2025-02",
       "detail": null
     },
     "cli": {
@@ -242,6 +298,10 @@
       "value": "yes",
       "detail": "Can spawn autonomous sub-agents to handle subtasks"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": "Plan mode for architectural planning before implementation"
+    },
     "additionalInfo": "Supports Hooks (automated event-driven scripts) and Plugins to extend with new capabilities"
   },
   {
@@ -254,6 +314,14 @@
     "ghStars": {
       "value": 30943,
       "detail": "Last updated: 2026-01-19"
+    },
+    "website": {
+      "value": "https://continue.dev",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2023-05",
+      "detail": null
     },
     "cli": {
       "value": "yes",
@@ -291,6 +359,10 @@
       "value": "no",
       "detail": "Single agent process, though can run background/CI agents in headless mode"
     },
+    "planMode": {
+      "value": "no",
+      "detail": null
+    },
     "additionalInfo": "Provides Mission Control UI to manage agent tasks; cloud agent support for CI/CD"
   },
   {
@@ -303,6 +375,14 @@
     "ghStars": {
       "value": 18364,
       "detail": "Last updated: 2026-01-19"
+    },
+    "website": {
+      "value": "https://charm.sh/crush",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2025-06",
+      "detail": null
     },
     "cli": {
       "value": "yes",
@@ -340,6 +420,10 @@
       "value": "no",
       "detail": "Single agent performs tasks sequentially, though it can orchestrate multi-step workflows internally"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": null
+    },
     "additionalInfo": "Configurable JSON config (crush.json); .crushignore to exclude files; permission management"
   },
   {
@@ -351,6 +435,14 @@
     },
     "ghStars": {
       "value": null,
+      "detail": null
+    },
+    "website": {
+      "value": "https://cursor.com",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2023-03",
       "detail": null
     },
     "cli": {
@@ -389,6 +481,10 @@
       "value": "no",
       "detail": "The agent handles tasks in one thread, though it can run background analysis as background agents for suggestions"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": "Plan/Act modes for structured development"
+    },
     "additionalInfo": "VS Code fork IDE; supports background agents for suggestions; Cursor Rules for instructions"
   },
   {
@@ -400,6 +496,14 @@
     },
     "ghStars": {
       "value": null,
+      "detail": null
+    },
+    "website": {
+      "value": "https://www.factory.ai",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2024-01",
       "detail": null
     },
     "cli": {
@@ -438,6 +542,10 @@
       "value": "yes",
       "detail": "Allows multiple specialized Droids – e.g. one might handle coding, others code review – working in concert as a team"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": null
+    },
     "additionalInfo": "Maintains User and Organization memory; rich third-party integrations (GitHub, Jira, Notion, Datadog)"
   },
   {
@@ -450,6 +558,14 @@
     "ghStars": {
       "value": 91526,
       "detail": "Last updated: 2026-01-19"
+    },
+    "website": {
+      "value": "https://github.com/google-gemini/gemini-cli",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2025-06",
+      "detail": null
     },
     "cli": {
       "value": "yes",
@@ -487,6 +603,10 @@
       "value": "no",
       "detail": "Focuses on one agent, but extensible via skills rather than multiple concurrent agents"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": null
+    },
     "additionalInfo": "Provides Smart Actions in IDE; integrates LSP for code context; 1000 free requests/day"
   },
   {
@@ -499,6 +619,14 @@
     "ghStars": {
       "value": null,
       "detail": null
+    },
+    "website": {
+      "value": "https://github.com/features/copilot",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2021-06",
+      "detail": "Technical preview launched"
     },
     "cli": {
       "value": "yes",
@@ -536,6 +664,10 @@
       "value": "no",
       "detail": "Copilot uses a single agent; no concurrent subagent feature exposed"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": null
+    },
     "additionalInfo": "Supports BYOK for enterprise; memory features to retain context across sessions"
   },
   {
@@ -548,6 +680,14 @@
     "ghStars": {
       "value": 26105,
       "detail": "Last updated: 2026-01-19"
+    },
+    "website": {
+      "value": "https://github.com/block/goose",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2024-10",
+      "detail": null
     },
     "cli": {
       "value": "yes",
@@ -585,6 +725,10 @@
       "value": "no",
       "detail": "One primary agent coordinates all actions per session"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": null
+    },
     "additionalInfo": "Offers Recipes (YAML scripts for multi-step workflows); supports Agent Client Protocol"
   },
   {
@@ -596,6 +740,14 @@
     },
     "ghStars": {
       "value": null,
+      "detail": null
+    },
+    "website": {
+      "value": "https://jules.google",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2024-12",
       "detail": null
     },
     "cli": {
@@ -634,6 +786,10 @@
       "value": "no",
       "detail": "Jules itself is a single agent per task, operating asynchronously"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": "Creates execution plans before implementation"
+    },
     "additionalInfo": "Works via GitHub integration; operates asynchronously in secure cloud sandbox"
   },
   {
@@ -646,6 +802,14 @@
     "ghStars": {
       "value": 14194,
       "detail": "Last updated: 2026-01-19"
+    },
+    "website": {
+      "value": "https://kilocode.ai",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2025-01",
+      "detail": null
     },
     "cli": {
       "value": "yes",
@@ -683,6 +847,10 @@
       "value": "yes",
       "detail": "Supports running multiple agents in parallel via git worktrees – e.g. parallel Droids tackling different tasks"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": "Architect mode for planning"
+    },
     "additionalInfo": "Multi-mode context management; Memory Bank (.kilocode/rules directory); forked from Roo Code"
   },
   {
@@ -694,6 +862,14 @@
     },
     "ghStars": {
       "value": null,
+      "detail": null
+    },
+    "website": {
+      "value": "https://kiro.dev",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2025-07",
       "detail": null
     },
     "cli": {
@@ -732,6 +908,10 @@
       "value": "yes",
       "detail": "Can deploy multiple specialized agents; Kiro emphasizes multi-agent collaboration for DevOps tasks"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": "Spec-driven development with structured planning"
+    },
     "additionalInfo": "Smart Hooks (pre/post command automation); agent steering configuration; deep code intelligence via LSP"
   },
   {
@@ -744,6 +924,14 @@
     "ghStars": {
       "value": 2689,
       "detail": "Last updated: 2026-01-19"
+    },
+    "website": {
+      "value": "https://mistral.ai",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2025-05",
+      "detail": null
     },
     "cli": {
       "value": "yes",
@@ -781,6 +969,10 @@
       "value": "no",
       "detail": "Single agent loop with step-by-step planning and execution, though model can internally plan multi-step solutions"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": "Step-by-step planning and execution"
+    },
     "additionalInfo": "Deep integration with Mistral's Devstral models; supports ACP to interface with GUI editors like Zed"
   },
   {
@@ -792,6 +984,14 @@
     },
     "ghStars": {
       "value": null,
+      "detail": null
+    },
+    "website": {
+      "value": "https://openai.com/codex",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2021-08",
       "detail": null
     },
     "cli": {
@@ -830,6 +1030,10 @@
       "value": "no",
       "detail": null
     },
+    "planMode": {
+      "value": "no",
+      "detail": null
+    },
     "additionalInfo": "AI code generation model (now succeeded by GitHub Copilot's use of GPT models); API only, not a standalone agent"
   },
   {
@@ -842,6 +1046,14 @@
     "ghStars": {
       "value": 76670,
       "detail": "Last updated: 2026-01-19"
+    },
+    "website": {
+      "value": "https://opencode.ai",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2025-04",
+      "detail": null
     },
     "cli": {
       "value": "yes",
@@ -879,6 +1091,10 @@
       "value": "yes",
       "detail": "Supports running multiple background agents in headless mode or parallel tasks, and integration with multiple Agent profiles via config"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": null
+    },
     "additionalInfo": "Highly extensible via plugins and SDK; supports Agent Client Protocol (ACP); opencode share for git integration"
   },
   {
@@ -891,6 +1107,14 @@
     "ghStars": {
       "value": 21800,
       "detail": "Last updated: 2026-01-19"
+    },
+    "website": {
+      "value": "https://roocode.com",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2024-11",
+      "detail": null
     },
     "cli": {
       "value": "no",
@@ -928,6 +1152,10 @@
       "value": "yes",
       "detail": "Marketed as a team of AI agents – uses different internal agent personas for different tasks, coordinated together"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": "Architect mode for planning"
+    },
     "additionalInfo": "VS Code extension; marketed as team of AI agents; integrated with GitHub issues/PRs; base for Kilo Code"
   },
   {
@@ -940,6 +1168,14 @@
     "ghStars": {
       "value": 32760,
       "detail": "Last updated: 2026-01-19"
+    },
+    "website": {
+      "value": "https://tabby.tabbyml.com",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2023-04",
+      "detail": null
     },
     "cli": {
       "value": "no",
@@ -977,6 +1213,10 @@
       "value": "no",
       "detail": null
     },
+    "planMode": {
+      "value": "no",
+      "detail": null
+    },
     "additionalInfo": "Self-hosted alternative to GitHub Copilot; emphasizes code completion with adaptive caching; OpenAPI interface; Answer Engine for team knowledge; supports consumer-grade GPUs"
   },
   {
@@ -989,6 +1229,14 @@
     "ghStars": {
       "value": 10576,
       "detail": "Last updated: 2026-01-19"
+    },
+    "website": {
+      "value": "https://www.trae.ai",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2025-01",
+      "detail": null
     },
     "cli": {
       "value": "yes",
@@ -1026,6 +1274,10 @@
       "value": "yes",
       "detail": "Trae emphasizes multi-agent collaboration within its IDE – potentially different agents handling different subtasks concurrently"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": "Builder mode for task planning"
+    },
     "additionalInfo": "Deep GitHub integration (opens PRs, comments on issues); multi-agent orchestration; from Bytedance"
   },
   {
@@ -1037,6 +1289,14 @@
     },
     "ghStars": {
       "value": null,
+      "detail": null
+    },
+    "website": {
+      "value": "https://www.warp.dev",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2022-04",
       "detail": null
     },
     "cli": {
@@ -1075,6 +1335,10 @@
       "value": "no",
       "detail": null
     },
+    "planMode": {
+      "value": "no",
+      "detail": null
+    },
     "additionalInfo": "GPU-accelerated terminal emulator; AI features for shell command assistance (not a coding agent)"
   },
   {
@@ -1086,6 +1350,14 @@
     },
     "ghStars": {
       "value": null,
+      "detail": null
+    },
+    "website": {
+      "value": "https://codeium.com/windsurf",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2024-11",
       "detail": null
     },
     "cli": {
@@ -1124,6 +1396,10 @@
       "value": "no",
       "detail": "One primary agent Cascade per workspace, which handles tasks sequentially"
     },
+    "planMode": {
+      "value": "yes",
+      "detail": null
+    },
     "additionalInfo": "Supports Cascade Hooks, Worktrees (parallel git worktrees), and visual plugin management; built on Codeium"
   },
   {
@@ -1136,6 +1412,14 @@
     "ghStars": {
       "value": 73567,
       "detail": "Last updated: 2026-01-19"
+    },
+    "website": {
+      "value": "https://zed.dev",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2024-01",
+      "detail": "Public release"
     },
     "cli": {
       "value": "no",
@@ -1172,6 +1456,10 @@
     "subagentsSupport": {
       "value": "no",
       "detail": "Zed connects to one agent at a time, though that agent can be multi-modal"
+    },
+    "planMode": {
+      "value": "yes",
+      "detail": null
     },
     "additionalInfo": "Implements Agent Communication Protocol (ACP); flexible provider setup; multi-buffer editing"
   }

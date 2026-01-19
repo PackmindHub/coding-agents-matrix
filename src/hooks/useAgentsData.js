@@ -16,6 +16,10 @@ const useAgentsData = () => {
         githubDetail: agent.github?.detail || null,
         ghStars: agent.ghStars?.value || null,
         ghStarsDetail: agent.ghStars?.detail || null,
+        website: agent.website?.value || null,
+        websiteDetail: agent.website?.detail || null,
+        firstRelease: agent.firstRelease?.value || null,
+        firstReleaseDetail: agent.firstRelease?.detail || null,
         cli: agent.cli.value,
         cliDetail: agent.cli.detail,
         dedicatedIde: agent.dedicatedIde.value,
@@ -34,6 +38,8 @@ const useAgentsData = () => {
         commandsReusablePromptsDetail: agent.commandsReusablePrompts.detail,
         subagentsSupport: agent.subagentsSupport.value,
         subagentsSupportDetail: agent.subagentsSupport.detail,
+        planMode: agent.planMode.value,
+        planModeDetail: agent.planMode.detail,
         additionalInfo: agent.additionalInfo
       }))
       setAgents(transformedAgents)

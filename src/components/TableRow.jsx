@@ -2,13 +2,19 @@ import TableCell from './TableCell'
 
 const TableRow = ({ agent, columns }) => {
   return (
-    <tr className="border-b border-slate-800/50 hover:bg-slate-800/30 transition-all duration-300 group hover:shadow-lg hover:shadow-violet-500/5">
+    <tr className="table-row group">
       {columns.map((column) => (
         <TableCell
           key={column.key}
           value={agent[column.key]}
           detail={agent[column.key + 'Detail']}
           type={column.cellType}
+          link={
+            column.key === 'ghStars' ? agent.github :
+            column.key === 'name' ? agent.website :
+            null
+          }
+          isGroupBoundary={column.isGroupBoundary}
         />
       ))}
     </tr>
