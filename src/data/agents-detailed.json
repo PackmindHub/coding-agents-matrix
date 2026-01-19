@@ -76,7 +76,7 @@
       "detail": null
     },
     "website": {
-      "value": "https://ampcode.com/",
+      "value": "https://ampcode.com",
       "detail": null
     },
     "firstRelease": {
@@ -125,7 +125,7 @@
     },
     "planMode": {
       "value": "no",
-      "detail": "Not native. From the doc: \"If you want the model to not write any code, but only to research and plan, say so: 'Only plan how to implement this. Do NOT write any code.'\""
+      "detail": "Planning mode is not natively supported. Users can request planning-only behavior by explicitly instructing the model not to write code."
     },
     "additionalInfo": "Agent toolkit includes automated code review and issue integration"
   },
