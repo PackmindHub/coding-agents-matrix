@@ -1,3 +1,5 @@
+import colors from 'tailwindcss/colors'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -5,6 +7,21 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      ...colors,
+      violet: {
+        50: '#f5f5fc',
+        100: '#ebebf9',
+        200: '#d5d7f3',
+        300: '#b5b8ee',
+        400: '#a1a5e8',
+        500: '#8D92E2',
+        600: '#7579CC',
+        700: '#5d60b6',
+        800: '#4a4d91',
+        900: '#3d3f77',
+      },
+    },
     extend: {
       colors: {
         surface: {
@@ -16,18 +33,6 @@ export default {
           primary: 'rgb(141 146 226)',       // #8D92E2
           'primary-hover': 'rgb(117 121 204)', // darker variant
           secondary: 'rgb(161 165 232)',     // lighter variant
-        },
-        violet: {
-          50: '#f5f5fc',
-          100: '#ebebf9',
-          200: '#d5d7f3',
-          300: '#b5b8ee',
-          400: '#a1a5e8',
-          500: '#8D92E2',
-          600: '#7579CC',
-          700: '#5d60b6',
-          800: '#4a4d91',
-          900: '#3d3f77',
         },
         status: {
           success: 'rgb(16 185 129)',   // emerald-500

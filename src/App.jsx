@@ -66,7 +66,7 @@ function App() {
               Changelog
             </button>
             <a
-              href="https://github.com/PackmindHub/packmind/issues"
+              href="https://github.com/PackmindHub/coding-agents-matrix/issues"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-violet-400 text-sm font-light tracking-wide transition-colors duration-200"
@@ -74,7 +74,7 @@ function App() {
               Submit an update
             </a>
             <a
-              href="https://github.com/PackmindHub/packmind"
+              href="https://github.com/PackmindHub/coding-agents-matrix"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-violet-400 transition-colors duration-200"
@@ -94,7 +94,7 @@ function App() {
               <Sparkles className="text-violet-400 w-6 h-6" />
             </div>
             <p className="text-slate-400 text-base font-light tracking-wide">
-              A curated comparison of the finest AI coding assistants
+              A curated comparison of AI coding assistants, powered by <a href={"https://packmind.com"}>Packmind</a>. Updated weekly.
             </p>
             <div className="mt-2 h-px w-48 mx-auto bg-gradient-to-r from-transparent via-violet-500/50 to-transparent"></div>
           </div>
