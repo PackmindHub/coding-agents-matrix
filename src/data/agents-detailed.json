@@ -43,8 +43,8 @@
       "detail": "Through the usage of the file `CONVENTIONS.md`"
     },
     "agentsMdSupport": {
-      "value": "yes",
-      "detail": null
+      "value": "partial",
+      "detail": "Not native, but can be configured to read these files. Read more: https://aider.chat/docs/usage/conventions.html#always-load-conventions"
     },
     "agentSkillsSupport": {
       "value": "no",
