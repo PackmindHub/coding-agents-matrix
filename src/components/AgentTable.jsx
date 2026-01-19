@@ -2,6 +2,7 @@ import TableHeader from './TableHeader'
 import TableRow from './TableRow'
 import AgentCard from './AgentCard'
 import groups from '../data/groups.json'
+import { Star } from 'lucide-react'
 
 const AgentTable = ({ agents, sortConfig, onSort }) => {
   // Build a set of column keys that are at group boundaries (last column of each group, except the last group)
@@ -14,9 +15,9 @@ const AgentTable = ({ agents, sortConfig, onSort }) => {
 
   const columns = [
     { key: 'name', label: 'Name', sortable: true, cellType: 'nameLink', tooltip: 'The name of the AI coding agent (click to visit website if available)' },
-    { key: 'type', label: 'Type', sortable: true, cellType: 'type', tooltip: 'Whether the agent is open source or proprietary' },
-    { key: 'ghStars', label: 'Stars', sortable: true, cellType: 'stars', tooltip: 'GitHub repository star count' },
-    { key: 'firstRelease', label: '1st Release', sortable: true, cellType: 'text', tooltip: 'First public release date (YYYY-MM)' },
+    { key: 'type', label: 'Open Source', sortable: true, cellType: 'openSource' },
+    { key: 'ghStars', label: <><Star className="w-3.5 h-3.5 fill-amber-400 inline-block mr-1" />Stars</>, sortable: true, cellType: 'stars', tooltip: 'GitHub repository star count' },
+    { key: 'firstRelease', label: '1st Release', sortable: true, cellType: 'text' },
     { key: 'cli', label: 'CLI', sortable: true, cellType: 'badge', tooltip: 'Command-line interface support for terminal-based usage' },
     { key: 'dedicatedIde', label: 'Dedicated IDE', sortable: true, cellType: 'badge', tooltip: 'Has its own integrated development environment' },
     { key: 'ideExtension', label: 'IDE Extension', sortable: true, cellType: 'badge', tooltip: 'Available as an IDE extension/plugin' },

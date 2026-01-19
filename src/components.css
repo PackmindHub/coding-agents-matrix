@@ -17,17 +17,6 @@
      Badge Patterns
      ============================================ */
 
-  /* Type Badges */
-  .badge-type-opensource {
-    @apply inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-medium border backdrop-blur-sm;
-    @apply bg-purple-500/10 border-purple-500/30 text-purple-400;
-  }
-
-  .badge-type-proprietary {
-    @apply inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-medium border backdrop-blur-sm;
-    @apply bg-blue-500/10 border-blue-500/30 text-blue-400;
-  }
-
   /* Status Badges */
   .badge-success {
     @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium border backdrop-blur-sm;
@@ -79,7 +68,7 @@
 
   .input-base {
     @apply w-full pl-12 pr-4 py-2 bg-slate-900/50 border border-slate-600/50 rounded-xl;
-    @apply text-slate-200 placeholder-slate-500 outline-none;
+    @apply text-sm text-slate-200 placeholder-slate-500 outline-none;
     @apply focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50;
     @apply transition-all duration-300;
   }
@@ -97,7 +86,7 @@
 
   .btn-filter-active {
     @apply px-3 py-1.5 rounded-xl text-sm font-medium;
-    @apply bg-gradient-to-r from-violet-600 to-purple-600 text-white;
+    @apply bg-violet-500 text-white;
     @apply shadow-lg shadow-violet-500/30 scale-105;
     @apply transition-all duration-300;
   }
@@ -194,7 +183,7 @@
 
   .drawer-title {
     @apply text-lg font-semibold;
-    @apply bg-gradient-to-r from-violet-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent;
+    @apply text-violet-400;
   }
 
   .drawer-close-btn {
@@ -215,7 +204,7 @@
 
   .changelog-content h1 {
     @apply text-2xl font-bold mb-6;
-    @apply bg-gradient-to-r from-violet-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent;
+    @apply text-violet-400;
   }
 
   .changelog-content h2 {

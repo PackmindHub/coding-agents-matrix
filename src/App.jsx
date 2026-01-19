@@ -88,7 +88,7 @@ function App() {
           <div className="text-center">
             <div className="inline-flex items-center gap-3 mb-2">
               <Sparkles className="text-violet-400 w-6 h-6" />
-              <h1 className="text-3xl font-bold bg-gradient-to-r from-violet-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent tracking-tight">
+              <h1 className="text-3xl font-bold text-violet-400 tracking-tight">
                 AI Coding Agents
               </h1>
               <Sparkles className="text-violet-400 w-6 h-6" />

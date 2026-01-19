@@ -13,9 +13,21 @@ export default {
           hover: 'rgb(51 65 85)',     // slate-700
         },
         brand: {
-          primary: 'rgb(139 92 246)',       // violet-500
-          'primary-hover': 'rgb(124 58 237)', // violet-600
-          secondary: 'rgb(168 85 247)',     // purple-500
+          primary: 'rgb(141 146 226)',       // #8D92E2
+          'primary-hover': 'rgb(117 121 204)', // darker variant
+          secondary: 'rgb(161 165 232)',     // lighter variant
+        },
+        violet: {
+          50: '#f5f5fc',
+          100: '#ebebf9',
+          200: '#d5d7f3',
+          300: '#b5b8ee',
+          400: '#a1a5e8',
+          500: '#8D92E2',
+          600: '#7579CC',
+          700: '#5d60b6',
+          800: '#4a4d91',
+          900: '#3d3f77',
         },
         status: {
           success: 'rgb(16 185 129)',   // emerald-500
@@ -64,12 +76,12 @@ export default {
         button: '0.5rem',   // 8px
       },
       boxShadow: {
-        'brand-sm': '0 1px 2px 0 rgb(139 92 246 / 0.05)',
-        'brand': '0 4px 6px -1px rgb(139 92 246 / 0.1), 0 2px 4px -2px rgb(139 92 246 / 0.1)',
-        'brand-lg': '0 10px 15px -3px rgb(139 92 246 / 0.1), 0 4px 6px -4px rgb(139 92 246 / 0.1)',
-        'brand-xl': '0 20px 25px -5px rgb(139 92 246 / 0.1), 0 8px 10px -6px rgb(139 92 246 / 0.1)',
-        'glow-violet-sm': '0 0 10px rgba(139, 92, 246, 0.3)',
-        'glow-violet': '0 0 20px rgba(139, 92, 246, 0.4)',
+        'brand-sm': '0 1px 2px 0 rgb(141 146 226 / 0.05)',
+        'brand': '0 4px 6px -1px rgb(141 146 226 / 0.1), 0 2px 4px -2px rgb(141 146 226 / 0.1)',
+        'brand-lg': '0 10px 15px -3px rgb(141 146 226 / 0.1), 0 4px 6px -4px rgb(141 146 226 / 0.1)',
+        'brand-xl': '0 20px 25px -5px rgb(141 146 226 / 0.1), 0 8px 10px -6px rgb(141 146 226 / 0.1)',
+        'glow-violet-sm': '0 0 10px rgba(141, 146, 226, 0.3)',
+        'glow-violet': '0 0 20px rgba(141, 146, 226, 0.4)',
       },
       transitionDuration: {
         fast: '200ms',

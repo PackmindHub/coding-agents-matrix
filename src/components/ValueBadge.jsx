@@ -1,4 +1,3 @@
-import { Check, X, CircleDot } from 'lucide-react'
 import Tooltip from './Tooltip'
 
 const ValueBadge = ({ value, detail }) => {
@@ -11,34 +10,21 @@ const ValueBadge = ({ value, detail }) => {
   const getBadgeClass = () => {
     switch (normalizedValue) {
       case 'yes':
-        return {
-          className: 'badge-success',
-          icon: <Check className="w-3.5 h-3.5" />
-        }
+        return 'badge-success'
       case 'no':
-        return {
-          className: 'badge-error',
-          icon: <X className="w-3.5 h-3.5" />
-        }
+        return 'badge-error'
       case 'partial':
       case 'limited':
-        return {
-          className: 'badge-warning',
-          icon: <CircleDot className="w-3.5 h-3.5" />
-        }
+        return 'badge-warning'
       default:
-        return {
-          className: 'badge-neutral',
-          icon: null
-        }
+        return 'badge-neutral'
     }
   }
 
-  const { className, icon } = getBadgeClass()
+  const className = getBadgeClass()
 
   const badge = (
     <span className={className}>
-      {icon}
       <span className="capitalize tracking-wide">{normalizedValue}</span>
     </span>
   )

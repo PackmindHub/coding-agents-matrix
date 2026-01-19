@@ -1,8 +1,9 @@
 import ValueBadge from './ValueBadge'
-import { Github, Star, ExternalLink } from 'lucide-react'
+import { Github, ExternalLink } from 'lucide-react'
 
 const AgentCard = ({ agent }) => {
   const isOpenSource = agent.type === 'Open Source'
+  const openSourceValue = isOpenSource ? 'Yes' : 'No'
 
   // Extract domain from website URL
   const getWebsiteDomain = (url) => {
@@ -18,9 +19,10 @@ const AgentCard = ({ agent }) => {
     <div className="glass-container p-5">
       <div className="flex items-start justify-between mb-4">
         <h3 className="text-lg font-bold text-slate-100 tracking-tight">{agent.name}</h3>
-        <span className={isOpenSource ? 'badge-type-opensource' : 'badge-type-proprietary'}>
-          {agent.type}
-        </span>
+        <div>
+          <span className="section-label block text-right mb-1">Open Source</span>
+          <ValueBadge value={openSourceValue} />
+        </div>
       </div>
 
       {/* GitHub and Website section */}
@@ -54,8 +56,7 @@ const AgentCard = ({ agent }) => {
           <div className="flex items-center gap-2">
             {agent.ghStars && (
               <span className="badge-stars">
-                <Star className="w-3.5 h-3.5 fill-amber-400" />
-                <span className="font-semibold">{agent.ghStars.toLocaleString('en-US')}</span>
+                <span className="font-semibold">{agent.ghStars.toLocaleString('en-US')} stars</span>
               </span>
             )}
             {agent.firstRelease && (

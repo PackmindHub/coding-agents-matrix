@@ -1,5 +1,5 @@
 import ValueBadge from './ValueBadge'
-import { Github, Star, ExternalLink } from 'lucide-react'
+import { Github, ExternalLink } from 'lucide-react'
 
 const TableCell = ({ value, type = 'text', detail, link, isGroupBoundary }) => {
   const borderClass = isGroupBoundary ? ' border-r-2 border-slate-600/50' : ''
@@ -12,13 +12,11 @@ const TableCell = ({ value, type = 'text', detail, link, isGroupBoundary }) => {
     )
   }
 
-  if (type === 'type') {
-    const isOpenSource = value === 'Open Source'
+  if (type === 'openSource') {
+    const displayValue = value === 'Open Source' ? 'Yes' : 'No'
     return (
       <td className={`px-4 py-3 text-sm whitespace-nowrap${borderClass}`}>
-        <span className={isOpenSource ? 'badge-type-opensource' : 'badge-type-proprietary'}>
-          {value}
-        </span>
+        <ValueBadge value={displayValue} detail={detail} />
       </td>
     )
   }
@@ -124,7 +122,6 @@ const TableCell = ({ value, type = 'text', detail, link, isGroupBoundary }) => {
         className="badge-stars"
         title={detail || ''}
       >
-        <Star className="w-3.5 h-3.5 fill-amber-400" />
         <span className="font-semibold">{formatted}</span>
       </span>
     )
