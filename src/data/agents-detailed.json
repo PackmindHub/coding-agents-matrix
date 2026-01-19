@@ -76,7 +76,7 @@
       "detail": null
     },
     "website": {
-      "value": "https://amp.dev",
+      "value": "https://ampcode.com",
       "detail": null
     },
     "firstRelease": {
@@ -92,12 +92,12 @@
       "detail": null
     },
     "ideExtension": {
-      "value": "no",
+      "value": "yes",
       "detail": null
     },
     "byoLlm": {
-      "value": "yes",
-      "detail": "Supports leading models via user's API credentials or sponsor-provided access"
+      "value": "no",
+      "detail": null
     },
     "mcpSupport": {
       "value": "yes",
@@ -112,20 +112,20 @@
       "detail": "Accepts AGENTS.md for project instructions to guide the agent"
     },
     "agentSkillsSupport": {
-      "value": "no",
-      "detail": "No separate skills modules exposed"
+      "value": "yes",
+      "detail": "https://ampcode.com/manual#agent-skills"
     },
     "commandsReusablePrompts": {
-      "value": "no",
-      "detail": "Agent operates via natural language; no special slash commands needed"
+      "value": "yes",
+      "detail": "https://ampcode.com/manual#custom-commands"
     },
     "subagentsSupport": {
-      "value": "no",
-      "detail": "Operates as a single junior developer agent per session"
+      "value": "yes",
+      "detail": "https://ampcode.com/manual#subagents"
     },
     "planMode": {
-      "value": "yes",
-      "detail": null
+      "value": "no",
+      "detail": "Planning mode is not natively supported. Users can request planning-only behavior by explicitly instructing the model not to write code."
     },
     "additionalInfo": "Agent toolkit includes automated code review and issue integration"
   },
