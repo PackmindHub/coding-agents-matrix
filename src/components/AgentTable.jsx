@@ -18,7 +18,7 @@ const AgentTable = ({ agents, sortConfig, onSort }) => {
     { key: 'type', label: 'Open Source', sortable: true, cellType: 'openSource' },
     { key: 'ghStars', label: <><Star className="w-3.5 h-3.5 fill-amber-400 inline-block mr-1" />Stars</>, sortable: true, cellType: 'stars', tooltip: 'GitHub repository star count' },
     { key: 'firstRelease', label: '1st Release', sortable: true, cellType: 'text' },
-    { key: 'cli', label: 'CLI', sortable: true, cellType: 'badge', tooltip: 'Command-line interface support for terminal-based usage' },
+    { key: 'cli', label: 'CLI', sortable: true, cellType: 'badge', tooltip: 'Command-line interface support for terminal-based usage of the AI Agent to read and edit files' },
     { key: 'dedicatedIde', label: 'Dedicated IDE', sortable: true, cellType: 'badge', tooltip: 'Has its own integrated development environment' },
     { key: 'ideExtension', label: 'IDE Extension', sortable: true, cellType: 'badge', tooltip: 'Available as an IDE extension/plugin' },
     { key: 'byoLlm', label: 'BYO LLM', sortable: true, cellType: 'badge', tooltip: 'Bring Your Own LLM - allows using custom language models' },
@@ -28,7 +28,7 @@ const AgentTable = ({ agents, sortConfig, onSort }) => {
     { key: 'agentSkillsSupport', label: 'Skills', sortable: true, cellType: 'badge', tooltip: 'Support for custom skills and capabilities' },
     { key: 'commandsReusablePrompts', label: 'Commands', sortable: true, cellType: 'badge', tooltip: 'Reusable commands and prompts for common tasks' },
     { key: 'subagentsSupport', label: 'Subagents', sortable: true, cellType: 'badge', tooltip: 'Support for spawning specialized sub-agents for complex tasks' },
-    { key: 'planMode', label: 'Plan Mode', sortable: true, cellType: 'badge', tooltip: 'Support for plan/architect mode' }
+    { key: 'planMode', label: 'Plan Mode', sortable: true, cellType: 'badge', tooltip: 'Has a built-in plan mode before starting writing any line of code' }
   ].map(col => ({ ...col, isGroupBoundary: groupBoundaries.has(col.key) }))
 
   if (agents.length === 0) {

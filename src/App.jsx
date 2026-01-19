@@ -94,7 +94,10 @@ function App() {
               <Sparkles className="text-violet-400 w-6 h-6" />
             </div>
             <p className="text-slate-400 text-base font-light tracking-wide">
-              A curated comparison of AI coding assistants, powered by <a target={"_blank"} href={"https://packmind.com?utm_source=coding-agents-list"}>Packmind</a>. Updated weekly.
+              A curated comparison of AI coding assistants, powered by <a target={"_blank"} href={"https://packmind.com?utm_source=coding-agents-list"}>Packmind</a>.
+            </p>
+            <p className="text-slate-500 text-sm font-light tracking-wide mt-1">
+              Last updated: January 19, 2026. Based on the latest versions of each agent's documentation.
             </p>
             <div className="mt-2 h-px w-48 mx-auto bg-gradient-to-r from-transparent via-violet-500/50 to-transparent"></div>
           </div>
