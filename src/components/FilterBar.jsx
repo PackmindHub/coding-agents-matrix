@@ -33,11 +33,19 @@ const FilterBar = ({ filters, onChange, totalAgents, filteredCount }) => {
     Object.values(filters.features).some(Boolean)
 
   const featureOptions = [
+    // Packaging
     { key: 'cli', label: 'CLI' },
+    { key: 'dedicatedIde', label: 'Dedicated IDE' },
+    { key: 'ideExtension', label: 'IDE Extension' },
+    // Features
+    { key: 'byoLlm', label: 'BYO LLM' },
     { key: 'mcpSupport', label: 'MCP Support' },
+    { key: 'customRules', label: 'Custom Rules' },
     { key: 'agentsMdSupport', label: 'AGENTS.md' },
     { key: 'agentSkillsSupport', label: 'Skills' },
-    { key: 'subagentsSupport', label: 'Subagents' }
+    { key: 'commandsReusablePrompts', label: 'Commands' },
+    { key: 'subagentsSupport', label: 'Subagents' },
+    { key: 'planMode', label: 'Plan Mode' }
   ]
 
   return (
