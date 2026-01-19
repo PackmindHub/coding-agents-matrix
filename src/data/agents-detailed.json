@@ -26,6 +26,10 @@
       "value": "no",
       "detail": null
     },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
+    },
     "byoLlm": {
       "value": "yes",
       "detail": "Supports connecting to OpenAI, Anthropic or local models via API keys"
@@ -84,6 +88,10 @@
       "detail": "Terminal agent and VS Code plugin available"
     },
     "dedicatedIde": {
+      "value": "no",
+      "detail": null
+    },
+    "ideExtension": {
       "value": "no",
       "detail": null
     },
@@ -148,6 +156,10 @@
       "value": "yes",
       "detail": "Google's AI-powered Antigravity IDE"
     },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
+    },
     "byoLlm": {
       "value": "no",
       "detail": "Powered by Google's Gemini models"
@@ -208,6 +220,10 @@
     "dedicatedIde": {
       "value": "no",
       "detail": "Integrates with VS Code, JetBrains, Vim, etc. via extensions"
+    },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
     },
     "byoLlm": {
       "value": "no",
@@ -270,6 +286,10 @@
       "value": "no",
       "detail": "Available via web interface and editor integrations"
     },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
+    },
     "byoLlm": {
       "value": "no",
       "detail": "Tied to Anthropic's Claude models"
@@ -331,6 +351,10 @@
       "value": "no",
       "detail": "Primarily a VS Code extension"
     },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
+    },
     "byoLlm": {
       "value": "yes",
       "detail": "Supports multiple model providers via configuration"
@@ -389,6 +413,10 @@
       "detail": "Terminal CLI with TUI interface"
     },
     "dedicatedIde": {
+      "value": "no",
+      "detail": null
+    },
+    "ideExtension": {
       "value": "no",
       "detail": null
     },
@@ -453,6 +481,10 @@
       "value": "yes",
       "detail": "Cursor is a standalone VS Code-fork IDE"
     },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
+    },
     "byoLlm": {
       "value": "no",
       "detail": "Bundled with supported model endpoints; no arbitrary model plug-in"
@@ -513,6 +545,10 @@
     "dedicatedIde": {
       "value": "no",
       "detail": "Integrates into existing editors via plugins; no separate IDE"
+    },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
     },
     "byoLlm": {
       "value": "yes",
@@ -575,6 +611,10 @@
       "value": "no",
       "detail": "Though it integrates with VS Code and JetBrains via plugins"
     },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
+    },
     "byoLlm": {
       "value": "no",
       "detail": "Specifically built to use Google's Gemini model via Google's API"
@@ -635,6 +675,10 @@
     "dedicatedIde": {
       "value": "no",
       "detail": "Integrates into popular IDEs/editors as extension"
+    },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
     },
     "byoLlm": {
       "value": "partial",
@@ -697,6 +741,10 @@
       "value": "no",
       "detail": "But provides a desktop GUI option in addition to terminal"
     },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
+    },
     "byoLlm": {
       "value": "yes",
       "detail": "Works with any LLM; supports multi-model configurations"
@@ -757,6 +805,10 @@
     "dedicatedIde": {
       "value": "no",
       "detail": "Runs asynchronously in cloud; not inside your editor"
+    },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
     },
     "byoLlm": {
       "value": "no",
@@ -819,6 +871,10 @@
       "value": "no",
       "detail": "Available as VS Code/JetBrains plugins and CLI; no separate IDE app"
     },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
+    },
     "byoLlm": {
       "value": "yes",
       "detail": "Model-agnostic: supports OpenAI, Anthropic, Google Gemini, local Llama2, etc."
@@ -879,6 +935,10 @@
     "dedicatedIde": {
       "value": "no",
       "detail": "Integrates with existing IDEs and also offers CLI; an IDE plugin exists for VS Code as Kiro agents"
+    },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
     },
     "byoLlm": {
       "value": "no",
@@ -941,6 +1001,10 @@
       "value": "no",
       "detail": "But supports editor integration via Agent Communication Protocol"
     },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
+    },
     "byoLlm": {
       "value": "yes",
       "detail": "Optimized for Mistral's open Devstral 2 models, but can be adapted to others since it's open source"
@@ -1001,6 +1065,10 @@
     "dedicatedIde": {
       "value": "no",
       "detail": "Used via integrations like Copilot or OpenAI Playground"
+    },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
     },
     "byoLlm": {
       "value": "no",
@@ -1063,6 +1131,10 @@
       "value": "yes",
       "detail": "Offers an OpenCode Desktop app aside from editor plugins"
     },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
+    },
     "byoLlm": {
       "value": "yes",
       "detail": "Not tied to any provider; supports OpenAI, Anthropic, local models, etc."
@@ -1123,6 +1195,10 @@
     "dedicatedIde": {
       "value": "no",
       "detail": "Runs within VS Code"
+    },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
     },
     "byoLlm": {
       "value": "yes",
@@ -1185,6 +1261,10 @@
       "value": "no",
       "detail": "Integrates with IDEs via extensions (VSCode, IntelliJ, Vim)"
     },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
+    },
     "byoLlm": {
       "value": "yes",
       "detail": "Compatible with major coding LLMs (CodeLlama, StarCoder, CodeGen) and supports custom models"
@@ -1245,6 +1325,10 @@
     "dedicatedIde": {
       "value": "yes",
       "detail": "TraeIDE – an AI-first coding IDE"
+    },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
     },
     "byoLlm": {
       "value": "yes",
@@ -1307,6 +1391,10 @@
       "value": "no",
       "detail": "It's a terminal emulator with AI features"
     },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
+    },
     "byoLlm": {
       "value": "no",
       "detail": "Warp AI uses built-in model integrations, e.g. OpenAI API provided by Warp"
@@ -1368,6 +1456,10 @@
       "value": "yes",
       "detail": "Windsurf IDE – a standalone AI-powered editor"
     },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
+    },
     "byoLlm": {
       "value": "partial",
       "detail": "Uses integrated models via Codeium/Cognition; users generally use provided models, not arbitrary endpoints"
@@ -1428,6 +1520,10 @@
     "dedicatedIde": {
       "value": "yes",
       "detail": "Zed code editor for macOS/Linux/Windows"
+    },
+    "ideExtension": {
+      "value": "no",
+      "detail": null
     },
     "byoLlm": {
       "value": "yes",

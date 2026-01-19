@@ -34,7 +34,18 @@ Thank you for contributing to agents-board! Use this template to submit a new AI
 
 ---
 
-## GitHub Properties
+## Links
+
+### Website* (required)
+
+**Website URL:**
+<!-- e.g., https://aider.chat -->
+
+**Format:** `https://example.com`
+
+**Examples:**
+- Aider: `https://aider.chat`
+- Claude Code: `https://claude.ai/claude-code`
 
 ### GitHub URL
 
@@ -55,6 +66,24 @@ Thank you for contributing to agents-board! Use this template to submit a new AI
 `null`
 
 > **Note:** GitHub Stars are automatically populated by `npm run update-stars` script. Always set this to `null` for new submissions.
+
+---
+
+## Release Info
+
+### First Release* (required)
+
+**First Release Date:**
+<!-- Format: YYYY-MM, e.g., 2024-01 -->
+
+**Format:** `YYYY-MM` (year and month)
+
+**Detail:** <!-- Optional: e.g., "Technical preview launched" -->
+
+**Examples:**
+- Aider: `2023-05`
+- Claude Code: `2025-02`
+- GitHub Copilot: `2021-06` with detail "Technical preview launched"
 
 ---
 
@@ -101,7 +130,26 @@ For each feature below, provide:
 
 ---
 
-### 3. Bring Your Own LLM (byoLlm)
+### 3. IDE Extension
+
+**Definition:** Whether the agent is available as an extension/plugin for existing IDEs (VS Code, JetBrains, etc.).
+
+**Value:** <!-- yes/no/partial/null -->
+
+**Detail:** <!-- Optional: e.g., "Available as VS Code and JetBrains extensions" -->
+
+**Possible values:**
+- `yes` - Available as IDE extension/plugin
+- `no` - Not available as an IDE extension
+- `partial` - Limited IDE extension support
+
+**Examples:**
+- Aider: `{ "value": "no", "detail": null }`
+- Continue: `{ "value": "yes", "detail": "VS Code and JetBrains extensions available" }`
+
+---
+
+### 4. Bring Your Own LLM (byoLlm)
 
 **Definition:** Whether users can configure the agent to use their own choice of Language Model provider (OpenAI, Anthropic, local models, etc.).
 
@@ -120,7 +168,7 @@ For each feature below, provide:
 
 ---
 
-### 4. MCP Support (Model Context Protocol)
+### 5. MCP Support (Model Context Protocol)
 
 **Definition:** Whether the agent implements MCP, an open standard for connecting AI assistants to external data sources and tools.
 
@@ -136,7 +184,7 @@ For each feature below, provide:
 
 ---
 
-### 5. Custom Rules
+### 6. Custom Rules
 
 **Definition:** Whether the agent allows users to define custom instructions, guidelines, or rules that shape the agent's behavior.
 
@@ -150,7 +198,7 @@ For each feature below, provide:
 
 ---
 
-### 6. AGENTS.md Support
+### 7. AGENTS.md Support
 
 **Definition:** Whether the agent recognizes and uses `AGENTS.md` files for project-specific instructions and context.
 
@@ -166,7 +214,7 @@ For each feature below, provide:
 
 ---
 
-### 7. Agent Skills Support
+### 8. Agent Skills Support
 
 **Definition:** Whether the agent supports installable skills, plugins, or extensions that add new capabilities or specialized behaviors.
 
@@ -180,7 +228,7 @@ For each feature below, provide:
 
 ---
 
-### 8. Commands/Reusable Prompts
+### 9. Commands/Reusable Prompts
 
 **Definition:** Whether the agent supports slash commands, saved prompts, or other reusable prompt mechanisms that users can invoke quickly.
 
@@ -196,7 +244,7 @@ For each feature below, provide:
 
 ---
 
-### 9. Sub-agents Support
+### 10. Sub-agents Support
 
 **Definition:** Whether the agent can spawn or delegate work to specialized sub-agents for different tasks (e.g., a planning agent, testing agent, exploration agent).
 
@@ -207,6 +255,26 @@ For each feature below, provide:
 **Examples:**
 - Aider: `{ "value": "no", "detail": null }`
 - Claude Code: `{ "value": "yes", "detail": "Can spawn autonomous sub-agents to handle subtasks" }`
+
+---
+
+### 11. Plan Mode
+
+**Definition:** Whether the agent supports a dedicated planning mode for architectural planning, task breakdown, or implementation strategy before writing code.
+
+**Value:** <!-- yes/no/partial/null -->
+
+**Detail:** <!-- Optional: e.g., "Plan mode for architectural planning before implementation" -->
+
+**Possible values:**
+- `yes` - Has dedicated planning/architect mode
+- `no` - No explicit planning mode
+- `partial` - Limited planning capabilities
+
+**Examples:**
+- Aider: `{ "value": "no", "detail": null }`
+- Claude Code: `{ "value": "yes", "detail": "Plan mode for architectural planning before implementation" }`
+- Cursor: `{ "value": "yes", "detail": "Plan/Act modes for structured development" }`
 
 ---
 
@@ -242,11 +310,11 @@ A brief description highlighting unique features, special capabilities, or impor
 
 ## Pre-submission Checklist
 
-- [ ] I have filled in all required fields marked with (*)
-- [ ] I have provided accurate values for all features (yes/no/partial/null)
+- [ ] I have filled in all required fields marked with (*): Name, Type, Website, First Release, Additional Info
+- [ ] I have provided accurate values for all 11 features (yes/no/partial/null)
 - [ ] I have reviewed the [Agent Properties Terminology](https://github.com/anthropics/agents-board#agent-properties-terminology)
 - [ ] I have provided examples and context in the "detail" fields where applicable
 - [ ] The agent name in the issue title matches the agent name in the form
 - [ ] I have set `ghStars` to `null` (it will be auto-updated)
-- [ ] I have provided a link to official documentation or website
+- [ ] I have provided the official website URL in the Links section
 - [ ] The `additionalInfo` field highlights what makes this agent unique

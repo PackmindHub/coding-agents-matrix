@@ -24,6 +24,8 @@ const useAgentsData = () => {
         cliDetail: agent.cli.detail,
         dedicatedIde: agent.dedicatedIde.value,
         dedicatedIdeDetail: agent.dedicatedIde.detail,
+        ideExtension: agent.ideExtension.value,
+        ideExtensionDetail: agent.ideExtension.detail,
         byoLlm: agent.byoLlm.value,
         byoLlmDetail: agent.byoLlm.detail,
         mcpSupport: agent.mcpSupport.value,

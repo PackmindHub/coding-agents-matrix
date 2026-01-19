@@ -132,13 +132,12 @@
   }
 
   .table-header-cell {
-    @apply px-4 py-3 text-left text-xs font-semibold text-slate-400;
-    @apply uppercase tracking-widest;
+    @apply px-4 py-3 text-left text-xs font-medium text-slate-400;
   }
 
   .table-header-cell-sortable {
-    @apply px-4 py-3 text-left text-xs font-semibold text-slate-400;
-    @apply uppercase tracking-widest cursor-pointer select-none;
+    @apply px-4 py-3 text-left text-xs font-medium text-slate-400;
+    @apply cursor-pointer select-none;
     @apply hover:bg-slate-800/50 transition-all duration-200;
   }
 

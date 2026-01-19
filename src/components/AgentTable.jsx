@@ -19,6 +19,7 @@ const AgentTable = ({ agents, sortConfig, onSort }) => {
     { key: 'firstRelease', label: '1st Release', sortable: true, cellType: 'text', tooltip: 'First public release date (YYYY-MM)' },
     { key: 'cli', label: 'CLI', sortable: true, cellType: 'badge', tooltip: 'Command-line interface support for terminal-based usage' },
     { key: 'dedicatedIde', label: 'Dedicated IDE', sortable: true, cellType: 'badge', tooltip: 'Has its own integrated development environment' },
+    { key: 'ideExtension', label: 'IDE Extension', sortable: true, cellType: 'badge', tooltip: 'Available as an IDE extension/plugin' },
     { key: 'byoLlm', label: 'BYO LLM', sortable: true, cellType: 'badge', tooltip: 'Bring Your Own LLM - allows using custom language models' },
     { key: 'mcpSupport', label: 'MCP', sortable: true, cellType: 'badge', tooltip: 'Model Context Protocol support for enhanced context sharing' },
     { key: 'customRules', label: 'Custom Rules', sortable: true, cellType: 'badge', tooltip: 'Ability to define custom rules and guidelines for the agent' },

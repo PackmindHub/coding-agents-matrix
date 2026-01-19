@@ -6,9 +6,9 @@
       "columns": ["name", "type", "ghStars", "firstRelease"]
     },
     {
-      "id": "packages",
-      "label": "Packages",
-      "columns": ["cli", "dedicatedIde"]
+      "id": "packaging",
+      "label": "Packaging",
+      "columns": ["cli", "dedicatedIde", "ideExtension"]
     },
     {
       "id": "features",
