@@ -11,11 +11,11 @@
       "detail": "Last updated: 2026-01-19"
     },
     "website": {
-      "value": "https://aider.chat",
+      "value": "https://aider.chat/",
       "detail": null
     },
     "firstRelease": {
-      "value": "2023-05",
+      "value": "2023-06",
       "detail": null
     },
     "cli": {
@@ -39,12 +39,12 @@
       "detail": "No built-in MCP client; can be extended via external MCP server integrations"
     },
     "customRules": {
-      "value": "no",
-      "detail": "No explicit project rules file support beyond user prompts"
+      "value": "yes",
+      "detail": "Through the usage of the file `CONVENTIONS.md`"
     },
     "agentsMdSupport": {
-      "value": "no",
-      "detail": null
+      "value": "partial",
+      "detail": "Not native, but can be configured to read these files. Read more: https://aider.chat/docs/usage/conventions.html#always-load-conventions"
     },
     "agentSkillsSupport": {
       "value": "no",
@@ -60,7 +60,7 @@
     },
     "planMode": {
       "value": "no",
-      "detail": null
+      "detail": "Has a `/architect` mode but not considered as a `plan` mode."
     },
     "additionalInfo": "Integrates with Git (auto-commits changes with messages); voice input and image context support"
   },
