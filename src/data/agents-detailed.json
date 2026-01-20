@@ -986,11 +986,11 @@
       "detail": "Last updated: 2026-01-19"
     },
     "website": {
-      "value": "https://mistral.ai",
+      "value": "https://docs.mistral.ai/mistral-vibe/introduction",
       "detail": null
     },
     "firstRelease": {
-      "value": "2025-05",
+      "value": "2025-10",
       "detail": null
     },
     "cli": {
@@ -1015,27 +1015,27 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Analyzes project config files and code structure to derive context; can produce an AGENTS.md-like summary on init, and supports standard instruction files via ACP integration"
+      "detail": "Through the file ~/.vibe/instructions.md"
     },
     "agentsMdSupport": {
       "value": "yes",
       "detail": "By convention – it will create or update an AGENTS.md with project context on initialization, and respects such files if present"
     },
     "agentSkillsSupport": {
-      "value": "no",
-      "detail": "No explicit mention of skills packages; focuses on core tool use and editing capabilities"
+      "value": "yes",
+      "detail": null
     },
     "commandsReusablePrompts": {
-      "value": "no",
-      "detail": "Agent works via natural language prompts, focusing on vibe coding with minimal manual commands"
+      "value": "yes",
+      "detail": "Through the ~/.vibe/prompts/"
     },
     "subagentsSupport": {
       "value": "no",
       "detail": "Single agent loop with step-by-step planning and execution, though model can internally plan multi-step solutions"
     },
     "planMode": {
-      "value": "yes",
-      "detail": "Step-by-step planning and execution"
+      "value": null,
+      "detail": null
     },
     "additionalInfo": "Deep integration with Mistral's Devstral models; supports ACP to interface with GUI editors like Zed"
   },
