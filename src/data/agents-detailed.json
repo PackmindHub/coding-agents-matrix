@@ -856,11 +856,11 @@
       "detail": "Last updated: 2026-01-19"
     },
     "website": {
-      "value": "https://kilocode.ai",
+      "value": "https://kilocode.ai/",
       "detail": null
     },
     "firstRelease": {
-      "value": "2025-01",
+      "value": "2025-03",
       "detail": null
     },
     "cli": {
@@ -872,7 +872,7 @@
       "detail": "Available as VS Code/JetBrains plugins and CLI; no separate IDE app"
     },
     "ideExtension": {
-      "value": "no",
+      "value": "yes",
       "detail": null
     },
     "byoLlm": {
@@ -885,27 +885,27 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Uses a memory bank of markdown files like `context.md`, `brief.md`, `history.md` to persist project knowledge; also compatible with AGENTS.md standard"
+      "detail": "Read more: https://kilo.ai/docs/agent-behavior/custom-rules"
     },
     "agentsMdSupport": {
       "value": "yes",
-      "detail": "Fully embraces AGENTS.md as an open standard for project instructions"
+      "detail": "Read more: https://kilo.ai/docs/agent-behavior/agents-md"
     },
     "agentSkillsSupport": {
-      "value": "no",
-      "detail": "No separate pluggable skills, instead has built-in development modes covering different tasks"
+      "value": "yes",
+      "detail": "https://kilo.ai/docs/agent-behavior/skills"
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Operates in distinct modes – Ask, Architect, Code, Debug, Orchestrator – which act as reusable prompt patterns"
+      "detail": "Read more: https://kilo.ai/docs/cli#custom-commands"
     },
     "subagentsSupport": {
-      "value": "yes",
-      "detail": "Supports running multiple agents in parallel via git worktrees – e.g. parallel Droids tackling different tasks"
+      "value": "no",
+      "detail": null
     },
     "planMode": {
       "value": "yes",
-      "detail": "Architect mode for planning"
+      "detail": "https://kilo.ai/docs/basic-usage/using-modes"
     },
     "additionalInfo": "Multi-mode context management; Memory Bank (.kilocode/rules directory); forked from Roo Code"
   },
