@@ -1116,11 +1116,11 @@
       "detail": "Last updated: 2026-01-19"
     },
     "website": {
-      "value": "https://opencode.ai",
+      "value": "https://opencode.ai/",
       "detail": null
     },
     "firstRelease": {
-      "value": "2025-04",
+      "value": "2025-05",
       "detail": null
     },
     "cli": {
@@ -1128,12 +1128,12 @@
       "detail": "Go-based `opencode` CLI with TUI"
     },
     "dedicatedIde": {
-      "value": "yes",
-      "detail": "Offers an OpenCode Desktop app aside from editor plugins"
-    },
-    "ideExtension": {
       "value": "no",
       "detail": null
+    },
+    "ideExtension": {
+      "value": "yes",
+      "detail": "OpenCode integrates with VS Code, Cursor, or any IDE that supports a terminal."
     },
     "byoLlm": {
       "value": "yes",
@@ -1144,8 +1144,8 @@
       "detail": "Supports connecting to MCP servers; exposes configuration for MCP tools"
     },
     "customRules": {
-      "value": "yes",
-      "detail": "Supports rules files and auto-generates AGENTS.md for project context"
+      "value": "no",
+      "detail": "Only support for `AGENTS.md`"
     },
     "agentsMdSupport": {
       "value": "yes",
@@ -1157,15 +1157,15 @@
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Interactive TUI with slash commands like `/connect` to configure providers, and other `/` commands for settings; otherwise natural language queries"
+      "detail": "Read more: https://opencode.ai/docs/commands/"
     },
     "subagentsSupport": {
       "value": "yes",
-      "detail": "Supports running multiple background agents in headless mode or parallel tasks, and integration with multiple Agent profiles via config"
+      "detail": "Read more: https://opencode.ai/docs/agents/"
     },
     "planMode": {
       "value": "yes",
-      "detail": null
+      "detail": "https://opencode.ai/docs/modes/#plan"
     },
     "additionalInfo": "Highly extensible via plugins and SDK; supports Agent Client Protocol (ACP); opencode share for git integration"
   },
