@@ -1376,39 +1376,39 @@
       "detail": null
     },
     "website": {
-      "value": "https://www.warp.dev",
+      "value": "https://warp.dev",
       "detail": null
     },
     "firstRelease": {
-      "value": "2022-04",
+      "value": "2021-06",
       "detail": null
     },
     "cli": {
-      "value": "no",
-      "detail": "Warp is a GPU-accelerated terminal application, not a CLI agent itself"
+      "value": "yes",
+      "detail": null
     },
     "dedicatedIde": {
       "value": "no",
-      "detail": "It's a terminal emulator with AI features"
+      "detail": null
     },
     "ideExtension": {
       "value": "no",
       "detail": null
     },
     "byoLlm": {
-      "value": "no",
-      "detail": "Warp AI uses built-in model integrations, e.g. OpenAI API provided by Warp"
+      "value": "partial",
+      "detail": "Only for paid plans - Warp's BYOK lets you plug in your own OpenAI, Anthropic, or Google API keys and use those models inside Warp's agent harness."
     },
     "mcpSupport": {
-      "value": "no",
-      "detail": "Warp's AI features are focused on shell command assistance, not general tool invocation via MCP"
+      "value": "yes",
+      "detail": null
     },
     "customRules": {
-      "value": "no",
-      "detail": "No mechanism for project-specific AI instructions; context is limited to shell history/commands"
+      "value": "yes",
+      "detail": "Through WRAP.md files"
     },
     "agentsMdSupport": {
-      "value": "no",
+      "value": "yes",
       "detail": null
     },
     "agentSkillsSupport": {
@@ -1417,15 +1417,15 @@
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Offers AI commands like explaining errors or writing commands – invoked via special UI actions in the terminal"
+      "detail": "Through the prompts: https://docs.warp.dev/knowledge-and-collaboration/warp-drive/prompts"
     },
     "subagentsSupport": {
       "value": "no",
       "detail": null
     },
     "planMode": {
-      "value": "no",
-      "detail": null
+      "value": "yes",
+      "detail": "Though the `/plan` command"
     },
     "additionalInfo": "GPU-accelerated terminal emulator; AI features for shell command assistance (not a coding agent)"
   },
