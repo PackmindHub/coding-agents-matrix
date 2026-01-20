@@ -261,7 +261,7 @@
   },
   {
     "name": "Claude Code",
-    "type": "Open Source",
+    "type": "Proprietary",
     "github": {
       "value": "https://github.com/anthropics/claude-code/",
       "detail": null
