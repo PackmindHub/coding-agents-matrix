@@ -430,7 +430,7 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Supports file `CRUSH.md` but also `.cursorrules`, `CLAUDE.md`, `.cursor/rules/`, `.github/copilot-instructions.md`"
+      "detail": "Supports files `CRUSH.md`, `.cursorrules`, `CLAUDE.md`, `.cursor/rules/`, `.github/copilot-instructions.md`"
     },
     "agentsMdSupport": {
       "value": "yes",
