@@ -145,7 +145,7 @@
       "detail": null
     },
     "firstRelease": {
-      "value": "2024-08",
+      "value": "2025-11",
       "detail": null
     },
     "cli": {
@@ -170,19 +170,19 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Uses global and workspace rules: e.g. `~/.gemini/GEMINI.md` for global, `.agent/rules/` in project"
+      "detail": "Through `gemini.md` or folder rules: https://antigravity.google/docs/rules-workflows#rules"
     },
     "agentsMdSupport": {
       "value": "no",
       "detail": "Expects rules via its own .agent/rules files; AGENTS.md must be manually loaded via a rule if needed"
     },
     "agentSkillsSupport": {
-      "value": "no",
-      "detail": "Focuses on built-in planning and execution workflows instead of modular skills"
+      "value": "yes",
+      "detail": "https://antigravity.google/docs/skills"
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Supports user-defined workflows (Workflows) that can be executed to automate tasks"
+      "detail": "https://antigravity.google/docs/rules-workflows#workflows"
     },
     "subagentsSupport": {
       "value": "no",
@@ -190,7 +190,7 @@
     },
     "planMode": {
       "value": "yes",
-      "detail": "Built-in planning and execution workflow"
+      "detail": "Read more: https://antigravity.google/docs/agent-modes-settings"
     },
     "additionalInfo": "Supports Workflows (predefined multi-step task sequences) and Agent Manager UI"
   },
