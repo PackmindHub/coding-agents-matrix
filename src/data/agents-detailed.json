@@ -222,7 +222,7 @@
       "detail": "Integrates with VS Code, JetBrains, Vim, etc. via extensions"
     },
     "ideExtension": {
-      "value": "no",
+      "value": "yes",
       "detail": null
     },
     "byoLlm": {
@@ -235,27 +235,27 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Extensive rules system with hierarchy; supports user-level and workspace-level rules files"
+      "detail": "https://docs.augmentcode.com/setup-augment/guidelines"
     },
     "agentsMdSupport": {
       "value": "yes",
-      "detail": "Automatically loads AGENTS.md if present"
+      "detail": "It supports CLAUDE.md as well"
     },
     "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "Supports Subagents and skill-like agent extensions for specific tasks"
+      "value": "no",
+      "detail": null
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Supports custom commands/macros in CLI"
+      "detail": "https://docs.augmentcode.com/cli/custom-commands"
     },
     "subagentsSupport": {
       "value": "yes",
-      "detail": "Can spawn subordinate autonomous agents for parallel tasks"
+      "detail": "https://docs.augmentcode.com/jetbrains/using-augment/agent"
     },
     "planMode": {
-      "value": "yes",
-      "detail": null
+      "value": "partial",
+      "detail": "Has a tasklist mode to create step-by-step plans."
     },
     "additionalInfo": "Integrations with Slack/Teams; smart hooks for pre/post command automation"
   },
