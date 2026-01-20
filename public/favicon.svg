@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    <!-- Background -->
+    <rect x="4" y="4" width="56" height="56" rx="14" fill="#0B1220"/>
+
+    <!-- Matrix grid (subtle) -->
+    <g stroke="#7DD3FC" stroke-opacity="0.35" stroke-width="2">
+        <path d="M16 14v36M32 14v36M48 14v36"/>
+        <path d="M14 16h36M14 32h36M14 48h36"/>
+    </g>
+
+    <!-- Central code chevrons -->
+    <g fill="none" stroke="#E5E7EB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M28 24l-10 8 10 8"/>
+        <path d="M36 24l10 8-10 8"/>
+    </g>
+
+    <!-- Small “spark” dot (AI hint) -->
+    <circle cx="49" cy="19" r="2.6" fill="#A7F3D0"/>
+</svg>
