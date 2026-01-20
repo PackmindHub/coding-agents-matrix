@@ -531,11 +531,11 @@
       "detail": null
     },
     "website": {
-      "value": "https://www.factory.ai",
+      "value": "https://factory.ai/",
       "detail": null
     },
     "firstRelease": {
-      "value": "2024-01",
+      "value": "2025-02",
       "detail": null
     },
     "cli": {
@@ -547,12 +547,12 @@
       "detail": "Integrates into existing editors via plugins; no separate IDE"
     },
     "ideExtension": {
-      "value": "no",
-      "detail": null
+      "value": "yes",
+      "detail": "VSCode extension"
     },
     "byoLlm": {
       "value": "yes",
-      "detail": "Model-agnostic: supports GPT-4/5, Claude, etc., via user's API keys or Factory's provided access"
+      "detail": "Read more: https://docs.factory.ai/cli/user-guides/choosing-your-model#5-%C2%B7-bring-your-own-keys-byok"
     },
     "mcpSupport": {
       "value": "yes",
@@ -560,27 +560,27 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Central use of AGENTS.md files at root and per-folder for project conventions; also uses Org/User memory stores for persistent guidelines"
+      "detail": "Read more: https://docs.factory.ai/guides/power-user/rules-conventions#rules-and-conventions"
     },
     "agentsMdSupport": {
       "value": "yes",
       "detail": "Integral to context – supports multiple AGENTS.md for different project parts"
     },
     "agentSkillsSupport": {
-      "value": "no",
-      "detail": "Relies on Droids handling tasks; no separate skill plugin system exposed"
+      "value": "yes",
+      "detail": "https://docs.factory.ai/cli/configuration/skills"
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Supports @-mentioning files or contexts in chat; provides some predefined command triggers like `@workspace` summary"
+      "detail": "Read more: https://docs.factory.ai/cli/configuration/custom-slash-commands"
     },
     "subagentsSupport": {
       "value": "yes",
-      "detail": "Allows multiple specialized Droids – e.g. one might handle coding, others code review – working in concert as a team"
+      "detail": "Read more: https://docs.factory.ai/cli/configuration/custom-droids"
     },
     "planMode": {
       "value": "yes",
-      "detail": null
+      "detail": "Spec Mode: https://docs.factory.ai/cli/getting-started/video-walkthrough#spec-mode-research-and-plan-only"
     },
     "additionalInfo": "Maintains User and Organization memory; rich third-party integrations (GitHub, Jira, Notion, Datadog)"
   },
