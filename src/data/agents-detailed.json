@@ -336,56 +336,56 @@
       "detail": "Last updated: 2026-01-19"
     },
     "website": {
-      "value": "https://continue.dev",
+      "value": "https://www.continue.dev/",
       "detail": null
     },
     "firstRelease": {
-      "value": "2023-05",
+      "value": "2025-02",
       "detail": null
     },
     "cli": {
       "value": "yes",
-      "detail": "Has a CLI/TUI mode for agentic operations"
+      "detail": null
     },
     "dedicatedIde": {
       "value": "no",
-      "detail": "Primarily a VS Code extension"
+      "detail": null
     },
     "ideExtension": {
-      "value": "no",
+      "value": "yes",
       "detail": null
     },
     "byoLlm": {
       "value": "yes",
-      "detail": "Supports multiple model providers via configuration"
+      "detail": null
     },
     "mcpSupport": {
       "value": "yes",
-      "detail": "Allows adding MCP tools for the agent to use"
+      "detail": null
     },
     "customRules": {
       "value": "yes",
-      "detail": "Supports rules in markdown with YAML frontmatter to guide agent behavior"
+      "detail": "https://docs.continue.dev/customize/rules"
     },
     "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Recognizes AGENTS.md as a source of project instructions"
+      "value": "no",
+      "detail": null
     },
     "agentSkillsSupport": {
       "value": "no",
-      "detail": "No specific modular skills system, focuses on tools and modes"
+      "detail": null
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Offers multiple modes like Chat, Agent mode for automated changes; mode switching via UI"
+      "detail": "Through prompts. https://docs.continue.dev/customize/prompts"
     },
     "subagentsSupport": {
-      "value": "no",
-      "detail": "Single agent process, though can run background/CI agents in headless mode"
+      "value": "yes",
+      "detail": null
     },
     "planMode": {
-      "value": "no",
-      "detail": null
+      "value": "yes",
+      "detail": "Read more: https://docs.continue.dev/guides/plan-mode-guide#using-plan-mode-with-continue"
     },
     "additionalInfo": "Provides Mission Control UI to manage agent tasks; cloud agent support for CI/CD"
   },
