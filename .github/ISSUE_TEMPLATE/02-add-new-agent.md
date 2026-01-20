@@ -7,10 +7,10 @@ labels: "new-agent, needs-review"
 
 # Add New Agent
 
-Thank you for contributing to agents-board! Use this template to submit a new AI coding agent for inclusion in the comparison matrix.
+Thank you for contributing to coding-agents-matrix! Use this template to submit a new AI coding agent for inclusion in the comparison matrix.
 
 **Before submitting:**
-- Review the [Agent Properties Terminology](https://github.com/anthropics/agents-board#agent-properties-terminology) in the README
+- Review the [Agent Properties Terminology](https://github.com/PackmindHub/coding-agents-matrix#agent-properties-terminology) in the README
 - Explore existing agents in `/src/data/agents-detailed.json` for examples
 - Required fields are marked with an asterisk (*)
 
@@ -312,7 +312,7 @@ A brief description highlighting unique features, special capabilities, or impor
 
 - [ ] I have filled in all required fields marked with (*): Name, Type, Website, First Release, Additional Info
 - [ ] I have provided accurate values for all 11 features (yes/no/partial/null)
-- [ ] I have reviewed the [Agent Properties Terminology](https://github.com/anthropics/agents-board#agent-properties-terminology)
+- [ ] I have reviewed the [Agent Properties Terminology](https://github.com/PackmindHub/coding-agents-matrix#agent-properties-terminology)
 - [ ] I have provided examples and context in the "detail" fields where applicable
 - [ ] The agent name in the issue title matches the agent name in the form
 - [ ] I have set `ghStars` to `null` (it will be auto-updated)

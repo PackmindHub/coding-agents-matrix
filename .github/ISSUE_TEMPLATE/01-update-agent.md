@@ -7,10 +7,10 @@ labels: "update, agent-data"
 
 # Update Existing Agent
 
-Thank you for helping keep the agents-board data accurate and up-to-date! Use this template to propose updates to any agent's information.
+Thank you for helping keep the coding-agents-matrix data accurate and up-to-date! Use this template to propose updates to any agent's information.
 
 **Before submitting:**
-- Review the [Agent Properties Terminology](https://github.com/anthropics/agents-board#agent-properties-terminology) in the README
+- Review the [Agent Properties Terminology](https://github.com/PackmindHub/coding-agents-matrix#agent-properties-terminology) in the README
 - Only include properties that need updating (leave others unchecked)
 
 ---
@@ -120,7 +120,7 @@ Please provide links or references that support your proposed changes:
 
 ## Pre-submission Checklist
 
-- [ ] I have reviewed the [Agent Properties Terminology](https://github.com/anthropics/agents-board#agent-properties-terminology)
+- [ ] I have reviewed the [Agent Properties Terminology](https://github.com/PackmindHub/coding-agents-matrix#agent-properties-terminology)
 - [ ] I have provided evidence or sources for the proposed changes
 - [ ] My proposed values follow the correct format (yes/no/partial/null for features)
 - [ ] I have filled in the agent name in the issue title

@@ -55,21 +55,39 @@ function App() {
     <div className="min-h-screen py-4 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[120rem] mx-auto">
         {/* Header */}
-        <div className="mb-4 relative">
-          {/* Header Links - Top Right */}
-          <div className="absolute top-0 right-0 flex items-center gap-4">
+        <div className="mb-4 sm:relative">
+          {/* Title Section */}
+          <div className="text-center">
+            <div className="inline-flex items-center gap-3 mb-2">
+              <Sparkles className="text-violet-400 w-6 h-6" />
+              <h1 className="text-3xl font-bold text-violet-400 tracking-tight">
+                AI Coding Agents Matrix
+              </h1>
+              <Sparkles className="text-violet-400 w-6 h-6" />
+            </div>
+            <p className="text-slate-400 text-base font-light tracking-wide">
+              A curated comparison of AI coding assistants, powered by <a target={"_blank"} href={"https://packmind.com?utm_source=coding-agents-list"}>Packmind</a>.
+            </p>
+            <p className="text-slate-500 text-sm font-light tracking-wide mt-1">
+              Last updated: January 19, 2026. Based on the latest versions of each agent's documentation.
+            </p>
+            <div className="mt-2 h-px w-48 mx-auto bg-gradient-to-r from-transparent via-violet-500/50 to-transparent"></div>
+          </div>
+
+          {/* Header Links - Below title on mobile, top right on desktop */}
+          <div className="flex items-center justify-center gap-3 sm:gap-4 mt-4 sm:absolute sm:top-0 sm:right-0 sm:mt-0 flex-wrap">
             <button
               onClick={() => setIsChangelogOpen(true)}
               className="btn-header"
             >
               <History className="w-4 h-4" />
-              Changelog
+              <span className="hidden sm:inline">Changelog</span>
             </button>
             <a
               href="https://github.com/PackmindHub/coding-agents-matrix/issues"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-violet-400 text-sm font-light tracking-wide transition-colors duration-200"
+              className="text-slate-400 hover:text-violet-400 text-xs sm:text-sm font-light tracking-wide transition-colors duration-200"
             >
               Submit an update
             </a>
@@ -82,24 +100,6 @@ function App() {
             >
               <Github className="w-5 h-5" />
             </a>
-          </div>
-
-          {/* Title Section */}
-          <div className="text-center">
-            <div className="inline-flex items-center gap-3 mb-2">
-              <Sparkles className="text-violet-400 w-6 h-6" />
-              <h1 className="text-3xl font-bold text-violet-400 tracking-tight">
-                AI Coding Agents
-              </h1>
-              <Sparkles className="text-violet-400 w-6 h-6" />
-            </div>
-            <p className="text-slate-400 text-base font-light tracking-wide">
-              A curated comparison of AI coding assistants, powered by <a target={"_blank"} href={"https://packmind.com?utm_source=coding-agents-list"}>Packmind</a>.
-            </p>
-            <p className="text-slate-500 text-sm font-light tracking-wide mt-1">
-              Last updated: January 19, 2026. Based on the latest versions of each agent's documentation.
-            </p>
-            <div className="mt-2 h-px w-48 mx-auto bg-gradient-to-r from-transparent via-violet-500/50 to-transparent"></div>
           </div>
         </div>
 

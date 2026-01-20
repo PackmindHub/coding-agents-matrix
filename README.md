@@ -7,11 +7,10 @@ A beautiful, interactive comparison matrix of AI coding agents and their capabil
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Adding a New Agent](#adding-a-new-agent)
-- [Agent Properties Terminology](#agent-properties-terminology)
+- [Agent Properties Reference](#agent-properties-reference)
 - [Property Values](#property-values)
 - [Examples](#examples)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
+- [Contribute](#contribute)
 
 ## Features
 
@@ -68,7 +67,7 @@ npm run preview
 
 To add a new agent to the board, follow these steps:
 
-1. **Open the agents data file**: `/src/data/agents.json`
+1. **Open the agents data file**: `/src/data/agents-detailed.json`
 
 2. **Add a new agent object** to the array with all required properties:
 
@@ -76,182 +75,81 @@ To add a new agent to the board, follow these steps:
 {
   "name": "Your Agent Name",
   "type": "Open Source",
-  "ghStars": null,
-  "cli": "yes",
-  "dedicatedIde": "no",
-  "byoLlm": "yes",
-  "mcpSupport": "yes",
-  "customRules": "yes",
-  "agentsMdSupport": "yes",
-  "agentSkillsSupport": "yes",
-  "commandsReusablePrompts": "yes",
-  "subagentsSupport": "no",
-  "additionalInfo": "Brief description of unique features and capabilities"
+  "github": { "value": "https://github.com/owner/repo", "detail": null },
+  "ghStars": { "value": null, "detail": null },
+  "website": { "value": "https://youragent.com", "detail": null },
+  "firstRelease": { "value": "2025-01", "detail": null },
+  "cli": { "value": "yes", "detail": null },
+  "dedicatedIde": { "value": "no", "detail": null },
+  "ideExtension": { "value": "no", "detail": null },
+  "byoLlm": { "value": "yes", "detail": "Supports OpenAI and Anthropic" },
+  "mcpSupport": { "value": "yes", "detail": null },
+  "customRules": { "value": "yes", "detail": null },
+  "agentsMdSupport": { "value": "yes", "detail": null },
+  "agentSkillsSupport": { "value": "yes", "detail": null },
+  "commandsReusablePrompts": { "value": "yes", "detail": null },
+  "subagentsSupport": { "value": "no", "detail": null },
+  "planMode": { "value": "yes", "detail": null },
+  "additionalInfo": "Brief description of unique features"
 }
 ```
+
+**Note about the `detail` field:**
+- Use it to provide additional context that will appear as a tooltip in the UI
+- Set to `null` when no clarification is needed
+- Examples: links to documentation, clarifications about partial support, or caveats
 
 3. **Save the file** - the UI will automatically pick up the new agent
 
 4. **(Optional)** Update `/src/data/agents.yaml` if you want to maintain YAML format consistency
 
-## Agent Properties Terminology
+## Agent Properties Reference
 
-Each agent has the following properties:
+### Data Structure
 
-### `name` (string, required)
-The official name of the AI coding agent.
+All properties except `name`, `type`, and `additionalInfo` use this structure:
+```json
+{
+  "propertyName": {
+    "value": "yes" | "no" | "partial" | string | number | null,
+    "detail": "Optional context displayed as tooltip in UI"
+  }
+}
+```
 
-**Example:** `"Claude Code"`, `"Aider"`, `"Cursor"`
+### Property Reference
 
----
+| Property | Type | Values | Description |
+|----------|------|--------|-------------|
+| **Identity** | | | |
+| `name` | string | - | Official agent name |
+| `type` | string | `"Open Source"` \| `"Proprietary"` | Licensing model |
+| `github` | object | `{value: "url" \| null, detail: null}` | GitHub repository URL |
+| `ghStars` | object | `{value: number \| null, detail: "Last updated: date"}` | Star count (auto-updated) |
+| `website` | object | `{value: "url" \| null, detail: null}` | Official website URL |
+| `firstRelease` | object | `{value: "YYYY-MM" \| null, detail: null}` | Initial release date |
+| **Packaging** | | | |
+| `cli` | object | `{value: "yes" \| "no" \| "partial", detail: string \| null}` | CLI support |
+| `dedicatedIde` | object | `{value: "yes" \| "no", detail: string \| null}` | Standalone/specific IDE |
+| `ideExtension` | object | `{value: "yes" \| "no", detail: string \| null}` | Available as extension |
+| **Features** | | | |
+| `byoLlm` | object | `{value: "yes" \| "no" \| "partial", detail: string \| null}` | Bring Your Own LLM |
+| `mcpSupport` | object | `{value: "yes" \| "no", detail: string \| null}` | [Model Context Protocol](https://modelcontextprotocol.io/) |
+| `customRules` | object | `{value: "yes" \| "no", detail: string \| null}` | Custom instructions |
+| `agentsMdSupport` | object | `{value: "yes" \| "no" \| "partial", detail: string \| null}` | AGENTS.md file support |
+| `agentSkillsSupport` | object | `{value: "yes" \| "no", detail: string \| null}` | Skills/plugins system |
+| `commandsReusablePrompts` | object | `{value: "yes" \| "no", detail: string \| null}` | Slash commands |
+| `subagentsSupport` | object | `{value: "yes" \| "no" \| "partial", detail: string \| null}` | Sub-agent spawning |
+| `planMode` | object | `{value: "yes" \| "no", detail: string \| null}` | Planning before execution |
+| `additionalInfo` | string | - | Brief unique features |
 
-### `type` (string, required)
-The licensing model of the agent.
+### Detail Field Usage
 
-**Possible values:**
-- `"Open Source"` - Source code is publicly available and can be self-hosted
-- `"Proprietary"` - Closed-source commercial product
-
-**Example:** `"Open Source"` or `"Proprietary"`
-
----
-
-### `github` (object, required)
-The GitHub repository URL for the agent's source code.
-
-**Structure:** `{ "value": "https://github.com/owner/repo" or null, "detail": null }`
-
-**Example:** `{ "value": "https://github.com/Aider-AI/aider", "detail": null }`
-
----
-
-### `ghStars` (object, optional)
-The number of GitHub stars the repository has received.
-
-**Structure:** `{ "value": 5000 or null, "detail": "Last updated: YYYY-MM-DD" }`
-
-**Note:** Automatically populated by `npm run update-stars` script.
-
-**Example:** `{ "value": 25430, "detail": "Last updated: 2026-01-16" }`
-
----
-
-### `cli` (string, required)
-Whether the agent provides a Command Line Interface for terminal-based interaction.
-
-**Possible values:**
-- `"yes"` - Full CLI support
-- `"no"` - No CLI available
-- `"partial"` - Limited CLI functionality (e.g., some features require GUI)
-
-**Example:** `"yes"`
-
----
-
-### `dedicatedIde` (string, required)
-Whether the agent comes with or requires a dedicated Integrated Development Environment.
-
-**Possible values:**
-- `"yes"` - Has its own IDE or is an IDE extension that requires a specific IDE
-- `"no"` - Works independently or integrates with any IDE/editor
-
-**Example:** `"no"`
-
----
-
-### `byoLlm` (string, required)
-**"Bring Your Own LLM"** - Whether users can configure the agent to use their own choice of Language Model provider (OpenAI, Anthropic, local models, etc.).
-
-**Possible values:**
-- `"yes"` - Supports multiple LLM providers/models
-- `"no"` - Locked to a specific provider
-- `"partial"` - Limited choice or requires specific configuration
-
-**Example:** `"yes"`
-
----
-
-### `mcpSupport` (string, required)
-**"Model Context Protocol"** support - Whether the agent implements MCP, an open standard for connecting AI assistants to external data sources and tools.
-
-**Possible values:**
-- `"yes"` - Supports MCP servers/connections
-- `"no"` - Does not support MCP
-
-**Example:** `"yes"`
-
-**Learn more:** [Model Context Protocol](https://modelcontextprotocol.io/)
-
----
-
-### `customRules` (string, required)
-Whether the agent allows users to define custom instructions, guidelines, or rules that shape the agent's behavior.
-
-**Possible values:**
-- `"yes"` - Supports custom rules/instructions
-- `"no"` - Fixed behavior without customization
-
-**Example:** `"yes"`
-
----
-
-### `agentsMdSupport` (string, required)
-Whether the agent recognizes and uses `AGENTS.md` files for project-specific instructions and context.
-
-**Possible values:**
-- `"yes"` - Reads and follows AGENTS.md files
-- `"no"` - Does not support AGENTS.md format
-
-**Example:** `"yes"`
-
-**Note:** AGENTS.md is an emerging convention for defining agent-specific instructions in a project.
-
----
-
-### `agentSkillsSupport` (string, required)
-Whether the agent supports installable skills, plugins, or extensions that add new capabilities or specialized behaviors.
-
-**Possible values:**
-- `"yes"` - Supports skills/plugins system
-- `"no"` - No extensibility through skills
-
-**Example:** `"yes"`
-
----
-
-### `commandsReusablePrompts` (string, required)
-Whether the agent supports slash commands, saved prompts, or other reusable prompt mechanisms that users can invoke quickly.
-
-**Possible values:**
-- `"yes"` - Supports reusable commands/prompts
-- `"no"` - No command system
-
-**Example:** `"yes"`
-
-**Note:** Examples include `/commit`, `/test`, `/review` type commands.
-
----
-
-### `subagentsSupport` (string, required)
-Whether the agent can spawn or delegate work to specialized sub-agents for different tasks (e.g., a planning agent, testing agent, exploration agent).
-
-**Possible values:**
-- `"yes"` - Supports sub-agent architecture
-- `"no"` - Single-agent system
-
-**Example:** `"yes"`
-
----
-
-### `additionalInfo` (string, required)
-A brief description highlighting unique features, special capabilities, or important details that distinguish this agent from others.
-
-**Example:** `"Supports Hooks (automated event-driven scripts) and Plugins to extend with new capabilities"`
-
-**Tips:**
-- Keep it concise (1-2 sentences)
-- Focus on differentiating features
-- Mention unique terminology (e.g., "Cursor Rules", "Hooks")
+The `detail` field provides context shown as tooltips:
+- **Clarification**: "Terminal agent and VS Code plugin available"
+- **Links**: Documentation URLs for features
+- **Caveats**: "Not native, but can be configured..."
+- **Null**: When no additional context needed
 
 ---
 
@@ -268,146 +166,222 @@ The UI renders different visual indicators based on property values:
 
 ## Examples
 
-### Example 1: Open Source Agent with Full CLI
+### Example 1: Complete Entry (Open Source Agent)
+
+This example shows a complete agent entry using real data from Aider, demonstrating all properties with the correct `{value, detail}` structure:
 
 ```json
 {
   "name": "Aider",
   "type": "Open Source",
-  "ghStars": null,
-  "cli": "yes",
-  "dedicatedIde": "no",
-  "byoLlm": "yes",
-  "mcpSupport": "no",
-  "customRules": "yes",
-  "agentsMdSupport": "yes",
-  "agentSkillsSupport": "no",
-  "commandsReusablePrompts": "yes",
-  "subagentsSupport": "no",
-  "additionalInfo": "Git-aware CLI tool; supports architect mode for planning; voice coding support"
+  "github": {
+    "value": "https://github.com/Aider-AI/aider",
+    "detail": null
+  },
+  "ghStars": {
+    "value": 39874,
+    "detail": "Last updated: 2026-01-19"
+  },
+  "website": {
+    "value": "https://aider.chat/",
+    "detail": null
+  },
+  "firstRelease": {
+    "value": "2023-06",
+    "detail": null
+  },
+  "cli": {
+    "value": "yes",
+    "detail": null
+  },
+  "dedicatedIde": {
+    "value": "no",
+    "detail": null
+  },
+  "ideExtension": {
+    "value": "no",
+    "detail": null
+  },
+  "byoLlm": {
+    "value": "yes",
+    "detail": "Supports connecting to OpenAI, Anthropic or local models via API keys"
+  },
+  "mcpSupport": {
+    "value": "no",
+    "detail": "No built-in MCP client; can be extended via external MCP server integrations"
+  },
+  "customRules": {
+    "value": "yes",
+    "detail": "Through the usage of the file `CONVENTIONS.md`"
+  },
+  "agentsMdSupport": {
+    "value": "partial",
+    "detail": "Not native, but can be configured to read these files. Read more: https://aider.chat/docs/usage/conventions.html#always-load-conventions"
+  },
+  "agentSkillsSupport": {
+    "value": "no",
+    "detail": null
+  },
+  "commandsReusablePrompts": {
+    "value": "no",
+    "detail": "All instructions given via natural language chat"
+  },
+  "subagentsSupport": {
+    "value": "no",
+    "detail": null
+  },
+  "planMode": {
+    "value": "no",
+    "detail": "Has a `/architect` mode but not considered as a `plan` mode."
+  },
+  "additionalInfo": "Integrates with Git (auto-commits changes with messages); voice input and image context support"
 }
 ```
 
-### Example 2: Proprietary Agent with IDE and Subagents
+### Example 2: Minimal Entry (Proprietary Agent)
+
+This example shows a minimal entry for a proprietary agent without a GitHub repository:
 
 ```json
 {
-  "name": "Claude Code",
+  "name": "Jules",
   "type": "Proprietary",
-  "ghStars": null,
-  "cli": "yes",
-  "dedicatedIde": "no",
-  "byoLlm": "no",
-  "mcpSupport": "yes",
-  "customRules": "yes",
-  "agentsMdSupport": "no",
-  "agentSkillsSupport": "yes",
-  "commandsReusablePrompts": "yes",
-  "subagentsSupport": "yes",
-  "additionalInfo": "Supports Hooks (automated event-driven scripts) and Plugins to extend with new capabilities"
+  "github": {
+    "value": null,
+    "detail": null
+  },
+  "ghStars": {
+    "value": null,
+    "detail": null
+  },
+  "website": {
+    "value": "https://jules.google",
+    "detail": null
+  },
+  "firstRelease": {
+    "value": "2024-12",
+    "detail": null
+  },
+  "cli": {
+    "value": "yes",
+    "detail": "Jules Tools CLI to interface with the cloud agent"
+  },
+  "dedicatedIde": {
+    "value": "no",
+    "detail": "Runs asynchronously in cloud; not inside your editor"
+  },
+  "ideExtension": {
+    "value": "no",
+    "detail": null
+  },
+  "byoLlm": {
+    "value": "no",
+    "detail": "Powered by Google's models on their backend"
+  },
+  "mcpSupport": {
+    "value": "yes",
+    "detail": "Jules uses tools in a sandboxed cloud environment to compile, test, etc., though not user-configurable MCP"
+  },
+  "customRules": {
+    "value": "no",
+    "detail": "No support for AGENTS.md or custom instructions files; agent infers context from repository code and standard config"
+  },
+  "agentsMdSupport": {
+    "value": "no",
+    "detail": null
+  },
+  "agentSkillsSupport": {
+    "value": "no",
+    "detail": null
+  },
+  "commandsReusablePrompts": {
+    "value": "yes",
+    "detail": "Tasks are queued via CLI commands or GitHub comments – e.g. you instruct Jules to fix tests and it works asynchronously"
+  },
+  "subagentsSupport": {
+    "value": "no",
+    "detail": "Jules itself is a single agent per task, operating asynchronously"
+  },
+  "planMode": {
+    "value": "yes",
+    "detail": "Creates execution plans before implementation"
+  },
+  "additionalInfo": "Works via GitHub integration; operates asynchronously in secure cloud sandbox"
 }
 ```
 
-### Example 3: Agent with Partial CLI Support
+## Contribute
 
-```json
-{
-  "name": "Cursor",
-  "type": "Proprietary",
-  "ghStars": null,
-  "cli": "partial",
-  "dedicatedIde": "yes",
-  "byoLlm": "no",
-  "mcpSupport": "yes",
-  "customRules": "yes",
-  "agentsMdSupport": "yes",
-  "agentSkillsSupport": "yes",
-  "commandsReusablePrompts": "yes",
-  "subagentsSupport": "no",
-  "additionalInfo": "VS Code fork IDE; supports background agents for suggestions; Cursor Rules for instructions"
-}
-```
+We welcome contributions! Here are three ways you can help improve the coding-agents-matrix:
+
+### 1. Add a New Agent
+
+Use the **[Add New Agent](https://github.com/PackmindHub/coding-agents-matrix/issues/new?template=02-add-new-agent.md)** issue template to submit a new AI coding agent for inclusion in the comparison matrix.
+
+**When to use:** You've discovered a new coding agent that should be tracked and compared with others.
+
+**What you'll provide:**
+- Agent name, type (Open Source/Proprietary), and website
+- GitHub URL and first release date
+- Support status for 11+ features (yes/no/partial/null)
+- Brief description highlighting unique capabilities
+
+### 2. Update an Existing Agent
+
+Use the **[Update Existing Agent](https://github.com/PackmindHub/coding-agents-matrix/issues/new?template=01-update-agent.md)** issue template to propose updates to any agent's information.
+
+**When to use:** An agent's properties have changed, new features are available, or information is outdated or incorrect.
+
+**What you'll provide:**
+- Agent name and brief description of changes
+- Updated property values with supporting evidence
+- Links to documentation or references
+
+### 3. Propose a New Property
+
+Use the **[Add New Property](https://github.com/PackmindHub/coding-agents-matrix/issues/new?template=03-add-new-property.md)** issue template to propose a new property or feature to track across all agents.
+
+**When to use:** You think an important capability or characteristic should be added to the comparison matrix for all agents.
+
+**What you'll provide:**
+- Property name (technical name in camelCase)
+- Property group (Identity/Packaging/Features)
+- Clear description and motivation
+- Examples of agents that support this property
+- Value format (yes/no/partial/null or custom values)
+
+### Tips for Contributing
+
+- Review the [Agent Properties Terminology](#agent-properties-reference) section to understand the existing properties
+- Check existing properties to avoid duplication
+- Provide sources or references to support your changes
+- Use clear, concise language in descriptions
+- Verify your proposed values against official agent documentation
+
+---
 
 ## Updating GitHub Stars
 
-To update star counts for open source agents:
+The following script:
 
 ```bash
 npm run update-stars
 ```
 
-This script:
-- Fetches current star counts from GitHub API (unauthenticated, 60 req/hour)
-- Updates the `agents-detailed.json` file
-- Creates a backup in `/backups/` before modifying data
-- Handles errors gracefully (404s, rate limits, network issues)
-
-Run this script weekly or after adding new agents.
-
-## Tech Stack
-
-- **React 18**: Modern React with hooks
-- **Vite**: Lightning-fast build tool and dev server
-- **Tailwind CSS**: Utility-first CSS framework for rapid styling
-- **Lucide React**: Beautiful, consistent icons
-
-## Project Structure
-
-```
-agents-board/
-├── src/
-│   ├── components/
-│   │   ├── AgentTable.jsx      # Main table component
-│   │   ├── AgentCard.jsx       # Mobile card view
-│   │   ├── FilterBar.jsx       # Search and filter UI
-│   │   ├── TableCell.jsx       # Table cell renderer
-│   │   ├── TableHeader.jsx     # Sortable column headers
-│   │   ├── TableRow.jsx        # Agent row component
-│   │   └── ValueBadge.jsx      # Yes/No/Partial badges
-│   ├── data/
-│   │   ├── agents.json         # Main agent data source
-│   │   └── agents.yaml         # Alternative YAML format
-│   ├── hooks/
-│   │   ├── useAgentsData.js    # Data loading hook
-│   │   ├── useFiltering.js     # Filter logic hook
-│   │   └── useSorting.js       # Sort logic hook
-│   ├── App.jsx                 # Main app component
-│   ├── main.jsx                # Entry point
-│   └── index.css               # Global styles
-├── index.html
-├── package.json
-├── vite.config.js
-└── tailwind.config.js
-```
-
-### Component Hierarchy
-
-```
-App
-├── FilterBar (handles search, type filter, feature toggles)
-├── AgentTable
-│   ├── AgentCard (mobile view)
-│   ├── TableHeader (sortable columns)
-│   └── TableRow
-│       └── TableCell
-│           └── ValueBadge
-└── useAgentsData (loads agents.json)
-    ├── useFiltering (search + type + feature filters)
-    └── useSorting (multi-value aware sorting)
-```
+is run weekly and updates automatically the values in the database file.
 
 ## Data Source
 
 The agent data is compiled from official documentation, GitHub repositories, and public sources. Last updated: January 2026.
 
-## Contributing
+## Verification Checklist
 
-When adding new agents:
-1. Ensure all required properties are present
-2. Use consistent terminology and values
+After your contribution is accepted and merged:
+1. Verify all required properties are present and correct
+2. Use consistent terminology and values with existing agents
 3. Keep `additionalInfo` concise and informative
-4. Verify the agent renders correctly in both table and card views
-5. Test filtering and sorting with the new agent included
+4. Confirm the agent/property renders correctly in both table and card views
+5. Test filtering and sorting with the new agent/property included
 
 ## License
 
