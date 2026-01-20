@@ -596,7 +596,7 @@
       "detail": "Last updated: 2026-01-19"
     },
     "website": {
-      "value": "https://github.com/google-gemini/gemini-cli",
+      "value": "https://geminicli.com/",
       "detail": null
     },
     "firstRelease": {
@@ -612,8 +612,8 @@
       "detail": "Though it integrates with VS Code and JetBrains via plugins"
     },
     "ideExtension": {
-      "value": "no",
-      "detail": null
+      "value": "yes",
+      "detail": "Read more: https://marketplace.visualstudio.com/items?itemName=google.gemini-cli-vscode-ide-companion"
     },
     "byoLlm": {
       "value": "no",
@@ -625,27 +625,27 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Supports AGENTS.md and its own GEMINI.md for project instructions"
+      "detail": "Through https://geminicli.com/docs/cli/gemini-md/"
     },
     "agentsMdSupport": {
       "value": "yes",
-      "detail": "Loads AGENTS.md as custom instructions if present"
+      "detail": "Read more: https://geminicli.com/docs/get-started/configuration-v1/#available-settings-in-settingsjson"
     },
     "agentSkillsSupport": {
       "value": "yes",
-      "detail": "Supports Agent Skills – modular skill directories with SKILL.md"
+      "detail": "Read more: https://geminicli.com/docs/cli/skills/"
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Allows mode switching and slash-style commands in the CLI; smart actions in IDE UI"
+      "detail": "Read more: https://geminicli.com/docs/cli/commands/#slash-commands"
     },
     "subagentsSupport": {
       "value": "no",
       "detail": "Focuses on one agent, but extensible via skills rather than multiple concurrent agents"
     },
     "planMode": {
-      "value": "yes",
-      "detail": null
+      "value": "partial",
+      "detail": "Currently experimental: https://geminicli.com/docs/get-started/configuration/#experimental"
     },
     "additionalInfo": "Provides Smart Actions in IDE; integrates LSP for code context; 1000 free requests/day"
   },
