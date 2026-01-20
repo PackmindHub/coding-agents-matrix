@@ -1441,7 +1441,7 @@
       "detail": null
     },
     "website": {
-      "value": "https://codeium.com/windsurf",
+      "value": "https://windsurf.com/",
       "detail": null
     },
     "firstRelease": {
@@ -1457,12 +1457,12 @@
       "detail": "Windsurf IDE – a standalone AI-powered editor"
     },
     "ideExtension": {
-      "value": "no",
-      "detail": null
+      "value": "yes",
+      "detail": "For Jetbrains only"
     },
     "byoLlm": {
       "value": "partial",
-      "detail": "Uses integrated models via Codeium/Cognition; users generally use provided models, not arbitrary endpoints"
+      "detail": "This is only available to free and paid individual users. Read more: https://docs.windsurf.com/windsurf/models#bring-your-own-key-byok"
     },
     "mcpSupport": {
       "value": "yes",
@@ -1470,7 +1470,7 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Supports Memories & Rules – project and user rules to customize agent behavior"
+      "detail": "Through the `.windsurf/rules` directory"
     },
     "agentsMdSupport": {
       "value": "yes",
@@ -1478,11 +1478,11 @@
     },
     "agentSkillsSupport": {
       "value": "yes",
-      "detail": "Has a Skills system for Cascade agent to have specialized capabilities"
+      "detail": "Read more: https://docs.windsurf.com/windsurf/cascade/skills"
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Provides a rich command palette and Workflows feature to automate multi-step tasks; also supports `@` mentions in chat for files or prior threads"
+      "detail": "Through the `.windsurf/workflows/` prompts"
     },
     "subagentsSupport": {
       "value": "no",
