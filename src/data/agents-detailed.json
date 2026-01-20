@@ -1197,8 +1197,8 @@
       "detail": "Runs within VS Code"
     },
     "ideExtension": {
-      "value": "no",
-      "detail": null
+      "value": "yes",
+      "detail": "VS Code only"
     },
     "byoLlm": {
       "value": "yes",
@@ -1210,27 +1210,27 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Supports project instruction files; originally used modes and could utilize AGENTS.md or similar for context"
+      "detail": "Through rules https://docs.roocode.com/features/custom-instructions"
     },
     "agentsMdSupport": {
       "value": "yes",
-      "detail": "Compatible with AGENTS.md for repo-level instructions to guide its dev team of agents"
+      "detail": "https://docs.roocode.com/features/custom-instructions?_highlight=agents.md#agentsmd-support"
     },
     "agentSkillsSupport": {
-      "value": "no",
-      "detail": "Focuses on built-in modes rather than pluggable skills"
+      "value": "yes",
+      "detail": "Read more: https://docs.roocode.com/features/skills"
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Offers multiple modes – Code, Architect, Ask, Debug, etc. – which act as preset prompt styles; user can switch modes to influence agent behavior"
+      "detail": "Through Slash commands: https://docs.roocode.com/features/slash-commands"
     },
     "subagentsSupport": {
       "value": "yes",
-      "detail": "Marketed as a team of AI agents – uses different internal agent personas for different tasks, coordinated together"
+      "detail": "Through cloud agents: https://docs.roocode.com/roo-code-cloud/cloud-agents?_highlight=agent"
     },
     "planMode": {
-      "value": "yes",
-      "detail": "Architect mode for planning"
+      "value": "partial",
+      "detail": "Through the `architect` mode: https://docs.roocode.com/basic-usage/using-modes?_highlight=plan#architect-mode"
     },
     "additionalInfo": "VS Code extension; marketed as team of AI agents; integrated with GitHub issues/PRs; base for Kilo Code"
   },
