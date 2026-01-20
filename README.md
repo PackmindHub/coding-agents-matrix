@@ -370,10 +370,6 @@ npm run update-stars
 
 is run weekly and updates automatically the values in the database file.
 
-## Data Source
-
-The agent data is compiled from official documentation, GitHub repositories, and public sources. Last updated: January 2026.
-
 ## Verification Checklist
 
 After your contribution is accepted and merged:
