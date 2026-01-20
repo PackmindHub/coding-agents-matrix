@@ -129,11 +129,11 @@ async function main() {
     console.warn('Could not fetch rate limit info\n');
   }
 
-  // Count open source agents with GitHub URLs
-  const openSourceAgents = data.filter(agent =>
-    agent.type === 'Open Source' && agent.github?.value
+  // Count agents with GitHub URLs
+  const agentsWithGithub = data.filter(agent =>
+    agent.github?.value
   );
-  console.log(`Found ${openSourceAgents.length} open source agents with GitHub URLs\n`);
+  console.log(`Found ${agentsWithGithub.length} agents with GitHub URLs\n`);
 
   // Update timestamp
   const timestamp = new Date().toISOString().split('T')[0];
@@ -143,7 +143,7 @@ async function main() {
   let errorCount = 0;
 
   for (const agent of data) {
-    if (agent.type === 'Open Source' && agent.github?.value) {
+    if (agent.github?.value) {
       const parsed = parseGitHubUrl(agent.github.value);
 
       if (!parsed) {
@@ -179,7 +179,7 @@ async function main() {
   // Summary
   console.log('Summary');
   console.log('=======');
-  console.log(`Total open source agents: ${openSourceAgents.length}`);
+  console.log(`Total agents with GitHub URLs: ${agentsWithGithub.length}`);
   console.log(`Successfully updated: ${successCount}`);
   console.log(`Errors: ${errorCount}`);
 

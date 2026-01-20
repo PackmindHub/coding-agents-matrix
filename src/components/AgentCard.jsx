@@ -28,7 +28,7 @@ const AgentCard = ({ agent }) => {
       {/* GitHub and Website section */}
       <div className="mb-4 pb-4 border-b border-slate-700/50">
         <div className="flex items-center justify-between flex-wrap gap-2">
-          {agent.type === 'Open Source' && agent.github ? (
+          {agent.github ? (
             <a
               href={agent.github}
               target="_blank"
@@ -68,7 +68,7 @@ const AgentCard = ({ agent }) => {
         </div>
 
         {/* Show website separately if we have both github and website */}
-        {agent.type === 'Open Source' && agent.github && agent.website && (
+        {agent.github && agent.website && (
           <div className="mt-2">
             <a
               href={agent.website}
