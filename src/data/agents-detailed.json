@@ -893,7 +893,7 @@
     },
     "agentSkillsSupport": {
       "value": "yes",
-      "detail": "https://kilo.ai/docs/agent-behavior/skills"
+      "detail": "Read more: https://kilo.ai/docs/agent-behavior/skills"
     },
     "commandsReusablePrompts": {
       "value": "yes",
@@ -905,7 +905,7 @@
     },
     "planMode": {
       "value": "yes",
-      "detail": "https://kilo.ai/docs/basic-usage/using-modes"
+      "detail": "Read more: https://kilo.ai/docs/basic-usage/using-modes"
     },
     "additionalInfo": "Multi-mode context management; Memory Bank (.kilocode/rules directory); forked from Roo Code"
   },
