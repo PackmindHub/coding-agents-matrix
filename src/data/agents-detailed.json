@@ -665,8 +665,8 @@
       "detail": null
     },
     "firstRelease": {
-      "value": "2021-06",
-      "detail": "Technical preview launched"
+      "value": "2021-10",
+      "detail": null
     },
     "cli": {
       "value": "yes",
@@ -677,12 +677,12 @@
       "detail": "Integrates into popular IDEs/editors as extension"
     },
     "ideExtension": {
-      "value": "no",
+      "value": "yes",
       "detail": null
     },
     "byoLlm": {
-      "value": "partial",
-      "detail": "Supports BYOK for certain models – e.g. enterprise can use own Azure OpenAI key – but generally uses GitHub-provided model endpoints"
+      "value": "no",
+      "detail": null
     },
     "mcpSupport": {
       "value": "yes",
@@ -690,7 +690,7 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Supports custom instructions at user and repo level"
+      "detail": "Custom instructions: https://docs.github.com/copilot/how-tos/configure-custom-instructions/add-repository-instructions"
     },
     "agentsMdSupport": {
       "value": "yes",
@@ -698,15 +698,15 @@
     },
     "agentSkillsSupport": {
       "value": "yes",
-      "detail": "Supports Agent Skills which are modular capabilities for the Copilot agent"
+      "detail": "Read more: https://docs.github.com/copilot/concepts/agents/about-agent-skills"
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Supports reusable prompts via `.github/copilot-instructions.md`; also offers CLI slash commands for common tasks"
+      "detail": "Read more: https://docs.github.com/en/copilot/tutorials/customization-library/prompt-files"
     },
     "subagentsSupport": {
-      "value": "no",
-      "detail": "Copilot uses a single agent; no concurrent subagent feature exposed"
+      "value": "yes",
+      "detail": "Read more: https://docs.github.com/en/copilot/tutorials/customization-library/custom-agents/your-first-custom-agent"
     },
     "planMode": {
       "value": "yes",
