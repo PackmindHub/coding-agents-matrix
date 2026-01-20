@@ -1051,52 +1051,52 @@
       "detail": null
     },
     "website": {
-      "value": "https://openai.com/codex",
+      "value": "https://developers.openai.com/codex/skills/",
       "detail": null
     },
     "firstRelease": {
-      "value": "2021-08",
+      "value": "2025-05",
       "detail": null
     },
     "cli": {
-      "value": "no",
-      "detail": "Codex is an API/model, not an interactive tool by itself"
+      "value": "yes",
+      "detail": null
     },
     "dedicatedIde": {
       "value": "no",
-      "detail": "Used via integrations like Copilot or OpenAI Playground"
+      "detail": null
     },
     "ideExtension": {
-      "value": "no",
+      "value": "yes",
       "detail": null
     },
     "byoLlm": {
       "value": "no",
-      "detail": "Codex itself is the underlying model provided by OpenAI"
+      "detail": null
     },
     "mcpSupport": {
-      "value": "no",
-      "detail": "Codex alone does not have tool use capabilities outside what the calling application provides"
+      "value": "yes",
+      "detail": null
     },
     "customRules": {
-      "value": "no",
-      "detail": "No concept of persistent project rules – depends on how it's integrated in a product"
+      "value": "yes",
+      "detail": "Read more: https://developers.openai.com/codex/rules"
     },
     "agentsMdSupport": {
-      "value": "no",
+      "value": "yes",
       "detail": null
     },
     "agentSkillsSupport": {
-      "value": "no",
+      "value": "yes",
       "detail": null
     },
     "commandsReusablePrompts": {
-      "value": "no",
-      "detail": "Codex is invoked via API calls; any reusable prompt functionality must be implemented by the client application"
+      "value": "yes",
+      "detail": "Through custom prompts: https://developers.openai.com/codex/custom-prompts"
     },
     "subagentsSupport": {
       "value": "no",
-      "detail": null
+      "detail": "Not in the sense of Claude sub-agents"
     },
     "planMode": {
       "value": "no",
