@@ -21,7 +21,7 @@ const AgentTable = ({ agents, sortConfig, onSort }) => {
     { key: 'cli', label: 'CLI', sortable: true, cellType: 'badge', tooltip: 'Command-line interface support for terminal-based usage of the AI Agent to read and edit files' },
     { key: 'dedicatedIde', label: 'Dedicated IDE', sortable: true, cellType: 'badge', tooltip: 'Has its own integrated development environment' },
     { key: 'ideExtension', label: 'IDE Extension', sortable: true, cellType: 'badge', tooltip: 'Available as an IDE extension/plugin' },
-    { key: 'byoLlm', label: 'BYO LLM', sortable: true, cellType: 'badge', tooltip: 'Bring Your Own LLM - allows using custom language models' },
+    { key: 'byoLlm', label: 'BYO LLM', sortable: true, cellType: 'badge', tooltip: 'Bring Your Own LLM - allows using custom language models, vs. using built-in list of LLM by the vendor' },
     { key: 'mcpSupport', label: 'MCP', sortable: true, cellType: 'badge', tooltip: 'Model Context Protocol support for enhanced context sharing' },
     { key: 'customRules', label: 'Custom Rules', sortable: true, cellType: 'badge', tooltip: 'Ability to define custom rules and guidelines for the agent' },
     { key: 'agentsMdSupport', label: 'AGENTS.md', sortable: true, cellType: 'badge', tooltip: 'Support for AGENTS.md configuration files' },
