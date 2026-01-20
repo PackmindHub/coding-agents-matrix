@@ -261,9 +261,9 @@
   },
   {
     "name": "Claude Code",
-    "type": "Proprietary",
+    "type": "Open Source",
     "github": {
-      "value": null,
+      "value": "https://github.com/anthropics/claude-code/",
       "detail": null
     },
     "ghStars": {
@@ -271,11 +271,11 @@
       "detail": null
     },
     "website": {
-      "value": "https://claude.ai/claude-code",
+      "value": "https://claude.com/product/claude-code",
       "detail": null
     },
     "firstRelease": {
-      "value": "2025-02",
+      "value": "2025-04",
       "detail": null
     },
     "cli": {
@@ -288,7 +288,7 @@
     },
     "ideExtension": {
       "value": "no",
-      "detail": null
+      "detail": "While it exists, it seems to be just a terminal inside the IDE"
     },
     "byoLlm": {
       "value": "no",
@@ -300,7 +300,7 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Supports custom rules via `.claude/rules/` directory and CLAUDE.md for project conventions"
+      "detail": "Through Claude.md or Claude memories (https://code.claude.com/docs/en/memory#modular-rules-with-claude/rules/)"
     },
     "agentsMdSupport": {
       "value": "no",
@@ -312,7 +312,7 @@
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Supports slash commands for common actions in the editor/CLI, e.g. `/explain`, `/test`"
+      "detail": "Slash commands"
     },
     "subagentsSupport": {
       "value": "yes",
