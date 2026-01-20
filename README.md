@@ -1,6 +1,6 @@
 # AI Coding Agents Matrix
 
-A comparison matrix of AI coding agents and their capabilities, powered by [Packmind](https://packmind.com)
+A comparison matrix of AI coding agents and their capabilities, powered by [Packmind](https://packmind.com).
 
 Available at [https://coding-agents-matrix.dev](https://coding-agents-matrix.dev)
 
