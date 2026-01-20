@@ -31,7 +31,7 @@ Click any column header to sort:
 
 - **Search**: Filter by agent name, type, or description
 - **Type**: Filter by Open Source or Proprietary
-- **Features**: Select multiple features (CLI, MCP Support, AGENTS.md, Skills, Subagents)
+- **Features**: Select from multiple filters including CLI, Dedicated IDE, IDE Extension, BYO LLM, MCP Support, Custom Rules, AGENTS.md, Skills, Commands, Subagents, and Plan Mode
 
 All filters use AND logic for precise results.
 
@@ -100,8 +100,6 @@ To add a new agent to the board, follow these steps:
 - Examples: links to documentation, clarifications about partial support, or caveats
 
 3. **Save the file** - the UI will automatically pick up the new agent
-
-4. **(Optional)** Update `/src/data/agents.yaml` if you want to maintain YAML format consistency
 
 ## Agent Properties Reference
 
@@ -383,6 +381,3 @@ After your contribution is accepted and merged:
 4. Confirm the agent/property renders correctly in both table and card views
 5. Test filtering and sorting with the new agent/property included
 
-## License
-
-MIT
