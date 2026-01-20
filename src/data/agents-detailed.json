@@ -746,8 +746,8 @@
       "detail": null
     },
     "byoLlm": {
-      "value": "no",
-      "detail": null
+      "value": "yes",
+      "detail": "Works with any LLM; supports multi-model configurations"
     },
     "mcpSupport": {
       "value": "yes",
