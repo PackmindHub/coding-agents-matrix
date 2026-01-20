@@ -820,7 +820,7 @@
     },
     "customRules": {
       "value": "no",
-      "detail": "No support for AGENTS.md or custom instructions files; agent infers context from repository code and standard config"
+      "detail": "No support for custom instructions files; agent infers context from repository code and standard config"
     },
     "agentsMdSupport": {
       "value": "yes",
