@@ -791,11 +791,11 @@
       "detail": null
     },
     "website": {
-      "value": "https://jules.google",
+      "value": "https://jules.google/",
       "detail": null
     },
     "firstRelease": {
-      "value": "2024-12",
+      "value": "2025-05",
       "detail": null
     },
     "cli": {
@@ -815,15 +815,15 @@
       "detail": "Powered by Google's models on their backend"
     },
     "mcpSupport": {
-      "value": "yes",
-      "detail": "Jules uses tools in a sandboxed cloud environment to compile, test, etc., though not user-configurable MCP"
+      "value": "no",
+      "detail": null
     },
     "customRules": {
       "value": "no",
       "detail": "No support for AGENTS.md or custom instructions files; agent infers context from repository code and standard config"
     },
     "agentsMdSupport": {
-      "value": "no",
+      "value": "yes",
       "detail": null
     },
     "agentSkillsSupport": {
@@ -831,8 +831,8 @@
       "detail": null
     },
     "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Tasks are queued via CLI commands or GitHub comments – e.g. you instruct Jules to fix tests and it works asynchronously"
+      "value": "no",
+      "detail": null
     },
     "subagentsSupport": {
       "value": "no",
