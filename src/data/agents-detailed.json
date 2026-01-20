@@ -726,11 +726,11 @@
       "detail": "Last updated: 2026-01-19"
     },
     "website": {
-      "value": "https://github.com/block/goose",
+      "value": "https://block.github.io/goose/",
       "detail": null
     },
     "firstRelease": {
-      "value": "2024-10",
+      "value": "2024-11",
       "detail": null
     },
     "cli": {
@@ -755,23 +755,23 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Supports AGENTS.md in repositories as briefing/instructions and a `.goosehints` file for additional hints"
+      "detail": "Read more: https://block.github.io/goose/docs/guides/context-engineering/using-goosehints/"
     },
     "agentsMdSupport": {
       "value": "yes",
       "detail": "Uses AGENTS.md for project context if present"
     },
     "agentSkillsSupport": {
-      "value": "no",
-      "detail": "Focuses on built-in autonomous capabilities; extensibility is via integrating APIs and tools rather than skill packages"
+      "value": "yes",
+      "detail": "Read more: https://block.github.io/goose/docs/guides/context-engineering/using-skills/"
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Provides a command-line companion `goose` with commands to initiate tasks; otherwise natural language instructions in chat"
+      "detail": "Read more on recipes: https://block.github.io/goose/docs/guides/recipes/"
     },
     "subagentsSupport": {
-      "value": "no",
-      "detail": "One primary agent coordinates all actions per session"
+      "value": "yes",
+      "detail": "Read more: https://block.github.io/goose/docs/guides/subagents"
     },
     "planMode": {
       "value": "yes",
