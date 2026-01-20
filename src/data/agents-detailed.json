@@ -466,7 +466,7 @@
       "detail": null
     },
     "website": {
-      "value": "https://cursor.com",
+      "value": "https://cursor.so/",
       "detail": null
     },
     "firstRelease": {
@@ -474,8 +474,8 @@
       "detail": null
     },
     "cli": {
-      "value": "partial",
-      "detail": "Offers a CLI to run agent in terminal, primarily used via the GUI editor"
+      "value": "yes",
+      "detail": null
     },
     "dedicatedIde": {
       "value": "yes",
@@ -495,19 +495,19 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Has Cursor Rules – project-specific `.cursor/rules/*.md` files for instructions"
+      "detail": "Support through Cursor rules: https://cursor.com/docs/context/rules"
     },
     "agentsMdSupport": {
       "value": "yes",
       "detail": "Treats AGENTS.md as equivalent to its rules format for compatibility"
     },
     "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "Supports Skills that extend agent capabilities"
+      "value": "partial",
+      "detail": "Not officially released, but in beta: https://cursor.com/docs/context/skills"
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Provides an in-IDE Agent chat; supports multi-step plans via Plan/Act modes automatically, no manual slash commands needed"
+      "detail": "Read more: https://cursor.com/docs/context/commands"
     },
     "subagentsSupport": {
       "value": "no",
@@ -515,7 +515,7 @@
     },
     "planMode": {
       "value": "yes",
-      "detail": "Plan/Act modes for structured development"
+      "detail": "Read more: https://cursor.com/docs/agent/modes#plan"
     },
     "additionalInfo": "VS Code fork IDE; supports background agents for suggestions; Cursor Rules for instructions"
   },
