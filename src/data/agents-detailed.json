@@ -1319,16 +1319,16 @@
       "detail": null
     },
     "cli": {
-      "value": "yes",
-      "detail": "Trae Agent CLI on GitHub; also offers a GUI Trae IDE"
+      "value": "no",
+      "detail": "No"
     },
     "dedicatedIde": {
       "value": "yes",
-      "detail": "TraeIDE – an AI-first coding IDE"
+      "detail": "Yes"
     },
     "ideExtension": {
-      "value": "no",
-      "detail": null
+      "value": "yes",
+      "detail": "Yes"
     },
     "byoLlm": {
       "value": "yes",
@@ -1336,31 +1336,31 @@
     },
     "mcpSupport": {
       "value": "yes",
-      "detail": "Built with MCP tool use in mind – can compile, run tests, etc. as part of its agentic tasks"
+      "detail": "Yes"
     },
     "customRules": {
       "value": "yes",
-      "detail": "Supports AGENTS.md or similar rule files for project context, along with Trae-specific config if any"
+      "detail": "Read more: https://docs.trae.ai/ide/rules?_lang=en"
     },
     "agentsMdSupport": {
       "value": "yes",
-      "detail": "Aims for standardization; likely reads AGENTS.md as project briefing"
+      "detail": "Read more: https://docs.trae.ai/ide/rules?_lang=en#3233e6b0"
     },
     "agentSkillsSupport": {
-      "value": "no",
-      "detail": "No separate skill plugin system reported"
+      "value": "yes",
+      "detail": null
     },
     "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Trae can automatically break down tasks; the user can issue high-level natural commands, and the agent handles execution. A command-line companion exists for triggering tasks"
+      "value": "no",
+      "detail": null
     },
     "subagentsSupport": {
       "value": "yes",
-      "detail": "Trae emphasizes multi-agent collaboration within its IDE – potentially different agents handling different subtasks concurrently"
+      "detail": "Read more: https://docs.trae.ai/ide/agent?_lang=en"
     },
     "planMode": {
-      "value": "yes",
-      "detail": "Builder mode for task planning"
+      "value": "no",
+      "detail": null
     },
     "additionalInfo": "Deep GitHub integration (opens PRs, comments on issues); multi-agent orchestration; from Bytedance"
   },
