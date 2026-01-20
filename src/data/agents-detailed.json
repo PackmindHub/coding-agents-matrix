@@ -771,7 +771,7 @@
     },
     "subagentsSupport": {
       "value": "yes",
-      "detail": "https://block.github.io/goose/docs/guides/subagents"
+      "detail": "Read more: https://block.github.io/goose/docs/guides/subagents"
     },
     "planMode": {
       "value": "yes",
