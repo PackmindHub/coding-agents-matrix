@@ -1096,7 +1096,7 @@
     },
     "subagentsSupport": {
       "value": "no",
-      "detail": "Not it the sense of Claude sub-agents"
+      "detail": "Not in the sense of Claude sub-agents"
     },
     "planMode": {
       "value": "no",
