@@ -933,7 +933,7 @@
       "detail": "Kiro CLI for terminal interaction"
     },
     "dedicatedIde": {
-      "value": "no",
+      "value": "yes",
       "detail": "Integrates with existing IDEs and also offers CLI; an IDE plugin exists for VS Code as Kiro agents"
     },
     "ideExtension": {
@@ -950,23 +950,23 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Supports AGENTS.md and its own steering files in `~/.kiro/steering/*.md` for guidelines"
+      "detail": "Read more: https://kiro.dev/docs/cli/steering/"
     },
     "agentsMdSupport": {
       "value": "yes",
-      "detail": "Loads AGENTS.md for project instructions"
+      "detail": "https://kiro.dev/docs/steering/#agentsmd"
     },
     "agentSkillsSupport": {
       "value": "yes",
-      "detail": "Allows creating Custom Agents with specialized behavior for workflows"
+      "detail": "https://kiro.dev/docs/cli/custom-agents/configuration-reference/#skill-resources"
     },
     "commandsReusablePrompts": {
       "value": "yes",
-      "detail": "Supports smart hooks and natural language commands; Kiro CLI can build, test, deploy via NL commands"
+      "detail": "Read more: https://kiro.dev/docs/cli/reference/slash-commands/"
     },
     "subagentsSupport": {
       "value": "yes",
-      "detail": "Can deploy multiple specialized agents; Kiro emphasizes multi-agent collaboration for DevOps tasks"
+      "detail": "https://kiro.dev/docs/cli/custom-agents/"
     },
     "planMode": {
       "value": "yes",
