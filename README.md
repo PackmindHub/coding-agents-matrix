@@ -2,6 +2,8 @@
 
 A beautiful, interactive comparison matrix of AI coding agents and their capabilities.
 
+Available at [https://coding-agents-matrix.dev](https://coding-agents-matrix.dev)
+
 ## Table of Contents
 
 - [Features](#features)
