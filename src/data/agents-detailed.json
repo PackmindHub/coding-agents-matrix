@@ -401,11 +401,11 @@
       "detail": "Last updated: 2026-01-19"
     },
     "website": {
-      "value": "https://charm.sh/crush",
+      "value": "https://github.com/charmbracelet/crush",
       "detail": null
     },
     "firstRelease": {
-      "value": "2025-06",
+      "value": "2025-07",
       "detail": null
     },
     "cli": {
@@ -430,7 +430,7 @@
     },
     "customRules": {
       "value": "yes",
-      "detail": "Creates AGENTS.md on project initialization by default to store context"
+      "detail": "Supports files `CRUSH.md`, `.cursorrules`, `CLAUDE.md`, `.cursor/rules/`, `.github/copilot-instructions.md`"
     },
     "agentsMdSupport": {
       "value": "yes",
@@ -441,15 +441,15 @@
       "detail": "Supports the Agent Skills open standard; discovers skills from `skills/` directories with SKILL.md"
     },
     "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Some special CLI flags and commands, e.g. `--yolo` to bypass confirmations; otherwise natural language in TUI"
+      "value": "no",
+      "detail": null
     },
     "subagentsSupport": {
       "value": "no",
       "detail": "Single agent performs tasks sequentially, though it can orchestrate multi-step workflows internally"
     },
     "planMode": {
-      "value": "yes",
+      "value": "no",
       "detail": null
     },
     "additionalInfo": "Configurable JSON config (crush.json); .crushignore to exclude files; permission management"
