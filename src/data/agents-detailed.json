@@ -287,8 +287,8 @@
       "detail": "Available via web interface and editor integrations"
     },
     "ideExtension": {
-      "value": "no",
-      "detail": "While it exists, it seems to be just a terminal inside the IDE"
+      "value": "yes",
+      "detail": null
     },
     "byoLlm": {
       "value": "no",
