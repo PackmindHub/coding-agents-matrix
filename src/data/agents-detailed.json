@@ -325,6 +325,71 @@
     "additionalInfo": "Supports Hooks (automated event-driven scripts) and Plugins to extend with new capabilities"
   },
   {
+    "name": "Cline",
+    "type": "Open Source",
+    "github": {
+      "value": "https://github.com/cline/cline",
+      "detail": null
+    },
+    "ghStars": {
+      "value": null,
+      "detail": null
+    },
+    "website": {
+      "value": "https://cline.bot",
+      "detail": null
+    },
+    "firstRelease": {
+      "value": "2024-07",
+      "detail": null
+    },
+    "cli": {
+      "value": "yes",
+      "detail": "Only seen in VS Code"
+    },
+    "dedicatedIde": {
+      "value": "no",
+      "detail": "Integrates through VS Code"
+    },
+    "ideExtension": {
+      "value": "yes",
+      "detail": "VS Code"
+    },
+    "byoLlm": {
+      "value": "yes",
+      "detail": null
+    },
+    "mcpSupport": {
+      "value": "yes",
+      "detail": null
+    },
+    "customRules": {
+      "value": "yes",
+      "detail": "Read more: https://docs.cline.bot/features/cline-rules"
+    },
+    "agentsMdSupport": {
+      "value": "yes",
+      "detail": "Read more: https://docs.cline.bot/features/cline-rules#agents-md-standard-support"
+    },
+    "agentSkillsSupport": {
+      "value": "yes",
+      "detail": "Read more: https://docs.cline.bot/features/skills"
+    },
+    "commandsReusablePrompts": {
+      "value": "no",
+      "detail": "Cline has built-in slash commands but custom ones cannot be created"
+    },
+    "subagentsSupport": {
+      "value": null,
+      "detail": null
+    },
+    "planMode": {
+      "value": "yes",
+      "detail": "Read more: https://docs.cline.bot/features/plan-and-act"
+    },
+    "additionalInfo": "Transparency on consumption, no LLM-vendor lock-in"
+  },
+  {
     "name": "Continue",
     "type": "Open Source",
     "github": {
