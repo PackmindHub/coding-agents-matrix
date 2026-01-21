@@ -1,5 +1,9 @@
 # Changelog
 
+## [2026-01-21]
+### Added
+- Clint added in the database
+
 ## [2026-01-20]
 ### Updated
 - The database of agents has been reviewed entirely
