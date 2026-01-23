@@ -1,8 +1,12 @@
-# AI Coding Agents Matrix
+# AI Coding Agents Matrix - Best AI Coding Agents List
 
-A comparison matrix of AI coding agents and their capabilities, powered by [Packmind](https://packmind.com).
+The most comprehensive **AI coding agents list** for developers. Compare **24+ best AI coding agents** side-by-side including Claude Code, Cursor, GitHub Copilot, Aider, Windsurf, Cline, Gemini CLI, and more.
 
-Available at [https://coding-agents-matrix.dev](https://coding-agents-matrix.dev)
+Whether you're looking for the best AI code assistant for your workflow, comparing open source vs proprietary options, or evaluating features like MCP support, custom rules, and plan mode - this matrix helps you make an informed decision.
+
+**Live Demo:** [https://coding-agents-matrix.dev](https://coding-agents-matrix.dev)
+
+Powered by [Packmind](https://packmind.com).
 
 ## Table of Contents
 
@@ -13,6 +17,49 @@ Available at [https://coding-agents-matrix.dev](https://coding-agents-matrix.dev
 - [Property Values](#property-values)
 - [Examples](#examples)
 - [Contribute](#contribute)
+
+## What is an AI Coding Agent?
+
+An **AI coding agent** is an autonomous software tool that uses large language models (LLMs) to help developers write, edit, debug, and refactor code. Unlike simple code completion tools, AI coding agents can:
+
+- Understand your entire codebase context
+- Execute multi-step tasks autonomously
+- Run commands, tests, and builds
+- Create and modify multiple files
+- Integrate with external tools via protocols like MCP
+
+The best AI coding agents in 2026 offer features like **plan mode** (planning before execution), **sub-agents** (delegating subtasks), **custom rules** (project-specific instructions), and **BYO LLM** (bring your own language model).
+
+## AI Coding Agents Included
+
+This list tracks the best AI coding agents available in 2026:
+
+| Agent | Type | Notable Features |
+|-------|------|------------------|
+| **Aider** | Open Source | Git integration, voice input, BYO LLM |
+| **Amp** | Proprietary | Subagents, code review, issue integration |
+| **Antigravity** | Proprietary | Google's AI IDE, Gemini-powered |
+| **AugmentCode** | Proprietary | Slack/Teams integration, smart hooks |
+| **Claude Code** | Proprietary | MCP support, hooks, sub-agents, plan mode |
+| **Cline** | Open Source | VS Code extension, transparent consumption |
+| **Continue** | Open Source | Mission Control UI, cloud agent support |
+| **Crush** | Open Source | TUI interface, multi-model configs |
+| **Cursor** | Proprietary | VS Code fork IDE, background agents |
+| **Factory** | Proprietary | Droids, memory, Jira/Notion integration |
+| **Gemini CLI** | Open Source | 1000 free requests/day, LSP integration |
+| **GitHub Copilot** | Proprietary | BYOK for enterprise, memory features |
+| **Goose** | Open Source | Recipes, Agent Client Protocol |
+| **Jules** | Proprietary | GitHub integration, async cloud sandbox |
+| **KiloCode** | Open Source | Multi-mode context, Memory Bank |
+| **Kiro** | Proprietary | AWS integration, spec-driven development |
+| **Mistral Vibe CLI** | Open Source | Devstral models, ACP support |
+| **OpenAI Codex** | Proprietary | Custom prompts, skills |
+| **OpenCode** | Open Source | TUI, ACP support, plugins |
+| **RooCode** | Open Source | VS Code extension, cloud agents |
+| **Trae AI** | Open Source | Bytedance, multi-agent orchestration |
+| **Warp** | Proprietary | GPU-accelerated terminal, BYOK |
+| **Windsurf** | Proprietary | Cascade agent, worktrees |
+| **Zed** | Open Source | Fast editor, ACP support |
 
 ## Features
 
