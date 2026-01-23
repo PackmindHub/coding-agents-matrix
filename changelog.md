@@ -1,5 +1,9 @@
 # Changelog
 
+## [2026-01-23]
+### Updated
+- Cursor now supports sub-agents
+
 ## [2026-01-21]
 ### Added
 - Clint added in the database

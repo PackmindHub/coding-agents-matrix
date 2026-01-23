@@ -575,8 +575,8 @@
       "detail": "Read more: https://cursor.com/docs/context/commands"
     },
     "subagentsSupport": {
-      "value": "no",
-      "detail": "The agent handles tasks in one thread, though it can run background analysis as background agents for suggestions"
+      "value": "Yes",
+      "detail": "Read more: https://cursor.com/docs/context/subagents"
     },
     "planMode": {
       "value": "yes",
