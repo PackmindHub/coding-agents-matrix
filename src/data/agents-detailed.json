@@ -567,8 +567,8 @@
       "detail": "Treats AGENTS.md as equivalent to its rules format for compatibility"
     },
     "agentSkillsSupport": {
-      "value": "partial",
-      "detail": "Not officially released, but in beta: https://cursor.com/docs/context/skills"
+      "value": "Yes",
+      "detail": "Read more: https://cursor.com/docs/context/skills"
     },
     "commandsReusablePrompts": {
       "value": "yes",

@@ -2,7 +2,7 @@
 
 ## [2026-01-23]
 ### Updated
-- Cursor now supports sub-agents
+- Cursor now supports sub-agents and skills
 
 ## [2026-01-21]
 ### Added
