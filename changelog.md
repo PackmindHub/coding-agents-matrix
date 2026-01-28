@@ -1,5 +1,9 @@
 # Changelog
 
+## [2026-01-28]
+### Updated
+- Mistral now supports sub-agents in its 2.0.0 release
+
 ## [2026-01-23]
 ### Updated
 - Cursor now supports sub-agents and skills

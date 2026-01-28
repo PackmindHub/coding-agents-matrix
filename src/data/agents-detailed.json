@@ -1095,14 +1095,13 @@
       "detail": "Through the ~/.vibe/prompts/"
     },
     "subagentsSupport": {
-      "value": "no",
-      "detail": "Single agent loop with step-by-step planning and execution, though model can internally plan multi-step solutions"
+      "value": "yes",
+      "detail": "Since release 2.0.0"
     },
     "planMode": {
       "value": "yes",
       "detail": "Available via the command `vibe --plan`"
-    },
-    "additionalInfo": "Deep integration with Mistral's Devstral models; supports ACP to interface with GUI editors like Zed"
+    }
   },
   {
     "name": "OpenAI Codex",
