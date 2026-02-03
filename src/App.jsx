@@ -7,8 +7,29 @@ import useFiltering from './hooks/useFiltering'
 import useSorting from './hooks/useSorting'
 import { Sparkles, Github, History } from 'lucide-react'
 
+// Format date from "2026-01-26" to "January 26, 2026"
+function formatDate(dateString) {
+  if (!dateString) return null
+  const date = new Date(dateString + 'T00:00:00')
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  })
+}
+
+// Format date from "2026-01-26" to "January 2026"
+function formatMonthYear(dateString) {
+  if (!dateString) return null
+  const date = new Date(dateString + 'T00:00:00')
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long'
+  })
+}
+
 function App() {
-  const { agents, loading, error } = useAgentsData()
+  const { agents, lastUpdated, loading, error } = useAgentsData()
   const [sortConfig, setSortConfig] = useState({ key: 'name', direction: 'asc' })
   const [filters, setFilters] = useState({
     searchTerm: '',
@@ -69,7 +90,7 @@ function App() {
               A curated comparison of AI coding assistants, powered by <a target={"_blank"} href={"https://packmind.com?utm_source=coding-agents-list"}>Packmind</a>.
             </p>
             <p className="text-slate-500 text-sm font-light tracking-wide mt-1">
-              Last updated: January 28, 2026. Based on the latest versions of each agent's documentation.
+              Last updated: {formatDate(lastUpdated) || 'Unknown'}. Based on the latest versions of each agent's documentation.
             </p>
             <div className="mt-2 h-px w-48 mx-auto bg-gradient-to-r from-transparent via-violet-500/50 to-transparent"></div>
           </div>
@@ -122,7 +143,7 @@ function App() {
         <div className="mt-4 text-center">
           <div className="inline-block">
             <p className="text-slate-500 text-sm font-light tracking-wider">
-              Meticulously compiled • January 2026
+              Meticulously compiled • {formatMonthYear(lastUpdated) || 'Unknown'}
             </p>
             <div className="mt-2 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
           </div>

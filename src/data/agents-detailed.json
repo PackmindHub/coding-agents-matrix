@@ -1,5 +1,9 @@
-[
-  {
+{
+  "metadata": {
+    "lastUpdated": "2026-02-03"
+  },
+  "agents": [
+    {
     "name": "Aider",
     "type": "Open Source",
     "github": {
@@ -1558,4 +1562,6 @@
     },
     "additionalInfo": "Implements Agent Communication Protocol (ACP); flexible provider setup; multi-buffer editing"
   }
-]
+  ]
+}
+

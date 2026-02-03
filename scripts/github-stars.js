@@ -110,7 +110,8 @@ async function main() {
   // Read the data file
   console.log('Reading data file...');
   const data = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
-  console.log(`✓ Found ${data.length} agents\n`);
+  const agents = data.agents;
+  console.log(`✓ Found ${agents.length} agents\n`);
 
   // Create backup
   createBackup(DATA_FILE);
@@ -130,7 +131,7 @@ async function main() {
   }
 
   // Count agents with GitHub URLs
-  const agentsWithGithub = data.filter(agent =>
+  const agentsWithGithub = agents.filter(agent =>
     agent.github?.value
   );
   console.log(`Found ${agentsWithGithub.length} agents with GitHub URLs\n`);
@@ -142,7 +143,7 @@ async function main() {
   let successCount = 0;
   let errorCount = 0;
 
-  for (const agent of data) {
+  for (const agent of agents) {
     if (agent.github?.value) {
       const parsed = parseGitHubUrl(agent.github.value);
 
@@ -170,6 +171,9 @@ async function main() {
       await new Promise(resolve => setTimeout(resolve, 500));
     }
   }
+
+  // Update metadata with current timestamp
+  data.metadata.lastUpdated = timestamp;
 
   // Write updated data back to file
   console.log('Writing updated data...');

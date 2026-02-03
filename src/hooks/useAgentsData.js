@@ -3,13 +3,16 @@ import agentsData from '../data/agents-detailed.json'
 
 const useAgentsData = () => {
   const [agents, setAgents] = useState([])
+  const [lastUpdated, setLastUpdated] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
   useEffect(() => {
     try {
+      const { metadata, agents: rawAgents } = agentsData
+
       // Transform detailed data to flat structure for compatibility
-      const transformedAgents = agentsData.map(agent => ({
+      const transformedAgents = rawAgents.map(agent => ({
         name: agent.name,
         type: agent.type,
         github: agent.github?.value || null,
@@ -45,6 +48,7 @@ const useAgentsData = () => {
         additionalInfo: agent.additionalInfo
       }))
       setAgents(transformedAgents)
+      setLastUpdated(metadata?.lastUpdated)
       setLoading(false)
     } catch (err) {
       setError(err.message)
@@ -52,7 +56,7 @@ const useAgentsData = () => {
     }
   }, [])
 
-  return { agents, loading, error }
+  return { agents, lastUpdated, loading, error }
 }
 
 export default useAgentsData
