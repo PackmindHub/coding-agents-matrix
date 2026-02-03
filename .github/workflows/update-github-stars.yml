@@ -50,7 +50,7 @@ jobs:
         if: steps.git-check.outputs.changes == 'true'
         run: |
           git add src/data/agents-detailed.json
-          git commit -m "chore: update GitHub star counts [skip ci]
+          git commit -m "chore: update GitHub star counts
 
           Automated weekly update of star counts for open-source agents.
           Updated: $(date -u +"%Y-%m-%d %H:%M UTC")"
