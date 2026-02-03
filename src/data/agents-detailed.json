@@ -4,1564 +4,1564 @@
   },
   "agents": [
     {
-    "name": "Aider",
-    "type": "Open Source",
-    "github": {
-      "value": "https://github.com/Aider-AI/aider",
-      "detail": null
-    },
-    "ghStars": {
-      "value": 40266,
-      "detail": "Last updated: 2026-02-02"
-    },
-    "website": {
-      "value": "https://aider.chat/",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2023-06",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": null
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": null
-    },
-    "ideExtension": {
-      "value": "no",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "yes",
-      "detail": "Supports connecting to OpenAI, Anthropic or local models via API keys"
-    },
-    "mcpSupport": {
-      "value": "no",
-      "detail": "No built-in MCP client; can be extended via external MCP server integrations"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Through the usage of the file `CONVENTIONS.md`"
-    },
-    "agentsMdSupport": {
-      "value": "partial",
-      "detail": "Not native, but can be configured to read these files. Read more: https://aider.chat/docs/usage/conventions.html#always-load-conventions"
-    },
-    "agentSkillsSupport": {
-      "value": "no",
-      "detail": null
-    },
-    "commandsReusablePrompts": {
-      "value": "no",
-      "detail": "All instructions given via natural language chat"
-    },
-    "subagentsSupport": {
-      "value": "no",
-      "detail": null
-    },
-    "planMode": {
-      "value": "no",
-      "detail": "Has a `/architect` mode but not considered as a `plan` mode."
-    },
-    "additionalInfo": "Integrates with Git (auto-commits changes with messages); voice input and image context support"
-  },
-  {
-    "name": "Amp",
-    "type": "Proprietary",
-    "github": {
-      "value": null,
-      "detail": null
-    },
-    "ghStars": {
-      "value": null,
-      "detail": null
-    },
-    "website": {
-      "value": "https://ampcode.com",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2024-10",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "Terminal agent and VS Code plugin available"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": null
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "no",
-      "detail": null
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Uses tool integrations; capable of running compilers, tests, etc. autonomously"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Compatible with AGENTS.md and other standard instruction files"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Accepts AGENTS.md for project instructions to guide the agent"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "https://ampcode.com/manual#agent-skills"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "https://ampcode.com/manual#custom-commands"
-    },
-    "subagentsSupport": {
-      "value": "yes",
-      "detail": "https://ampcode.com/manual#subagents"
-    },
-    "planMode": {
-      "value": "no",
-      "detail": "Planning mode is not natively supported. Users can request planning-only behavior by explicitly instructing the model not to write code."
-    },
-    "additionalInfo": "Agent toolkit includes automated code review and issue integration"
-  },
-  {
-    "name": "Antigravity",
-    "type": "Proprietary",
-    "github": {
-      "value": null,
-      "detail": null
-    },
-    "ghStars": {
-      "value": null,
-      "detail": null
-    },
-    "website": {
-      "value": "https://idx.google.com",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-11",
-      "detail": null
-    },
-    "cli": {
-      "value": "no",
-      "detail": "Provided as a standalone IDE application"
-    },
-    "dedicatedIde": {
-      "value": "yes",
-      "detail": "Google's AI-powered Antigravity IDE"
-    },
-    "ideExtension": {
-      "value": "no",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "no",
-      "detail": "Powered by Google's Gemini models"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Supports MCP for connecting to tools and data sources in agent mode"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Through `gemini.md` or folder rules: https://antigravity.google/docs/rules-workflows#rules"
-    },
-    "agentsMdSupport": {
-      "value": "no",
-      "detail": "Expects rules via its own .agent/rules files; AGENTS.md must be manually loaded via a rule if needed"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "https://antigravity.google/docs/skills"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "https://antigravity.google/docs/rules-workflows#workflows"
-    },
-    "subagentsSupport": {
-      "value": "no",
-      "detail": "Single agent executes plan; no parallel subagent concept"
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": "Read more: https://antigravity.google/docs/agent-modes-settings"
-    },
-    "additionalInfo": "Supports Workflows (predefined multi-step task sequences) and Agent Manager UI"
-  },
-  {
-    "name": "AugmentCode",
-    "type": "Proprietary",
-    "github": {
-      "value": null,
-      "detail": null
-    },
-    "ghStars": {
-      "value": null,
-      "detail": null
-    },
-    "website": {
-      "value": "https://www.augmentcode.com",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-02",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "Auggie CLI for terminal"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": "Integrates with VS Code, JetBrains, Vim, etc. via extensions"
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "no",
-      "detail": "Uses provided model endpoints; no arbitrary model configuration for individual users"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Integrates Model Context Protocol tools for retrieval and actions"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "https://docs.augmentcode.com/setup-augment/guidelines"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "It supports CLAUDE.md as well"
-    },
-    "agentSkillsSupport": {
-      "value": "no",
-      "detail": null
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "https://docs.augmentcode.com/cli/custom-commands"
-    },
-    "subagentsSupport": {
-      "value": "yes",
-      "detail": "https://docs.augmentcode.com/jetbrains/using-augment/agent"
-    },
-    "planMode": {
-      "value": "partial",
-      "detail": "Has a tasklist mode to create step-by-step plans."
-    },
-    "additionalInfo": "Integrations with Slack/Teams; smart hooks for pre/post command automation"
-  },
-  {
-    "name": "Claude Code",
-    "type": "Proprietary",
-    "github": {
-      "value": "https://github.com/anthropics/claude-code/",
-      "detail": null
-    },
-    "ghStars": {
-      "value": 63029,
-      "detail": "Last updated: 2026-02-02"
-    },
-    "website": {
-      "value": "https://claude.com/product/claude-code",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-04",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "Claude Code CLI and interactive terminal mode"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": "Available via web interface and editor integrations"
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "no",
-      "detail": "Tied to Anthropic's Claude models"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Native support for MCP to connect tools; e.g. can use Figma plugin via MCP"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Through Claude.md or Claude memories (https://code.claude.com/docs/en/memory#modular-rules-with-claude/rules/)"
-    },
-    "agentsMdSupport": {
-      "value": "no",
-      "detail": "Uses CLAUDE.md for similar purpose; AGENTS.md is not natively used by Claude Code"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "Supports specialized agents and skills through its plugin system"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Slash commands"
-    },
-    "subagentsSupport": {
-      "value": "yes",
-      "detail": "Can spawn autonomous sub-agents to handle subtasks"
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": "Plan mode for architectural planning before implementation"
-    },
-    "additionalInfo": "Supports Hooks (automated event-driven scripts) and Plugins to extend with new capabilities"
-  },
-  {
-    "name": "Cline",
-    "type": "Open Source",
-    "github": {
-      "value": "https://github.com/cline/cline",
-      "detail": null
-    },
-    "ghStars": {
-      "value": 57470,
-      "detail": "Last updated: 2026-02-02"
-    },
-    "website": {
-      "value": "https://cline.bot",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2024-07",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "Only seen in VS Code"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": "Integrates through VS Code"
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": "VS Code"
-    },
-    "byoLlm": {
-      "value": "yes",
-      "detail": null
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": null
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Read more: https://docs.cline.bot/features/cline-rules"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Read more: https://docs.cline.bot/features/cline-rules#agents-md-standard-support"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "Read more: https://docs.cline.bot/features/skills"
-    },
-    "commandsReusablePrompts": {
-      "value": "no",
-      "detail": "Cline has built-in slash commands but custom ones cannot be created"
-    },
-    "subagentsSupport": {
-      "value": null,
-      "detail": null
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": "Read more: https://docs.cline.bot/features/plan-and-act"
-    },
-    "additionalInfo": "Transparency on consumption, no LLM-vendor lock-in"
-  },
-  {
-    "name": "Continue",
-    "type": "Open Source",
-    "github": {
-      "value": "https://github.com/continuedev/continue",
-      "detail": null
-    },
-    "ghStars": {
-      "value": 31186,
-      "detail": "Last updated: 2026-02-02"
-    },
-    "website": {
-      "value": "https://www.continue.dev/",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-02",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": null
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": null
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "yes",
-      "detail": null
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": null
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "https://docs.continue.dev/customize/rules"
-    },
-    "agentsMdSupport": {
-      "value": "no",
-      "detail": null
-    },
-    "agentSkillsSupport": {
-      "value": "no",
-      "detail": null
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Through prompts. https://docs.continue.dev/customize/prompts"
-    },
-    "subagentsSupport": {
-      "value": "yes",
-      "detail": null
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": "Read more: https://docs.continue.dev/guides/plan-mode-guide#using-plan-mode-with-continue"
-    },
-    "additionalInfo": "Provides Mission Control UI to manage agent tasks; cloud agent support for CI/CD"
-  },
-  {
-    "name": "Crush",
-    "type": "Open Source",
-    "github": {
-      "value": "https://github.com/charmbracelet/crush",
-      "detail": null
-    },
-    "ghStars": {
-      "value": 19305,
-      "detail": "Last updated: 2026-02-02"
-    },
-    "website": {
-      "value": "https://github.com/charmbracelet/crush",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-07",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "Terminal CLI with TUI interface"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": null
-    },
-    "ideExtension": {
-      "value": "no",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "yes",
-      "detail": "Supports multiple models and multi-model configs"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Built-in support for connecting to MCP servers over stdio/http/SSE"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Supports files `CRUSH.md`, `.cursorrules`, `CLAUDE.md`, `.cursor/rules/`, `.github/copilot-instructions.md`"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Uses AGENTS.md as the project context file; can be renamed via config"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "Supports the Agent Skills open standard; discovers skills from `skills/` directories with SKILL.md"
-    },
-    "commandsReusablePrompts": {
-      "value": "no",
-      "detail": null
-    },
-    "subagentsSupport": {
-      "value": "no",
-      "detail": "Single agent performs tasks sequentially, though it can orchestrate multi-step workflows internally"
-    },
-    "planMode": {
-      "value": "no",
-      "detail": null
-    },
-    "additionalInfo": "Configurable JSON config (crush.json); .crushignore to exclude files; permission management"
-  },
-  {
-    "name": "Cursor",
-    "type": "Proprietary",
-    "github": {
-      "value": null,
-      "detail": null
-    },
-    "ghStars": {
-      "value": null,
-      "detail": null
-    },
-    "website": {
-      "value": "https://cursor.so/",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2023-03",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": null
-    },
-    "dedicatedIde": {
-      "value": "yes",
-      "detail": "Cursor is a standalone VS Code-fork IDE"
-    },
-    "ideExtension": {
-      "value": "no",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "no",
-      "detail": "Bundled with supported model endpoints; no arbitrary model plug-in"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Supports connecting to MCP servers for tools; can configure MCP tools in settings"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Support through Cursor rules: https://cursor.com/docs/context/rules"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Treats AGENTS.md as equivalent to its rules format for compatibility"
-    },
-    "agentSkillsSupport": {
-      "value": "Yes",
-      "detail": "Read more: https://cursor.com/docs/context/skills"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Read more: https://cursor.com/docs/context/commands"
-    },
-    "subagentsSupport": {
-      "value": "Yes",
-      "detail": "Read more: https://cursor.com/docs/context/subagents"
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": "Read more: https://cursor.com/docs/agent/modes#plan"
-    },
-    "additionalInfo": "VS Code fork IDE; supports background agents for suggestions; Cursor Rules for instructions"
-  },
-  {
-    "name": "Factory",
-    "type": "Proprietary",
-    "github": {
-      "value": null,
-      "detail": null
-    },
-    "ghStars": {
-      "value": null,
-      "detail": null
-    },
-    "website": {
-      "value": "https://factory.ai/",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-02",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "Factory CLI to interact with Droids in terminal"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": "Integrates into existing editors via plugins; no separate IDE"
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": "VSCode extension"
-    },
-    "byoLlm": {
-      "value": "yes",
-      "detail": "Read more: https://docs.factory.ai/cli/user-guides/choosing-your-model#5-%C2%B7-bring-your-own-keys-byok"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Extensive tool integrations, effectively using MCP to connect to code, logs, docs, tickets, etc."
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Read more: https://docs.factory.ai/guides/power-user/rules-conventions#rules-and-conventions"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Integral to context – supports multiple AGENTS.md for different project parts"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "https://docs.factory.ai/cli/configuration/skills"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Read more: https://docs.factory.ai/cli/configuration/custom-slash-commands"
-    },
-    "subagentsSupport": {
-      "value": "yes",
-      "detail": "Read more: https://docs.factory.ai/cli/configuration/custom-droids"
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": "Spec Mode: https://docs.factory.ai/cli/getting-started/video-walkthrough#spec-mode-research-and-plan-only"
-    },
-    "additionalInfo": "Maintains User and Organization memory; rich third-party integrations (GitHub, Jira, Notion, Datadog)"
-  },
-  {
-    "name": "Gemini CLI",
-    "type": "Open Source",
-    "github": {
-      "value": "https://github.com/google-gemini/gemini-cli",
-      "detail": null
-    },
-    "ghStars": {
-      "value": 93252,
-      "detail": "Last updated: 2026-02-02"
-    },
-    "website": {
-      "value": "https://geminicli.com/",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-06",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "Open-source Google Gemini CLI for terminal"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": "Though it integrates with VS Code and JetBrains via plugins"
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": "Read more: https://marketplace.visualstudio.com/items?itemName=google.gemini-cli-vscode-ide-companion"
-    },
-    "byoLlm": {
-      "value": "no",
-      "detail": "Specifically built to use Google's Gemini model via Google's API"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Supports tool use via the Model Context Protocol as part of its agent capabilities"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Through https://geminicli.com/docs/cli/gemini-md/"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Read more: https://geminicli.com/docs/get-started/configuration-v1/#available-settings-in-settingsjson"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "Read more: https://geminicli.com/docs/cli/skills/"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Read more: https://geminicli.com/docs/cli/commands/#slash-commands"
-    },
-    "subagentsSupport": {
-      "value": "no",
-      "detail": "Focuses on one agent, but extensible via skills rather than multiple concurrent agents"
-    },
-    "planMode": {
-      "value": "partial",
-      "detail": "Currently experimental: https://geminicli.com/docs/get-started/configuration/#experimental"
-    },
-    "additionalInfo": "Provides Smart Actions in IDE; integrates LSP for code context; 1000 free requests/day"
-  },
-  {
-    "name": "GitHub Copilot",
-    "type": "Proprietary",
-    "github": {
-      "value": null,
-      "detail": null
-    },
-    "ghStars": {
-      "value": null,
-      "detail": null
-    },
-    "website": {
-      "value": "https://github.com/features/copilot",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2021-10",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "Copilot CLI available for terminal assistance"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": "Integrates into popular IDEs/editors as extension"
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "no",
-      "detail": null
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Microsoft's Copilot ecosystem supports MCP to connect to internal knowledge bases and tools"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Custom instructions: https://docs.github.com/copilot/how-tos/configure-custom-instructions/add-repository-instructions"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Reads AGENTS.md files in the repo for project-specific guidance"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "Read more: https://docs.github.com/copilot/concepts/agents/about-agent-skills"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Read more: https://docs.github.com/en/copilot/tutorials/customization-library/prompt-files"
-    },
-    "subagentsSupport": {
-      "value": "yes",
-      "detail": "Read more: https://docs.github.com/en/copilot/tutorials/customization-library/custom-agents/your-first-custom-agent"
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": null
-    },
-    "additionalInfo": "Supports BYOK for enterprise; memory features to retain context across sessions"
-  },
-  {
-    "name": "Goose",
-    "type": "Open Source",
-    "github": {
-      "value": "https://github.com/block/goose",
-      "detail": null
-    },
-    "ghStars": {
-      "value": 29655,
-      "detail": "Last updated: 2026-02-02"
-    },
-    "website": {
-      "value": "https://block.github.io/goose/",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2024-11",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "CLI and desktop app available"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": "But provides a desktop GUI option in addition to terminal"
-    },
-    "ideExtension": {
-      "value": "no",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "yes",
-      "detail": "Works with any LLM; supports multi-model configurations"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Designed to integrate with MCP servers; can seamlessly use external tools"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Read more: https://block.github.io/goose/docs/guides/context-engineering/using-goosehints/"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Uses AGENTS.md for project context if present"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "Read more: https://block.github.io/goose/docs/guides/context-engineering/using-skills/"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Read more on recipes: https://block.github.io/goose/docs/guides/recipes/"
-    },
-    "subagentsSupport": {
-      "value": "yes",
-      "detail": "Read more: https://block.github.io/goose/docs/guides/subagents"
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": null
-    },
-    "additionalInfo": "Offers Recipes (YAML scripts for multi-step workflows); supports Agent Client Protocol"
-  },
-  {
-    "name": "Jules",
-    "type": "Proprietary",
-    "github": {
-      "value": null,
-      "detail": null
-    },
-    "ghStars": {
-      "value": null,
-      "detail": null
-    },
-    "website": {
-      "value": "https://jules.google/",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-05",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "Jules Tools CLI to interface with the cloud agent"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": "Runs asynchronously in cloud; not inside your editor"
-    },
-    "ideExtension": {
-      "value": "no",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "no",
-      "detail": "Powered by Google's models on their backend"
-    },
-    "mcpSupport": {
-      "value": "no",
-      "detail": null
-    },
-    "customRules": {
-      "value": "no",
-      "detail": "Only support for AGENTS.md"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": null
-    },
-    "agentSkillsSupport": {
-      "value": "no",
-      "detail": null
-    },
-    "commandsReusablePrompts": {
-      "value": "no",
-      "detail": null
-    },
-    "subagentsSupport": {
-      "value": "no",
-      "detail": "Jules itself is a single agent per task, operating asynchronously"
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": "Creates execution plans before implementation"
-    },
-    "additionalInfo": "Works via GitHub integration; operates asynchronously in secure cloud sandbox"
-  },
-  {
-    "name": "KiloCode",
-    "type": "Open Source",
-    "github": {
-      "value": "https://github.com/Kilo-Org/kilocode",
-      "detail": null
-    },
-    "ghStars": {
-      "value": 14804,
-      "detail": "Last updated: 2026-02-02"
-    },
-    "website": {
-      "value": "https://kilocode.ai/",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-03",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "Provides a CLI and also editor extensions"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": "Available as VS Code/JetBrains plugins and CLI; no separate IDE app"
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "yes",
-      "detail": "Model-agnostic: supports OpenAI, Anthropic, Google Gemini, local Llama2, etc."
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Built for tool use; can call compilers, run tests, search documentation via integrated or MCP tools"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Read more: https://kilo.ai/docs/agent-behavior/custom-rules"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Read more: https://kilo.ai/docs/agent-behavior/agents-md"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "https://kilo.ai/docs/agent-behavior/skills"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Read more: https://kilo.ai/docs/cli#custom-commands"
-    },
-    "subagentsSupport": {
-      "value": "no",
-      "detail": null
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": "https://kilo.ai/docs/basic-usage/using-modes"
-    },
-    "additionalInfo": "Multi-mode context management; Memory Bank (.kilocode/rules directory); forked from Roo Code"
-  },
-  {
-    "name": "Kiro",
-    "type": "Proprietary",
-    "github": {
-      "value": null,
-      "detail": null
-    },
-    "ghStars": {
-      "value": null,
-      "detail": null
-    },
-    "website": {
-      "value": "https://kiro.dev",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-07",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "Kiro CLI for terminal interaction"
-    },
-    "dedicatedIde": {
-      "value": "yes",
-      "detail": "Integrates with existing IDEs and also offers CLI; an IDE plugin exists for VS Code as Kiro agents"
-    },
-    "ideExtension": {
-      "value": "no",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "no",
-      "detail": "Uses managed model access, often through Amazon Q or AWS endpoints as Kiro is closely integrated with AWS"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Supports connecting external tools via MCP"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Read more: https://kiro.dev/docs/cli/steering/"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "https://kiro.dev/docs/steering/#agentsmd"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "https://kiro.dev/docs/cli/custom-agents/configuration-reference/#skill-resources"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Read more: https://kiro.dev/docs/cli/reference/slash-commands/"
-    },
-    "subagentsSupport": {
-      "value": "yes",
-      "detail": "https://kiro.dev/docs/cli/custom-agents/"
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": "Spec-driven development with structured planning"
-    },
-    "additionalInfo": "Smart Hooks (pre/post command automation); agent steering configuration; deep code intelligence via LSP"
-  },
-  {
-    "name": "Mistral Vibe CLI",
-    "type": "Open Source",
-    "github": {
-      "value": "https://github.com/mistralai/mistral-vibe",
-      "detail": null
-    },
-    "ghStars": {
-      "value": 2906,
-      "detail": "Last updated: 2026-02-02"
-    },
-    "website": {
-      "value": "https://docs.mistral.ai/mistral-vibe/introduction",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-10",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "Terminal-based Vibe CLI agent from Mistral"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": "But supports editor integration via Agent Communication Protocol"
-    },
-    "ideExtension": {
-      "value": "no",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "yes",
-      "detail": "Optimized for Mistral's open Devstral 2 models, but can be adapted to others since it's open source"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Devstral models are built to use tools; Vibe CLI can run shell commands and use code exploration tools as part of its workflow"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Through the file ~/.vibe/instructions.md"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "By convention – it will create or update an AGENTS.md with project context on initialization, and respects such files if present"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": null
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Through the ~/.vibe/prompts/"
-    },
-    "subagentsSupport": {
-      "value": "yes",
-      "detail": "Since release 2.0.0"
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": "Available via the command `vibe --plan`"
+      "name": "Aider",
+      "type": "Open Source",
+      "github": {
+        "value": "https://github.com/Aider-AI/aider",
+        "detail": null
+      },
+      "ghStars": {
+        "value": 40266,
+        "detail": "Last updated: 2026-02-02"
+      },
+      "website": {
+        "value": "https://aider.chat/",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2023-06",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": null
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": null
+      },
+      "ideExtension": {
+        "value": "no",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "yes",
+        "detail": "Supports connecting to OpenAI, Anthropic or local models via API keys"
+      },
+      "mcpSupport": {
+        "value": "no",
+        "detail": "No built-in MCP client; can be extended via external MCP server integrations"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Through the usage of the file `CONVENTIONS.md`"
+      },
+      "agentsMdSupport": {
+        "value": "partial",
+        "detail": "Not native, but can be configured to read these files. Read more: https://aider.chat/docs/usage/conventions.html#always-load-conventions"
+      },
+      "agentSkillsSupport": {
+        "value": "no",
+        "detail": null
+      },
+      "commandsReusablePrompts": {
+        "value": "no",
+        "detail": "All instructions given via natural language chat"
+      },
+      "subagentsSupport": {
+        "value": "no",
+        "detail": null
+      },
+      "planMode": {
+        "value": "no",
+        "detail": "Has a `/architect` mode but not considered as a `plan` mode."
+      },
+      "additionalInfo": "Integrates with Git (auto-commits changes with messages); voice input and image context support"
+    },
+    {
+      "name": "Amp",
+      "type": "Proprietary",
+      "github": {
+        "value": null,
+        "detail": null
+      },
+      "ghStars": {
+        "value": null,
+        "detail": null
+      },
+      "website": {
+        "value": "https://ampcode.com",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2024-10",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "Terminal agent and VS Code plugin available"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": null
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "no",
+        "detail": null
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Uses tool integrations; capable of running compilers, tests, etc. autonomously"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Compatible with AGENTS.md and other standard instruction files"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "Accepts AGENTS.md for project instructions to guide the agent"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "https://ampcode.com/manual#agent-skills"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "https://ampcode.com/manual#custom-commands"
+      },
+      "subagentsSupport": {
+        "value": "yes",
+        "detail": "https://ampcode.com/manual#subagents"
+      },
+      "planMode": {
+        "value": "no",
+        "detail": "Planning mode is not natively supported. Users can request planning-only behavior by explicitly instructing the model not to write code."
+      },
+      "additionalInfo": "Agent toolkit includes automated code review and issue integration"
+    },
+    {
+      "name": "Antigravity",
+      "type": "Proprietary",
+      "github": {
+        "value": null,
+        "detail": null
+      },
+      "ghStars": {
+        "value": null,
+        "detail": null
+      },
+      "website": {
+        "value": "https://idx.google.com",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-11",
+        "detail": null
+      },
+      "cli": {
+        "value": "no",
+        "detail": "Provided as a standalone IDE application"
+      },
+      "dedicatedIde": {
+        "value": "yes",
+        "detail": "Google's AI-powered Antigravity IDE"
+      },
+      "ideExtension": {
+        "value": "no",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "no",
+        "detail": "Powered by Google's Gemini models"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Supports MCP for connecting to tools and data sources in agent mode"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Through `gemini.md` or folder rules: https://antigravity.google/docs/rules-workflows#rules"
+      },
+      "agentsMdSupport": {
+        "value": "no",
+        "detail": "Expects rules via its own .agent/rules files; AGENTS.md must be manually loaded via a rule if needed"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "https://antigravity.google/docs/skills"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "https://antigravity.google/docs/rules-workflows#workflows"
+      },
+      "subagentsSupport": {
+        "value": "no",
+        "detail": "Single agent executes plan; no parallel subagent concept"
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": "Read more: https://antigravity.google/docs/agent-modes-settings"
+      },
+      "additionalInfo": "Supports Workflows (predefined multi-step task sequences) and Agent Manager UI"
+    },
+    {
+      "name": "AugmentCode",
+      "type": "Proprietary",
+      "github": {
+        "value": null,
+        "detail": null
+      },
+      "ghStars": {
+        "value": null,
+        "detail": null
+      },
+      "website": {
+        "value": "https://www.augmentcode.com",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-02",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "Auggie CLI for terminal"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": "Integrates with VS Code, JetBrains, Vim, etc. via extensions"
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "no",
+        "detail": "Uses provided model endpoints; no arbitrary model configuration for individual users"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Integrates Model Context Protocol tools for retrieval and actions"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "https://docs.augmentcode.com/setup-augment/guidelines"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "It supports CLAUDE.md as well"
+      },
+      "agentSkillsSupport": {
+        "value": "no",
+        "detail": null
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "https://docs.augmentcode.com/cli/custom-commands"
+      },
+      "subagentsSupport": {
+        "value": "yes",
+        "detail": "https://docs.augmentcode.com/jetbrains/using-augment/agent"
+      },
+      "planMode": {
+        "value": "partial",
+        "detail": "Has a tasklist mode to create step-by-step plans."
+      },
+      "additionalInfo": "Integrations with Slack/Teams; smart hooks for pre/post command automation"
+    },
+    {
+      "name": "Claude Code",
+      "type": "Proprietary",
+      "github": {
+        "value": "https://github.com/anthropics/claude-code/",
+        "detail": null
+      },
+      "ghStars": {
+        "value": 63029,
+        "detail": "Last updated: 2026-02-02"
+      },
+      "website": {
+        "value": "https://claude.com/product/claude-code",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-04",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "Claude Code CLI and interactive terminal mode"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": "Available via web interface and editor integrations"
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "no",
+        "detail": "Tied to Anthropic's Claude models"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Native support for MCP to connect tools; e.g. can use Figma plugin via MCP"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Through Claude.md or Claude memories (https://code.claude.com/docs/en/memory#modular-rules-with-claude/rules/)"
+      },
+      "agentsMdSupport": {
+        "value": "no",
+        "detail": "Uses CLAUDE.md for similar purpose; AGENTS.md is not natively used by Claude Code"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "Supports specialized agents and skills through its plugin system"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Slash commands"
+      },
+      "subagentsSupport": {
+        "value": "yes",
+        "detail": "Can spawn autonomous sub-agents to handle subtasks"
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": "Plan mode for architectural planning before implementation"
+      },
+      "additionalInfo": "Supports Hooks (automated event-driven scripts) and Plugins to extend with new capabilities"
+    },
+    {
+      "name": "Cline",
+      "type": "Open Source",
+      "github": {
+        "value": "https://github.com/cline/cline",
+        "detail": null
+      },
+      "ghStars": {
+        "value": 57470,
+        "detail": "Last updated: 2026-02-02"
+      },
+      "website": {
+        "value": "https://cline.bot",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2024-07",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "Only seen in VS Code"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": "Integrates through VS Code"
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": "VS Code"
+      },
+      "byoLlm": {
+        "value": "yes",
+        "detail": null
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": null
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Read more: https://docs.cline.bot/features/cline-rules"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "Read more: https://docs.cline.bot/features/cline-rules#agents-md-standard-support"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "Read more: https://docs.cline.bot/features/skills"
+      },
+      "commandsReusablePrompts": {
+        "value": "no",
+        "detail": "Cline has built-in slash commands but custom ones cannot be created"
+      },
+      "subagentsSupport": {
+        "value": null,
+        "detail": null
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": "Read more: https://docs.cline.bot/features/plan-and-act"
+      },
+      "additionalInfo": "Transparency on consumption, no LLM-vendor lock-in"
+    },
+    {
+      "name": "Continue",
+      "type": "Open Source",
+      "github": {
+        "value": "https://github.com/continuedev/continue",
+        "detail": null
+      },
+      "ghStars": {
+        "value": 31186,
+        "detail": "Last updated: 2026-02-02"
+      },
+      "website": {
+        "value": "https://www.continue.dev/",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-02",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": null
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": null
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "yes",
+        "detail": null
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": null
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "https://docs.continue.dev/customize/rules"
+      },
+      "agentsMdSupport": {
+        "value": "no",
+        "detail": null
+      },
+      "agentSkillsSupport": {
+        "value": "no",
+        "detail": null
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Through prompts. https://docs.continue.dev/customize/prompts"
+      },
+      "subagentsSupport": {
+        "value": "yes",
+        "detail": null
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": "Read more: https://docs.continue.dev/guides/plan-mode-guide#using-plan-mode-with-continue"
+      },
+      "additionalInfo": "Provides Mission Control UI to manage agent tasks; cloud agent support for CI/CD"
+    },
+    {
+      "name": "Crush",
+      "type": "Open Source",
+      "github": {
+        "value": "https://github.com/charmbracelet/crush",
+        "detail": null
+      },
+      "ghStars": {
+        "value": 19305,
+        "detail": "Last updated: 2026-02-02"
+      },
+      "website": {
+        "value": "https://github.com/charmbracelet/crush",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-07",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "Terminal CLI with TUI interface"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": null
+      },
+      "ideExtension": {
+        "value": "no",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "yes",
+        "detail": "Supports multiple models and multi-model configs"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Built-in support for connecting to MCP servers over stdio/http/SSE"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Supports files `CRUSH.md`, `.cursorrules`, `CLAUDE.md`, `.cursor/rules/`, `.github/copilot-instructions.md`"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "Uses AGENTS.md as the project context file; can be renamed via config"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "Supports the Agent Skills open standard; discovers skills from `skills/` directories with SKILL.md"
+      },
+      "commandsReusablePrompts": {
+        "value": "no",
+        "detail": null
+      },
+      "subagentsSupport": {
+        "value": "no",
+        "detail": "Single agent performs tasks sequentially, though it can orchestrate multi-step workflows internally"
+      },
+      "planMode": {
+        "value": "no",
+        "detail": null
+      },
+      "additionalInfo": "Configurable JSON config (crush.json); .crushignore to exclude files; permission management"
+    },
+    {
+      "name": "Cursor",
+      "type": "Proprietary",
+      "github": {
+        "value": null,
+        "detail": null
+      },
+      "ghStars": {
+        "value": null,
+        "detail": null
+      },
+      "website": {
+        "value": "https://cursor.so/",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2023-03",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": null
+      },
+      "dedicatedIde": {
+        "value": "yes",
+        "detail": "Cursor is a standalone VS Code-fork IDE"
+      },
+      "ideExtension": {
+        "value": "no",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "no",
+        "detail": "Bundled with supported model endpoints; no arbitrary model plug-in"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Supports connecting to MCP servers for tools; can configure MCP tools in settings"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Support through Cursor rules: https://cursor.com/docs/context/rules"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "Treats AGENTS.md as equivalent to its rules format for compatibility"
+      },
+      "agentSkillsSupport": {
+        "value": "Yes",
+        "detail": "Read more: https://cursor.com/docs/context/skills"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Read more: https://cursor.com/docs/context/commands"
+      },
+      "subagentsSupport": {
+        "value": "Yes",
+        "detail": "Read more: https://cursor.com/docs/context/subagents"
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": "Read more: https://cursor.com/docs/agent/modes#plan"
+      },
+      "additionalInfo": "VS Code fork IDE; supports background agents for suggestions; Cursor Rules for instructions"
+    },
+    {
+      "name": "Factory",
+      "type": "Proprietary",
+      "github": {
+        "value": null,
+        "detail": null
+      },
+      "ghStars": {
+        "value": null,
+        "detail": null
+      },
+      "website": {
+        "value": "https://factory.ai/",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-02",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "Factory CLI to interact with Droids in terminal"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": "Integrates into existing editors via plugins; no separate IDE"
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": "VSCode extension"
+      },
+      "byoLlm": {
+        "value": "yes",
+        "detail": "Read more: https://docs.factory.ai/cli/user-guides/choosing-your-model#5-%C2%B7-bring-your-own-keys-byok"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Extensive tool integrations, effectively using MCP to connect to code, logs, docs, tickets, etc."
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Read more: https://docs.factory.ai/guides/power-user/rules-conventions#rules-and-conventions"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "Integral to context – supports multiple AGENTS.md for different project parts"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "https://docs.factory.ai/cli/configuration/skills"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Read more: https://docs.factory.ai/cli/configuration/custom-slash-commands"
+      },
+      "subagentsSupport": {
+        "value": "yes",
+        "detail": "Read more: https://docs.factory.ai/cli/configuration/custom-droids"
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": "Spec Mode: https://docs.factory.ai/cli/getting-started/video-walkthrough#spec-mode-research-and-plan-only"
+      },
+      "additionalInfo": "Maintains User and Organization memory; rich third-party integrations (GitHub, Jira, Notion, Datadog)"
+    },
+    {
+      "name": "Gemini CLI",
+      "type": "Open Source",
+      "github": {
+        "value": "https://github.com/google-gemini/gemini-cli",
+        "detail": null
+      },
+      "ghStars": {
+        "value": 93252,
+        "detail": "Last updated: 2026-02-02"
+      },
+      "website": {
+        "value": "https://geminicli.com/",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-06",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "Open-source Google Gemini CLI for terminal"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": "Though it integrates with VS Code and JetBrains via plugins"
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": "Read more: https://marketplace.visualstudio.com/items?itemName=google.gemini-cli-vscode-ide-companion"
+      },
+      "byoLlm": {
+        "value": "no",
+        "detail": "Specifically built to use Google's Gemini model via Google's API"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Supports tool use via the Model Context Protocol as part of its agent capabilities"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Through https://geminicli.com/docs/cli/gemini-md/"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "Read more: https://geminicli.com/docs/get-started/configuration-v1/#available-settings-in-settingsjson"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "Read more: https://geminicli.com/docs/cli/skills/"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Read more: https://geminicli.com/docs/cli/commands/#slash-commands"
+      },
+      "subagentsSupport": {
+        "value": "no",
+        "detail": "Focuses on one agent, but extensible via skills rather than multiple concurrent agents"
+      },
+      "planMode": {
+        "value": "partial",
+        "detail": "Currently experimental: https://geminicli.com/docs/get-started/configuration/#experimental"
+      },
+      "additionalInfo": "Provides Smart Actions in IDE; integrates LSP for code context; 1000 free requests/day"
+    },
+    {
+      "name": "GitHub Copilot",
+      "type": "Proprietary",
+      "github": {
+        "value": null,
+        "detail": null
+      },
+      "ghStars": {
+        "value": null,
+        "detail": null
+      },
+      "website": {
+        "value": "https://github.com/features/copilot",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2021-10",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "Copilot CLI available for terminal assistance"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": "Integrates into popular IDEs/editors as extension"
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "no",
+        "detail": null
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Microsoft's Copilot ecosystem supports MCP to connect to internal knowledge bases and tools"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Custom instructions: https://docs.github.com/copilot/how-tos/configure-custom-instructions/add-repository-instructions"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "Reads AGENTS.md files in the repo for project-specific guidance"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "Read more: https://docs.github.com/copilot/concepts/agents/about-agent-skills"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Read more: https://docs.github.com/en/copilot/tutorials/customization-library/prompt-files"
+      },
+      "subagentsSupport": {
+        "value": "yes",
+        "detail": "Read more: https://docs.github.com/en/copilot/tutorials/customization-library/custom-agents/your-first-custom-agent"
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": null
+      },
+      "additionalInfo": "Supports BYOK for enterprise; memory features to retain context across sessions"
+    },
+    {
+      "name": "Goose",
+      "type": "Open Source",
+      "github": {
+        "value": "https://github.com/block/goose",
+        "detail": null
+      },
+      "ghStars": {
+        "value": 29655,
+        "detail": "Last updated: 2026-02-02"
+      },
+      "website": {
+        "value": "https://block.github.io/goose/",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2024-11",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "CLI and desktop app available"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": "But provides a desktop GUI option in addition to terminal"
+      },
+      "ideExtension": {
+        "value": "no",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "yes",
+        "detail": "Works with any LLM; supports multi-model configurations"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Designed to integrate with MCP servers; can seamlessly use external tools"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Read more: https://block.github.io/goose/docs/guides/context-engineering/using-goosehints/"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "Uses AGENTS.md for project context if present"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "Read more: https://block.github.io/goose/docs/guides/context-engineering/using-skills/"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Read more on recipes: https://block.github.io/goose/docs/guides/recipes/"
+      },
+      "subagentsSupport": {
+        "value": "yes",
+        "detail": "Read more: https://block.github.io/goose/docs/guides/subagents"
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": null
+      },
+      "additionalInfo": "Offers Recipes (YAML scripts for multi-step workflows); supports Agent Client Protocol"
+    },
+    {
+      "name": "Jules",
+      "type": "Proprietary",
+      "github": {
+        "value": null,
+        "detail": null
+      },
+      "ghStars": {
+        "value": null,
+        "detail": null
+      },
+      "website": {
+        "value": "https://jules.google/",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-05",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "Jules Tools CLI to interface with the cloud agent"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": "Runs asynchronously in cloud; not inside your editor"
+      },
+      "ideExtension": {
+        "value": "no",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "no",
+        "detail": "Powered by Google's models on their backend"
+      },
+      "mcpSupport": {
+        "value": "no",
+        "detail": null
+      },
+      "customRules": {
+        "value": "no",
+        "detail": "Only support for AGENTS.md"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": null
+      },
+      "agentSkillsSupport": {
+        "value": "no",
+        "detail": null
+      },
+      "commandsReusablePrompts": {
+        "value": "no",
+        "detail": null
+      },
+      "subagentsSupport": {
+        "value": "no",
+        "detail": "Jules itself is a single agent per task, operating asynchronously"
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": "Creates execution plans before implementation"
+      },
+      "additionalInfo": "Works via GitHub integration; operates asynchronously in secure cloud sandbox"
+    },
+    {
+      "name": "KiloCode",
+      "type": "Open Source",
+      "github": {
+        "value": "https://github.com/Kilo-Org/kilocode",
+        "detail": null
+      },
+      "ghStars": {
+        "value": 14804,
+        "detail": "Last updated: 2026-02-02"
+      },
+      "website": {
+        "value": "https://kilocode.ai/",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-03",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "Provides a CLI and also editor extensions"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": "Available as VS Code/JetBrains plugins and CLI; no separate IDE app"
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "yes",
+        "detail": "Model-agnostic: supports OpenAI, Anthropic, Google Gemini, local Llama2, etc."
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Built for tool use; can call compilers, run tests, search documentation via integrated or MCP tools"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Read more: https://kilo.ai/docs/agent-behavior/custom-rules"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "Read more: https://kilo.ai/docs/agent-behavior/agents-md"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "https://kilo.ai/docs/agent-behavior/skills"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Read more: https://kilo.ai/docs/cli#custom-commands"
+      },
+      "subagentsSupport": {
+        "value": "no",
+        "detail": null
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": "https://kilo.ai/docs/basic-usage/using-modes"
+      },
+      "additionalInfo": "Multi-mode context management; Memory Bank (.kilocode/rules directory); forked from Roo Code"
+    },
+    {
+      "name": "Kiro",
+      "type": "Proprietary",
+      "github": {
+        "value": null,
+        "detail": null
+      },
+      "ghStars": {
+        "value": null,
+        "detail": null
+      },
+      "website": {
+        "value": "https://kiro.dev",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-07",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "Kiro CLI for terminal interaction"
+      },
+      "dedicatedIde": {
+        "value": "yes",
+        "detail": "Integrates with existing IDEs and also offers CLI; an IDE plugin exists for VS Code as Kiro agents"
+      },
+      "ideExtension": {
+        "value": "no",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "no",
+        "detail": "Uses managed model access, often through Amazon Q or AWS endpoints as Kiro is closely integrated with AWS"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Supports connecting external tools via MCP"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Read more: https://kiro.dev/docs/cli/steering/"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "https://kiro.dev/docs/steering/#agentsmd"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "https://kiro.dev/docs/cli/custom-agents/configuration-reference/#skill-resources"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Read more: https://kiro.dev/docs/cli/reference/slash-commands/"
+      },
+      "subagentsSupport": {
+        "value": "yes",
+        "detail": "https://kiro.dev/docs/cli/custom-agents/"
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": "Spec-driven development with structured planning"
+      },
+      "additionalInfo": "Smart Hooks (pre/post command automation); agent steering configuration; deep code intelligence via LSP"
+    },
+    {
+      "name": "Mistral Vibe CLI",
+      "type": "Open Source",
+      "github": {
+        "value": "https://github.com/mistralai/mistral-vibe",
+        "detail": null
+      },
+      "ghStars": {
+        "value": 2906,
+        "detail": "Last updated: 2026-02-02"
+      },
+      "website": {
+        "value": "https://docs.mistral.ai/mistral-vibe/introduction",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-10",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "Terminal-based Vibe CLI agent from Mistral"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": "But supports editor integration via Agent Communication Protocol"
+      },
+      "ideExtension": {
+        "value": "no",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "yes",
+        "detail": "Optimized for Mistral's open Devstral 2 models, but can be adapted to others since it's open source"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Devstral models are built to use tools; Vibe CLI can run shell commands and use code exploration tools as part of its workflow"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Through the file ~/.vibe/instructions.md"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "By convention – it will create or update an AGENTS.md with project context on initialization, and respects such files if present"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": null
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Through the ~/.vibe/prompts/"
+      },
+      "subagentsSupport": {
+        "value": "yes",
+        "detail": "Since release 2.0.0"
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": "Available via the command `vibe --plan`"
+      }
+    },
+    {
+      "name": "OpenAI Codex",
+      "type": "Proprietary",
+      "github": {
+        "value": null,
+        "detail": null
+      },
+      "ghStars": {
+        "value": null,
+        "detail": null
+      },
+      "website": {
+        "value": "https://developers.openai.com/codex/skills/",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-05",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": null
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": null
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "no",
+        "detail": null
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": null
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Read more: https://developers.openai.com/codex/rules"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": null
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": null
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Through custom prompts: https://developers.openai.com/codex/custom-prompts"
+      },
+      "subagentsSupport": {
+        "value": "no",
+        "detail": "Not in the sense of Claude sub-agents"
+      },
+      "planMode": {
+        "value": "no",
+        "detail": null
+      },
+      "additionalInfo": "AI code generation model (now succeeded by GitHub Copilot's use of GPT models); API only, not a standalone agent"
+    },
+    {
+      "name": "OpenCode",
+      "type": "Open Source",
+      "github": {
+        "value": "https://github.com/anomalyco/opencode",
+        "detail": null
+      },
+      "ghStars": {
+        "value": 94709,
+        "detail": "Last updated: 2026-02-02"
+      },
+      "website": {
+        "value": "https://opencode.ai/",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-05",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "Go-based `opencode` CLI with TUI"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": null
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": "OpenCode integrates with VS Code, Cursor, or any IDE that supports a terminal."
+      },
+      "byoLlm": {
+        "value": "yes",
+        "detail": "Not tied to any provider; supports OpenAI, Anthropic, local models, etc."
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Supports connecting to MCP servers; exposes configuration for MCP tools"
+      },
+      "customRules": {
+        "value": "no",
+        "detail": "Only support for `AGENTS.md`"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "Analyzes and creates AGENTS.md to brief the agent on the project"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "Supports Agent Skills; configurable via `agentskills.io` standard and `skills` directories"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Read more: https://opencode.ai/docs/commands/"
+      },
+      "subagentsSupport": {
+        "value": "yes",
+        "detail": "Read more: https://opencode.ai/docs/agents/"
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": "https://opencode.ai/docs/modes/#plan"
+      },
+      "additionalInfo": "Highly extensible via plugins and SDK; supports Agent Client Protocol (ACP); opencode share for git integration"
+    },
+    {
+      "name": "RooCode",
+      "type": "Open Source",
+      "github": {
+        "value": "https://github.com/RooCodeInc/Roo-Code",
+        "detail": null
+      },
+      "ghStars": {
+        "value": 22062,
+        "detail": "Last updated: 2026-02-02"
+      },
+      "website": {
+        "value": "https://roocode.com",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2024-11",
+        "detail": null
+      },
+      "cli": {
+        "value": "no",
+        "detail": "Primarily a Visual Studio Code extension"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": "Runs within VS Code"
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": "VS Code only"
+      },
+      "byoLlm": {
+        "value": "yes",
+        "detail": "Configurable to use different models via API keys"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Supports tool use like running tests/compilers as part of its autonomous workflow"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Through rules https://docs.roocode.com/features/custom-instructions"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "https://docs.roocode.com/features/custom-instructions?_highlight=agents.md#agentsmd-support"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "Read more: https://docs.roocode.com/features/skills"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Through Slash commands: https://docs.roocode.com/features/slash-commands"
+      },
+      "subagentsSupport": {
+        "value": "yes",
+        "detail": "Through cloud agents: https://docs.roocode.com/roo-code-cloud/cloud-agents?_highlight=agent"
+      },
+      "planMode": {
+        "value": "partial",
+        "detail": "Through the `architect` mode: https://docs.roocode.com/basic-usage/using-modes?_highlight=plan#architect-mode"
+      },
+      "additionalInfo": "VS Code extension; marketed as team of AI agents; integrated with GitHub issues/PRs; base for Kilo Code"
+    },
+    {
+      "name": "Trae AI",
+      "type": "Open Source",
+      "github": {
+        "value": "https://github.com/bytedance/trae-agent",
+        "detail": null
+      },
+      "ghStars": {
+        "value": 10702,
+        "detail": "Last updated: 2026-02-02"
+      },
+      "website": {
+        "value": "https://www.trae.ai",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2025-01",
+        "detail": null
+      },
+      "cli": {
+        "value": "no",
+        "detail": "No"
+      },
+      "dedicatedIde": {
+        "value": "yes",
+        "detail": "Yes"
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": "Yes"
+      },
+      "byoLlm": {
+        "value": "yes",
+        "detail": "Supports various models; Bytedance's implementation likely allows plugging different backends"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Yes"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Read more: https://docs.trae.ai/ide/rules?_lang=en"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "Read more: https://docs.trae.ai/ide/rules?_lang=en#3233e6b0"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": null
+      },
+      "commandsReusablePrompts": {
+        "value": "no",
+        "detail": null
+      },
+      "subagentsSupport": {
+        "value": "yes",
+        "detail": "Read more: https://docs.trae.ai/ide/agent?_lang=en"
+      },
+      "planMode": {
+        "value": "no",
+        "detail": null
+      },
+      "additionalInfo": "Deep GitHub integration (opens PRs, comments on issues); multi-agent orchestration; from Bytedance"
+    },
+    {
+      "name": "Warp",
+      "type": "Proprietary",
+      "github": {
+        "value": null,
+        "detail": null
+      },
+      "ghStars": {
+        "value": null,
+        "detail": null
+      },
+      "website": {
+        "value": "https://warp.dev",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2021-06",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": null
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": null
+      },
+      "ideExtension": {
+        "value": "no",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "partial",
+        "detail": "Only for paid plans - Warp's BYOK lets you plug in your own OpenAI, Anthropic, or Google API keys and use those models inside Warp's agent harness."
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": null
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Through WRAP.md files"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": null
+      },
+      "agentSkillsSupport": {
+        "value": "no",
+        "detail": null
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Through the prompts: https://docs.warp.dev/knowledge-and-collaboration/warp-drive/prompts"
+      },
+      "subagentsSupport": {
+        "value": "no",
+        "detail": null
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": "Though the `/plan` command"
+      },
+      "additionalInfo": "GPU-accelerated terminal emulator; AI features for shell command assistance (not a coding agent)"
+    },
+    {
+      "name": "Windsurf",
+      "type": "Proprietary",
+      "github": {
+        "value": null,
+        "detail": null
+      },
+      "ghStars": {
+        "value": null,
+        "detail": null
+      },
+      "website": {
+        "value": "https://windsurf.com/",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2024-11",
+        "detail": null
+      },
+      "cli": {
+        "value": "no",
+        "detail": "Windsurf is a full IDE application, though it has a command palette and can be launched via `windsurf` command"
+      },
+      "dedicatedIde": {
+        "value": "yes",
+        "detail": "Windsurf IDE – a standalone AI-powered editor"
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": "For Jetbrains only"
+      },
+      "byoLlm": {
+        "value": "partial",
+        "detail": "This is only available to free and paid individual users. Read more: https://docs.windsurf.com/windsurf/models#bring-your-own-key-byok"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Native MCP integration to extend agent with external tools"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Through the `.windsurf/rules` directory"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "Supports reading AGENTS.md files for project instructions"
+      },
+      "agentSkillsSupport": {
+        "value": "yes",
+        "detail": "Read more: https://docs.windsurf.com/windsurf/cascade/skills"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Through the `.windsurf/workflows/` prompts"
+      },
+      "subagentsSupport": {
+        "value": "no",
+        "detail": "One primary agent Cascade per workspace, which handles tasks sequentially"
+      },
+      "planMode": {
+        "value": "yes",
+        "detail": null
+      },
+      "additionalInfo": "Supports Cascade Hooks, Worktrees (parallel git worktrees), and visual plugin management; built on Codeium"
+    },
+    {
+      "name": "Zed",
+      "type": "Open Source",
+      "github": {
+        "value": "https://github.com/zed-industries/zed",
+        "detail": null
+      },
+      "ghStars": {
+        "value": 74492,
+        "detail": "Last updated: 2026-02-02"
+      },
+      "website": {
+        "value": "https://zed.dev/",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2021-06",
+        "detail": "Initial v0.1 without AI at the time"
+      },
+      "cli": {
+        "value": "no",
+        "detail": "Zed is a GUI code editor, though it can connect to terminal-based agents via ACP"
+      },
+      "dedicatedIde": {
+        "value": "yes",
+        "detail": "Zed code editor for macOS/Linux/Windows"
+      },
+      "ideExtension": {
+        "value": "no",
+        "detail": null
+      },
+      "byoLlm": {
+        "value": "yes",
+        "detail": "See: https://zed.dev/docs/ai/configuration"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": "Via Agent Client Protocol and MCP, Zed can let an agent execute commands and retrieve data; e.g. works with Gemini CLI or Vibe CLI as external agent"
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "See: https://zed.dev/docs/ai/rules?highlight=rules#creating-rules"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "Project rule files in Zed can simply be AGENTS.md – it treats them equivalently"
+      },
+      "agentSkillsSupport": {
+        "value": "no",
+        "detail": "Zed itself doesn't define a skills system, but can leverage any skills the connected agent has"
+      },
+      "commandsReusablePrompts": {
+        "value": "yes",
+        "detail": "Possible to add custom slash commands: https://zed.dev/docs/extensions/slash-commands"
+      },
+      "subagentsSupport": {
+        "value": "partial",
+        "detail": "Coming soon: https://github.com/zed-industries/zed/pull/46186"
+      },
+      "planMode": {
+        "value": "no",
+        "detail": "PR in progress: https://github.com/zed-industries/zed/pull/45804"
+      },
+      "additionalInfo": "Implements Agent Communication Protocol (ACP); flexible provider setup; multi-buffer editing"
     }
-  },
-  {
-    "name": "OpenAI Codex",
-    "type": "Proprietary",
-    "github": {
-      "value": null,
-      "detail": null
-    },
-    "ghStars": {
-      "value": null,
-      "detail": null
-    },
-    "website": {
-      "value": "https://developers.openai.com/codex/skills/",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-05",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": null
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": null
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "no",
-      "detail": null
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": null
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Read more: https://developers.openai.com/codex/rules"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": null
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": null
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Through custom prompts: https://developers.openai.com/codex/custom-prompts"
-    },
-    "subagentsSupport": {
-      "value": "no",
-      "detail": "Not in the sense of Claude sub-agents"
-    },
-    "planMode": {
-      "value": "no",
-      "detail": null
-    },
-    "additionalInfo": "AI code generation model (now succeeded by GitHub Copilot's use of GPT models); API only, not a standalone agent"
-  },
-  {
-    "name": "OpenCode",
-    "type": "Open Source",
-    "github": {
-      "value": "https://github.com/anomalyco/opencode",
-      "detail": null
-    },
-    "ghStars": {
-      "value": 94709,
-      "detail": "Last updated: 2026-02-02"
-    },
-    "website": {
-      "value": "https://opencode.ai/",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-05",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": "Go-based `opencode` CLI with TUI"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": null
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": "OpenCode integrates with VS Code, Cursor, or any IDE that supports a terminal."
-    },
-    "byoLlm": {
-      "value": "yes",
-      "detail": "Not tied to any provider; supports OpenAI, Anthropic, local models, etc."
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Supports connecting to MCP servers; exposes configuration for MCP tools"
-    },
-    "customRules": {
-      "value": "no",
-      "detail": "Only support for `AGENTS.md`"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Analyzes and creates AGENTS.md to brief the agent on the project"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "Supports Agent Skills; configurable via `agentskills.io` standard and `skills` directories"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Read more: https://opencode.ai/docs/commands/"
-    },
-    "subagentsSupport": {
-      "value": "yes",
-      "detail": "Read more: https://opencode.ai/docs/agents/"
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": "https://opencode.ai/docs/modes/#plan"
-    },
-    "additionalInfo": "Highly extensible via plugins and SDK; supports Agent Client Protocol (ACP); opencode share for git integration"
-  },
-  {
-    "name": "RooCode",
-    "type": "Open Source",
-    "github": {
-      "value": "https://github.com/RooCodeInc/Roo-Code",
-      "detail": null
-    },
-    "ghStars": {
-      "value": 22062,
-      "detail": "Last updated: 2026-02-02"
-    },
-    "website": {
-      "value": "https://roocode.com",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2024-11",
-      "detail": null
-    },
-    "cli": {
-      "value": "no",
-      "detail": "Primarily a Visual Studio Code extension"
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": "Runs within VS Code"
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": "VS Code only"
-    },
-    "byoLlm": {
-      "value": "yes",
-      "detail": "Configurable to use different models via API keys"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Supports tool use like running tests/compilers as part of its autonomous workflow"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Through rules https://docs.roocode.com/features/custom-instructions"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "https://docs.roocode.com/features/custom-instructions?_highlight=agents.md#agentsmd-support"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "Read more: https://docs.roocode.com/features/skills"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Through Slash commands: https://docs.roocode.com/features/slash-commands"
-    },
-    "subagentsSupport": {
-      "value": "yes",
-      "detail": "Through cloud agents: https://docs.roocode.com/roo-code-cloud/cloud-agents?_highlight=agent"
-    },
-    "planMode": {
-      "value": "partial",
-      "detail": "Through the `architect` mode: https://docs.roocode.com/basic-usage/using-modes?_highlight=plan#architect-mode"
-    },
-    "additionalInfo": "VS Code extension; marketed as team of AI agents; integrated with GitHub issues/PRs; base for Kilo Code"
-  },
-  {
-    "name": "Trae AI",
-    "type": "Open Source",
-    "github": {
-      "value": "https://github.com/bytedance/trae-agent",
-      "detail": null
-    },
-    "ghStars": {
-      "value": 10702,
-      "detail": "Last updated: 2026-02-02"
-    },
-    "website": {
-      "value": "https://www.trae.ai",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2025-01",
-      "detail": null
-    },
-    "cli": {
-      "value": "no",
-      "detail": "No"
-    },
-    "dedicatedIde": {
-      "value": "yes",
-      "detail": "Yes"
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": "Yes"
-    },
-    "byoLlm": {
-      "value": "yes",
-      "detail": "Supports various models; Bytedance's implementation likely allows plugging different backends"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Yes"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Read more: https://docs.trae.ai/ide/rules?_lang=en"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Read more: https://docs.trae.ai/ide/rules?_lang=en#3233e6b0"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": null
-    },
-    "commandsReusablePrompts": {
-      "value": "no",
-      "detail": null
-    },
-    "subagentsSupport": {
-      "value": "yes",
-      "detail": "Read more: https://docs.trae.ai/ide/agent?_lang=en"
-    },
-    "planMode": {
-      "value": "no",
-      "detail": null
-    },
-    "additionalInfo": "Deep GitHub integration (opens PRs, comments on issues); multi-agent orchestration; from Bytedance"
-  },
-  {
-    "name": "Warp",
-    "type": "Proprietary",
-    "github": {
-      "value": null,
-      "detail": null
-    },
-    "ghStars": {
-      "value": null,
-      "detail": null
-    },
-    "website": {
-      "value": "https://warp.dev",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2021-06",
-      "detail": null
-    },
-    "cli": {
-      "value": "yes",
-      "detail": null
-    },
-    "dedicatedIde": {
-      "value": "no",
-      "detail": null
-    },
-    "ideExtension": {
-      "value": "no",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "partial",
-      "detail": "Only for paid plans - Warp's BYOK lets you plug in your own OpenAI, Anthropic, or Google API keys and use those models inside Warp's agent harness."
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": null
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Through WRAP.md files"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": null
-    },
-    "agentSkillsSupport": {
-      "value": "no",
-      "detail": null
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Through the prompts: https://docs.warp.dev/knowledge-and-collaboration/warp-drive/prompts"
-    },
-    "subagentsSupport": {
-      "value": "no",
-      "detail": null
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": "Though the `/plan` command"
-    },
-    "additionalInfo": "GPU-accelerated terminal emulator; AI features for shell command assistance (not a coding agent)"
-  },
-  {
-    "name": "Windsurf",
-    "type": "Proprietary",
-    "github": {
-      "value": null,
-      "detail": null
-    },
-    "ghStars": {
-      "value": null,
-      "detail": null
-    },
-    "website": {
-      "value": "https://windsurf.com/",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2024-11",
-      "detail": null
-    },
-    "cli": {
-      "value": "no",
-      "detail": "Windsurf is a full IDE application, though it has a command palette and can be launched via `windsurf` command"
-    },
-    "dedicatedIde": {
-      "value": "yes",
-      "detail": "Windsurf IDE – a standalone AI-powered editor"
-    },
-    "ideExtension": {
-      "value": "yes",
-      "detail": "For Jetbrains only"
-    },
-    "byoLlm": {
-      "value": "partial",
-      "detail": "This is only available to free and paid individual users. Read more: https://docs.windsurf.com/windsurf/models#bring-your-own-key-byok"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Native MCP integration to extend agent with external tools"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "Through the `.windsurf/rules` directory"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Supports reading AGENTS.md files for project instructions"
-    },
-    "agentSkillsSupport": {
-      "value": "yes",
-      "detail": "Read more: https://docs.windsurf.com/windsurf/cascade/skills"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Through the `.windsurf/workflows/` prompts"
-    },
-    "subagentsSupport": {
-      "value": "no",
-      "detail": "One primary agent Cascade per workspace, which handles tasks sequentially"
-    },
-    "planMode": {
-      "value": "yes",
-      "detail": null
-    },
-    "additionalInfo": "Supports Cascade Hooks, Worktrees (parallel git worktrees), and visual plugin management; built on Codeium"
-  },
-  {
-    "name": "Zed",
-    "type": "Open Source",
-    "github": {
-      "value": "https://github.com/zed-industries/zed",
-      "detail": null
-    },
-    "ghStars": {
-      "value": 74492,
-      "detail": "Last updated: 2026-02-02"
-    },
-    "website": {
-      "value": "https://zed.dev/",
-      "detail": null
-    },
-    "firstRelease": {
-      "value": "2021-06",
-      "detail": "Initial v0.1 without AI at the time"
-    },
-    "cli": {
-      "value": "no",
-      "detail": "Zed is a GUI code editor, though it can connect to terminal-based agents via ACP"
-    },
-    "dedicatedIde": {
-      "value": "yes",
-      "detail": "Zed code editor for macOS/Linux/Windows"
-    },
-    "ideExtension": {
-      "value": "no",
-      "detail": null
-    },
-    "byoLlm": {
-      "value": "yes",
-      "detail": "See: https://zed.dev/docs/ai/configuration"
-    },
-    "mcpSupport": {
-      "value": "yes",
-      "detail": "Via Agent Client Protocol and MCP, Zed can let an agent execute commands and retrieve data; e.g. works with Gemini CLI or Vibe CLI as external agent"
-    },
-    "customRules": {
-      "value": "yes",
-      "detail": "See: https://zed.dev/docs/ai/rules?highlight=rules#creating-rules"
-    },
-    "agentsMdSupport": {
-      "value": "yes",
-      "detail": "Project rule files in Zed can simply be AGENTS.md – it treats them equivalently"
-    },
-    "agentSkillsSupport": {
-      "value": "no",
-      "detail": "Zed itself doesn't define a skills system, but can leverage any skills the connected agent has"
-    },
-    "commandsReusablePrompts": {
-      "value": "yes",
-      "detail": "Possible to add custom slash commands: https://zed.dev/docs/extensions/slash-commands"
-    },
-    "subagentsSupport": {
-      "value": "partial",
-      "detail": "Coming soon: https://github.com/zed-industries/zed/pull/46186"
-    },
-    "planMode": {
-      "value": "no",
-      "detail": "PR in progress: https://github.com/zed-industries/zed/pull/45804"
-    },
-    "additionalInfo": "Implements Agent Communication Protocol (ACP); flexible provider setup; multi-buffer editing"
-  }
   ]
 }
 
