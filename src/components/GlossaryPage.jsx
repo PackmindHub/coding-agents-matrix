@@ -71,7 +71,7 @@ export default function GlossaryPage({ onChangelogOpen }) {
           <div className="mt-8 text-center">
             <div className="inline-block">
               <p className="text-slate-500 text-sm font-light tracking-wider">
-                Part of the AI Coding Agents Matrix
+                Part of the AI Coding Agents Matrix, powered by <a href={"https://packmind.com?utm_source=coding-agents-matrix"}>Packmind</a>
               </p>
               <div className="mt-2 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
             </div>
