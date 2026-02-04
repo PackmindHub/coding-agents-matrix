@@ -66,6 +66,10 @@
         "value": "no",
         "detail": "Has a `/architect` mode but not considered as a `plan` mode."
       },
+      "hooks": {
+        "value": "no",
+        "detail": null
+      },
       "additionalInfo": "Integrates with Git (auto-commits changes with messages); voice input and image context support"
     },
     {
@@ -130,6 +134,10 @@
       "planMode": {
         "value": "no",
         "detail": "Planning mode is not natively supported. Users can request planning-only behavior by explicitly instructing the model not to write code."
+      },
+      "hooks": {
+        "value": "yes",
+        "detail": "Read more: https://ampcode.com/manual?internal#hooks"
       },
       "additionalInfo": "Agent toolkit includes automated code review and issue integration"
     },
@@ -196,6 +204,10 @@
         "value": "yes",
         "detail": "Read more: https://antigravity.google/docs/agent-modes-settings"
       },
+      "hooks": {
+        "value": null,
+        "detail": null
+      },
       "additionalInfo": "Supports Workflows (predefined multi-step task sequences) and Agent Manager UI"
     },
     {
@@ -260,6 +272,10 @@
       "planMode": {
         "value": "partial",
         "detail": "Has a tasklist mode to create step-by-step plans."
+      },
+      "hooks": {
+        "value": "no",
+        "detail": null
       },
       "additionalInfo": "Integrations with Slack/Teams; smart hooks for pre/post command automation"
     },
@@ -326,6 +342,10 @@
         "value": "yes",
         "detail": "Plan mode for architectural planning before implementation"
       },
+      "hooks": {
+        "value": "yes",
+        "detail": "Read more: https://code.claude.com/docs/en/hooks"
+      },
       "additionalInfo": "Supports Hooks (automated event-driven scripts) and Plugins to extend with new capabilities"
     },
     {
@@ -390,6 +410,10 @@
       "planMode": {
         "value": "yes",
         "detail": "Read more: https://docs.cline.bot/features/plan-and-act"
+      },
+      "hooks": {
+        "value": "yes",
+        "detail": "Read more: https://docs.cline.bot/features/hooks"
       },
       "additionalInfo": "Transparency on consumption, no LLM-vendor lock-in"
     },
@@ -456,6 +480,10 @@
         "value": "yes",
         "detail": "Read more: https://docs.continue.dev/guides/plan-mode-guide#using-plan-mode-with-continue"
       },
+      "hooks": {
+        "value": "no",
+        "detail": null
+      },
       "additionalInfo": "Provides Mission Control UI to manage agent tasks; cloud agent support for CI/CD"
     },
     {
@@ -520,6 +548,10 @@
       "planMode": {
         "value": "no",
         "detail": null
+      },
+      "hooks": {
+        "value": "no",
+        "detail": "GitHub issue opened: https://github.com/charmbracelet/crush/issues/1336"
       },
       "additionalInfo": "Configurable JSON config (crush.json); .crushignore to exclude files; permission management"
     },
@@ -586,6 +618,10 @@
         "value": "yes",
         "detail": "Read more: https://cursor.com/docs/agent/modes#plan"
       },
+      "hooks": {
+        "value": null,
+        "detail": null
+      },
       "additionalInfo": "VS Code fork IDE; supports background agents for suggestions; Cursor Rules for instructions"
     },
     {
@@ -650,6 +686,10 @@
       "planMode": {
         "value": "yes",
         "detail": "Spec Mode: https://docs.factory.ai/cli/getting-started/video-walkthrough#spec-mode-research-and-plan-only"
+      },
+      "hooks": {
+        "value": "yes",
+        "detail": "Read more: https://docs.factory.ai/reference/hooks-reference"
       },
       "additionalInfo": "Maintains User and Organization memory; rich third-party integrations (GitHub, Jira, Notion, Datadog)"
     },
@@ -716,6 +756,10 @@
         "value": "partial",
         "detail": "Currently experimental: https://geminicli.com/docs/get-started/configuration/#experimental"
       },
+      "hooks": {
+        "value": "yes",
+        "detail": "Read more: https://geminicli.com/docs/hooks/"
+      },
       "additionalInfo": "Provides Smart Actions in IDE; integrates LSP for code context; 1000 free requests/day"
     },
     {
@@ -781,6 +825,10 @@
         "value": "yes",
         "detail": null
       },
+      "hooks": {
+        "value": "yes",
+        "detail": "Read more: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/use-hooks"
+      },
       "additionalInfo": "Supports BYOK for enterprise; memory features to retain context across sessions"
     },
     {
@@ -844,6 +892,10 @@
       },
       "planMode": {
         "value": "yes",
+        "detail": null
+      },
+      "hooks": {
+        "value": "no",
         "detail": null
       },
       "additionalInfo": "Offers Recipes (YAML scripts for multi-step workflows); supports Agent Client Protocol"
@@ -911,6 +963,10 @@
         "value": "yes",
         "detail": "Creates execution plans before implementation"
       },
+      "hooks": {
+        "value": "no",
+        "detail": null
+      },
       "additionalInfo": "Works via GitHub integration; operates asynchronously in secure cloud sandbox"
     },
     {
@@ -975,6 +1031,10 @@
       "planMode": {
         "value": "yes",
         "detail": "https://kilo.ai/docs/basic-usage/using-modes"
+      },
+      "hooks": {
+        "value": "no",
+        "detail": null
       },
       "additionalInfo": "Multi-mode context management; Memory Bank (.kilocode/rules directory); forked from Roo Code"
     },
@@ -1041,6 +1101,10 @@
         "value": "yes",
         "detail": "Spec-driven development with structured planning"
       },
+      "hooks": {
+        "value": "yes",
+        "detail": "Read more: https://kiro.dev/docs/hooks/"
+      },
       "additionalInfo": "Smart Hooks (pre/post command automation); agent steering configuration; deep code intelligence via LSP"
     },
     {
@@ -1105,6 +1169,10 @@
       "planMode": {
         "value": "yes",
         "detail": "Available via the command `vibe --plan`"
+      },
+      "hooks": {
+        "value": "no",
+        "detail": "GitHub issue opened: https://github.com/mistralai/mistral-vibe/issues/250"
       }
     },
     {
@@ -1169,6 +1237,10 @@
       "planMode": {
         "value": "no",
         "detail": null
+      },
+      "hooks": {
+        "value": "no",
+        "detail": "GitHub discussion opened: https://github.com/openai/codex/discussions/2150"
       },
       "additionalInfo": "AI code generation model (now succeeded by GitHub Copilot's use of GPT models); API only, not a standalone agent"
     },
@@ -1235,6 +1307,10 @@
         "value": "yes",
         "detail": "https://opencode.ai/docs/modes/#plan"
       },
+      "hooks": {
+        "value": "partial",
+        "detail": "Not native, but seems possible using plugins: https://github.com/anomalyco/opencode/issues/1473"
+      },
       "additionalInfo": "Highly extensible via plugins and SDK; supports Agent Client Protocol (ACP); opencode share for git integration"
     },
     {
@@ -1300,6 +1376,10 @@
         "value": "partial",
         "detail": "Through the `architect` mode: https://docs.roocode.com/basic-usage/using-modes?_highlight=plan#architect-mode"
       },
+      "hooks": {
+        "value": "no",
+        "detail": null
+      },
       "additionalInfo": "VS Code extension; marketed as team of AI agents; integrated with GitHub issues/PRs; base for Kilo Code"
     },
     {
@@ -1362,6 +1442,10 @@
         "detail": "Read more: https://docs.trae.ai/ide/agent?_lang=en"
       },
       "planMode": {
+        "value": "no",
+        "detail": null
+      },
+      "hooks": {
         "value": "no",
         "detail": null
       },
@@ -1430,6 +1514,10 @@
         "value": "yes",
         "detail": "Though the `/plan` command"
       },
+      "hooks": {
+        "value": "no",
+        "detail": null
+      },
       "additionalInfo": "GPU-accelerated terminal emulator; AI features for shell command assistance (not a coding agent)"
     },
     {
@@ -1495,6 +1583,10 @@
         "value": "yes",
         "detail": null
       },
+      "hooks": {
+        "value": "yes",
+        "detail": "Read more: https://docs.windsurf.com/windsurf/cascade/hooks"
+      },
       "additionalInfo": "Supports Cascade Hooks, Worktrees (parallel git worktrees), and visual plugin management; built on Codeium"
     },
     {
@@ -1559,6 +1651,10 @@
       "planMode": {
         "value": "no",
         "detail": "PR in progress: https://github.com/zed-industries/zed/pull/45804"
+      },
+      "hooks": {
+        "value": "no",
+        "detail": "GitHub discussion open: https://github.com/zed-industries/zed/discussions/34962"
       },
       "additionalInfo": "Implements Agent Communication Protocol (ACP); flexible provider setup; multi-buffer editing"
     }

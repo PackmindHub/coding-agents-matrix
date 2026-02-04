@@ -45,6 +45,8 @@ const useAgentsData = () => {
         subagentsSupportDetail: agent.subagentsSupport?.detail ?? null,
         planMode: agent.planMode.value,
         planModeDetail: agent.planMode?.detail ?? null,
+        hooks: agent.hooks.value,
+        hooksDetail: agent.hooks?.detail ?? null,
         additionalInfo: agent.additionalInfo
       }))
       setAgents(transformedAgents)

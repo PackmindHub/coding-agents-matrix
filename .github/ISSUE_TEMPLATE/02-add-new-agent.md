@@ -278,6 +278,26 @@ For each feature below, provide:
 
 ---
 
+### 12. Hooks
+
+**Definition:** Whether the agent supports user-defined scripts or commands that execute at various points in the agent's lifecycle (before/after tool calls, file edits, shell commands, etc.).
+
+**Value:** <!-- yes/no/partial/null -->
+
+**Detail:** <!-- Optional: e.g., "Read more: https://example.com/docs/hooks" -->
+
+**Possible values:**
+- `yes` - Supports multiple hook events across different lifecycle points with both pre and post execution hooks
+- `no` - Does not support user-defined hooks or lifecycle callbacks
+- `partial` - Supports hooks but with limited events or restricted functionality
+
+**Examples:**
+- Aider: `{ "value": "no", "detail": null }`
+- Claude Code: `{ "value": "yes", "detail": "Read more: https://code.claude.com/docs/en/hooks" }`
+- Windsurf: `{ "value": "yes", "detail": "Read more: https://docs.windsurf.com/windsurf/cascade/hooks" }`
+
+---
+
 ## Additional Information
 
 ### Additional Info* (required)
@@ -311,7 +331,7 @@ A brief description highlighting unique features, special capabilities, or impor
 ## Pre-submission Checklist
 
 - [ ] I have filled in all required fields marked with (*): Name, Type, Website, First Release, Additional Info
-- [ ] I have provided accurate values for all 11 features (yes/no/partial/null)
+- [ ] I have provided accurate values for all 12 features (yes/no/partial/null)
 - [ ] I have reviewed the [Agent Properties Terminology](https://github.com/PackmindHub/coding-agents-matrix#agent-properties-terminology)
 - [ ] I have provided examples and context in the "detail" fields where applicable
 - [ ] The agent name in the issue title matches the agent name in the form

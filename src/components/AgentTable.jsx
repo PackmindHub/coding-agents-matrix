@@ -28,7 +28,8 @@ const AgentTable = ({ agents, sortConfig, onSort }) => {
     { key: 'agentSkillsSupport', label: 'Skills', sortable: true, cellType: 'badge', tooltip: 'Support for custom skills and/or agent skills standards' },
     { key: 'commandsReusablePrompts', label: 'Commands', sortable: true, cellType: 'badge', tooltip: 'Reusable commands and prompts for common tasks' },
     { key: 'subagentsSupport', label: 'Subagents', sortable: true, cellType: 'badge', tooltip: 'Support for spawning specialized sub-agents for complex tasks' },
-    { key: 'planMode', label: 'Plan Mode', sortable: true, cellType: 'badge', tooltip: 'Has a built-in plan mode before starting writing any line of code' }
+    { key: 'planMode', label: 'Plan Mode', sortable: true, cellType: 'badge', tooltip: 'Has a built-in plan mode before starting writing any line of code' },
+    { key: 'hooks', label: 'Hooks', sortable: true, cellType: 'badge', tooltip: 'User-defined scripts or commands that execute at various points in the agent lifecycle (before/after tool calls, file edits, shell commands, etc.)' }
   ].map(col => ({ ...col, isGroupBoundary: groupBoundaries.has(col.key) }))
 
   if (agents.length === 0) {

@@ -46,7 +46,8 @@ const FilterBar = ({ filters, onChange, totalAgents, filteredCount }) => {
     { key: 'agentSkillsSupport', label: 'Skills' },
     { key: 'commandsReusablePrompts', label: 'Commands' },
     { key: 'subagentsSupport', label: 'Subagents' },
-    { key: 'planMode', label: 'Plan Mode' }
+    { key: 'planMode', label: 'Plan Mode' },
+    { key: 'hooks', label: 'Hooks' }
   ]
 
   return (

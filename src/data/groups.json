@@ -13,7 +13,7 @@
     {
       "id": "features",
       "label": "Features",
-      "columns": ["byoLlm", "mcpSupport", "customRules", "agentsMdSupport", "agentSkillsSupport", "commandsReusablePrompts", "subagentsSupport", "planMode"]
+      "columns": ["byoLlm", "mcpSupport", "customRules", "agentsMdSupport", "agentSkillsSupport", "commandsReusablePrompts", "subagentsSupport", "planMode", "hooks"]
     }
   ]
 }

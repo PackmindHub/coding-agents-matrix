@@ -103,6 +103,10 @@ Each feature has a **value** (yes/no/partial/null) and an optional **detail** fi
   - New value: <!-- yes/no/partial/null -->
   - Detail:
 
+- [ ] **Hooks** (`hooks`)
+  - New value: <!-- yes/no/partial/null -->
+  - Detail:
+
 ### Additional Information
 
 - [ ] **Additional Info** (`additionalInfo`)
