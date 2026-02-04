@@ -248,4 +248,452 @@
     @apply border border-slate-700/50 hover:border-violet-500/30;
     @apply transition-all duration-200;
   }
+
+  .btn-header-active {
+    @apply text-white bg-violet-500 border-violet-500;
+    @apply hover:text-white hover:bg-violet-600 hover:border-violet-600;
+  }
+
+  /* ============================================
+     Navigation Tabs (Desktop Header)
+     ============================================ */
+
+  .nav-tab {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium;
+    @apply text-slate-400 hover:text-slate-200;
+    @apply hover:bg-slate-800/50;
+    @apply transition-all duration-200;
+  }
+
+  .nav-tab-active {
+    @apply text-violet-400 bg-violet-500/10;
+    @apply hover:text-violet-400 hover:bg-violet-500/15;
+  }
+
+  /* ============================================
+     Mobile Navigation Items
+     ============================================ */
+
+  .mobile-nav-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-base;
+    @apply text-slate-300 hover:text-slate-100;
+    @apply hover:bg-slate-800/50;
+    @apply transition-all duration-200;
+  }
+
+  .mobile-nav-item-active {
+    @apply text-violet-400 bg-violet-500/10;
+    @apply hover:text-violet-400 hover:bg-violet-500/15;
+  }
+
+  /* ============================================
+     Glossary Page Patterns
+     ============================================ */
+
+  .glossary-nav {
+    @apply sticky top-16 z-20 -mx-4 px-4 py-3 mb-6;
+    @apply bg-slate-900/95 backdrop-blur-xl;
+    @apply border-b border-slate-700/50;
+  }
+
+  .glossary-nav-container {
+    @apply flex items-center gap-2 overflow-x-auto pb-1;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+  }
+
+  .glossary-nav-container::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .glossary-nav-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .glossary-nav-container::-webkit-scrollbar-thumb {
+    background: rgb(51 65 85 / 0.5);
+    border-radius: 2px;
+  }
+
+  .glossary-nav-item {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm whitespace-nowrap;
+    @apply text-slate-400 hover:text-slate-200;
+    @apply bg-slate-800/30 hover:bg-slate-800/50;
+    @apply border border-slate-700/30 hover:border-slate-600/50;
+    @apply transition-all duration-200;
+  }
+
+  .glossary-nav-item-active {
+    @apply text-violet-400 bg-violet-500/10 border-violet-500/30;
+    @apply shadow-sm shadow-violet-500/10;
+  }
+
+  .glossary-grid {
+    @apply space-y-4;
+  }
+
+  .glossary-card {
+    @apply flex gap-4 p-5;
+    @apply bg-slate-800/40 backdrop-blur-xl rounded-2xl;
+    @apply border border-slate-700/50;
+    @apply hover:border-slate-600/50 hover:shadow-lg hover:shadow-violet-500/5;
+    @apply transition-all duration-300;
+  }
+
+  .glossary-card-icon {
+    @apply flex-shrink-0 w-12 h-12 rounded-xl;
+    @apply bg-violet-500/10 border border-violet-500/20;
+    @apply flex items-center justify-center;
+  }
+
+  .glossary-card-content {
+    @apply flex-1 min-w-0;
+  }
+
+  .glossary-card-title {
+    @apply text-lg font-semibold mb-2;
+  }
+
+  .glossary-card-fullname {
+    @apply text-slate-400 font-normal;
+  }
+
+  .glossary-card-description {
+    @apply text-sm text-slate-400 leading-relaxed;
+  }
+
+  .glossary-card-description p {
+    @apply mb-3;
+  }
+
+  .glossary-card-description p:last-child {
+    @apply mb-0;
+  }
+
+  .glossary-card-summary {
+    @apply text-sm text-slate-400 leading-relaxed mb-3;
+  }
+
+  /* Expand button */
+  .glossary-card-expand-btn {
+    @apply inline-flex items-center gap-1.5 text-xs font-medium;
+    @apply text-violet-400 hover:text-violet-300;
+    @apply transition-colors duration-200;
+    @apply bg-transparent border-none cursor-pointer p-0;
+  }
+
+  /* Expandable content animation */
+  .glossary-card-expandable {
+    @apply overflow-hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+  }
+
+  .glossary-card-expanded {
+    max-height: 1200px;
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.4s ease-in;
+  }
+
+  .glossary-card-expanded-content {
+    @apply pt-4 space-y-4;
+    @apply border-t border-slate-700/50 mt-3;
+  }
+
+  /* Code example block */
+  .glossary-code-example {
+    @apply rounded-xl overflow-hidden;
+    @apply bg-slate-900/70 border border-slate-700/50;
+  }
+
+  .glossary-code-header {
+    @apply flex items-center justify-between px-4 py-2;
+    @apply bg-slate-800/50 border-b border-slate-700/50;
+  }
+
+  .glossary-code-title {
+    @apply text-xs font-medium text-slate-300;
+  }
+
+  .glossary-code-language {
+    @apply px-2 py-0.5 rounded text-xs font-mono;
+    @apply bg-violet-500/20 text-violet-300 border border-violet-500/30;
+  }
+
+  .glossary-code-block {
+    @apply p-4 overflow-x-auto;
+    @apply text-xs font-mono text-slate-300 leading-relaxed;
+    @apply whitespace-pre;
+  }
+
+  /* Code example tabs */
+  .glossary-code-tabs {
+    @apply flex items-center gap-1 px-2 py-2;
+    @apply bg-slate-800/70 border-b border-slate-700/50;
+    @apply overflow-x-auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .glossary-code-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .glossary-code-tab {
+    @apply px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap;
+    @apply text-slate-400 bg-transparent;
+    @apply border border-transparent;
+    @apply hover:text-slate-200 hover:bg-slate-700/50;
+    @apply transition-all duration-200 cursor-pointer;
+  }
+
+  .glossary-code-tab-active {
+    @apply text-violet-400 bg-violet-500/10;
+    @apply border-violet-500/50;
+  }
+
+  /* Code example link (for Skills) */
+  .glossary-code-link {
+    @apply px-4 py-3;
+    @apply bg-slate-800/30 border-t border-slate-700/50;
+  }
+
+  .glossary-code-link a {
+    @apply inline-flex items-center gap-1.5 text-xs font-medium;
+    @apply text-violet-400 hover:text-violet-300;
+    @apply transition-colors duration-200;
+  }
+
+  /* Unsupported feature notice */
+  .glossary-code-unsupported {
+    @apply px-4 py-3;
+    @apply bg-amber-500/5 border-t border-amber-500/20;
+    @apply text-xs text-amber-400;
+  }
+
+  /* Agent support badges */
+  .glossary-agent-support {
+    @apply space-y-2;
+  }
+
+  .glossary-agent-support-title {
+    @apply text-xs font-semibold text-slate-400 uppercase tracking-wider;
+  }
+
+  .glossary-agent-badges {
+    @apply flex flex-wrap gap-2;
+  }
+
+  /* Pro tips */
+  .glossary-pro-tips {
+    @apply rounded-xl p-4;
+    @apply bg-amber-500/5 border border-amber-500/20;
+  }
+
+  .glossary-pro-tips-title {
+    @apply flex items-center gap-2 text-xs font-semibold uppercase tracking-wider;
+    @apply text-amber-400 mb-3;
+  }
+
+  .glossary-pro-tips-list {
+    @apply space-y-2 list-none;
+  }
+
+  .glossary-pro-tips-list li {
+    @apply text-sm text-slate-400 pl-4 relative;
+  }
+
+  .glossary-pro-tips-list li::before {
+    content: '•';
+    @apply absolute left-0 text-amber-500;
+  }
+
+  /* ============================================
+     Concept Quiz
+     ============================================ */
+
+  /* Collapsed state - subtle bar */
+  .concept-quiz-collapsed {
+    @apply mb-8 px-5 py-4 rounded-xl;
+    @apply bg-amber-500/10 backdrop-blur-xl;
+    @apply border border-amber-500/30;
+    @apply flex items-center justify-between gap-4;
+    @apply transition-all duration-300;
+    @apply hover:border-amber-500/50;
+  }
+
+  .concept-quiz-collapsed-content {
+    @apply flex items-center gap-3;
+  }
+
+  .concept-quiz-collapsed-title {
+    @apply text-sm font-medium text-slate-300;
+  }
+
+  .concept-quiz-start-btn {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium;
+    @apply bg-amber-500/20 text-amber-400;
+    @apply border border-amber-500/30;
+    @apply hover:bg-amber-500/30 hover:border-amber-500/50;
+    @apply transition-all duration-200 cursor-pointer;
+  }
+
+  /* Expanded container */
+  .concept-quiz-container {
+    @apply mb-8 p-8 rounded-2xl relative;
+    @apply bg-gradient-to-br from-violet-900/20 via-slate-800/40 to-slate-800/40;
+    @apply backdrop-blur-xl;
+    @apply border border-violet-500/30;
+    @apply shadow-lg shadow-violet-500/10;
+    @apply text-center;
+  }
+
+  .concept-quiz-collapse-btn {
+    @apply absolute top-4 right-4;
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium;
+    @apply text-slate-400 hover:text-slate-200;
+    @apply bg-slate-700/50 hover:bg-slate-700;
+    @apply border border-slate-600/50 hover:border-slate-500/50;
+    @apply transition-all duration-200 cursor-pointer;
+  }
+
+  .concept-quiz-title {
+    @apply text-xl font-bold text-violet-400 mb-6;
+    @apply flex items-center justify-center gap-2;
+  }
+
+  .concept-quiz-description {
+    @apply text-base text-slate-300 leading-relaxed mb-4;
+    @apply italic;
+    @apply max-w-lg mx-auto;
+  }
+
+  .concept-quiz-question {
+    @apply text-sm text-slate-500 mb-6;
+  }
+
+  .concept-quiz-answers {
+    @apply flex flex-wrap justify-center gap-3 mb-6;
+  }
+
+  .concept-quiz-answer {
+    @apply px-4 py-2 rounded-xl text-sm font-medium;
+    @apply bg-slate-700/50 text-slate-300;
+    @apply border border-slate-600/50;
+    @apply hover:bg-slate-700 hover:border-slate-500/50 hover:text-slate-200;
+    @apply transition-all duration-200 cursor-pointer;
+  }
+
+  .concept-quiz-answer:disabled {
+    @apply cursor-default;
+  }
+
+  .concept-quiz-answer-selected {
+    @apply bg-violet-500/20 border-violet-500/50 text-violet-300;
+    @apply hover:bg-violet-500/20 hover:border-violet-500/50 hover:text-violet-300;
+  }
+
+  .concept-quiz-answer-correct {
+    @apply bg-emerald-500/20 border-emerald-500/50 text-emerald-400;
+    @apply hover:bg-emerald-500/20 hover:border-emerald-500/50 hover:text-emerald-400;
+    @apply shadow-sm shadow-emerald-500/20;
+  }
+
+  .concept-quiz-answer-wrong {
+    @apply bg-rose-500/20 border-rose-500/50 text-rose-400;
+    @apply hover:bg-rose-500/20 hover:border-rose-500/50 hover:text-rose-400;
+    @apply shadow-sm shadow-rose-500/20;
+  }
+
+  .concept-quiz-answer-disabled {
+    @apply opacity-50;
+    @apply hover:bg-slate-700/50 hover:border-slate-600/50 hover:text-slate-300;
+  }
+
+  .concept-quiz-score {
+    @apply text-sm text-slate-500 mb-4;
+  }
+
+  .concept-quiz-submit-btn {
+    @apply w-full max-w-xs mx-auto px-6 py-3 rounded-xl text-sm font-medium;
+    @apply bg-slate-600 text-slate-300;
+    @apply transition-all duration-200;
+    @apply block;
+  }
+
+  .concept-quiz-submit-btn:not(:disabled) {
+    @apply bg-violet-500 text-white;
+    @apply hover:bg-violet-600;
+    @apply shadow-lg shadow-violet-500/20;
+    @apply cursor-pointer;
+  }
+
+  .concept-quiz-submit-btn:disabled {
+    @apply cursor-not-allowed opacity-50;
+  }
+
+  .concept-quiz-next-btn {
+    @apply w-full max-w-xs mx-auto px-6 py-3 rounded-xl text-sm font-medium;
+    @apply bg-violet-500 text-white;
+    @apply hover:bg-violet-600;
+    @apply shadow-lg shadow-violet-500/20;
+    @apply transition-all duration-200;
+    @apply block;
+  }
+
+  .concept-quiz-complete {
+    @apply py-4;
+  }
+
+  .concept-quiz-complete-title {
+    @apply text-xl font-semibold text-violet-400 mb-4;
+  }
+
+  .concept-quiz-complete-score {
+    @apply text-5xl font-bold text-slate-200 mb-2;
+  }
+
+  .concept-quiz-complete-message {
+    @apply text-slate-400 mb-6;
+  }
+
+  .concept-quiz-restart-btn {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium;
+    @apply bg-violet-500 text-white;
+    @apply hover:bg-violet-600;
+    @apply shadow-lg shadow-violet-500/20;
+    @apply transition-all duration-200;
+  }
+
+  /* Mobile responsiveness for quiz */
+  @media (max-width: 640px) {
+    .concept-quiz-collapsed {
+      @apply px-4 py-3;
+    }
+
+    .concept-quiz-collapsed-title {
+      @apply text-xs;
+    }
+
+    .concept-quiz-start-btn {
+      @apply px-3 py-1.5 text-xs;
+    }
+
+    .concept-quiz-container {
+      @apply p-4;
+    }
+
+    .concept-quiz-collapse-btn {
+      @apply top-2 right-2 px-2 py-1;
+    }
+
+    .concept-quiz-answers {
+      @apply gap-2;
+    }
+
+    .concept-quiz-answer {
+      @apply px-3 py-1.5 text-xs;
+    }
+  }
 }
