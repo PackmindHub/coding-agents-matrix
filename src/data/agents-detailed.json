@@ -621,7 +621,7 @@
       "hooks": {
         "value": "yes",
         "detail": "Read more: https://cursor.com/docs/agent/hooks"
-      },
+      }
     },
     {
       "name": "Factory",
@@ -793,8 +793,8 @@
         "detail": null
       },
       "byoLlm": {
-        "value": "no",
-        "detail": null
+        "value": "partial",
+        "detail": "Enterprise BYOK (Bring Your Own Key) for GitHub Copilot is in public preview: https://github.blog/changelog/2025-11-20-enterprise-bring-your-own-key-byok-for-github-copilot-is-now-in-public-preview/"
       },
       "mcpSupport": {
         "value": "yes",
