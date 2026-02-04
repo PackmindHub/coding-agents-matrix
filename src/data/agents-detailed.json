@@ -205,7 +205,7 @@
         "detail": "Read more: https://antigravity.google/docs/agent-modes-settings"
       },
       "hooks": {
-        "value": null,
+        "value": "no",
         "detail": null
       },
       "additionalInfo": "Supports Workflows (predefined multi-step task sequences) and Agent Manager UI"
@@ -619,10 +619,9 @@
         "detail": "Read more: https://cursor.com/docs/agent/modes#plan"
       },
       "hooks": {
-        "value": null,
-        "detail": null
+        "value": "yes",
+        "detail": "Read more: https://cursor.com/docs/agent/hooks"
       },
-      "additionalInfo": "VS Code fork IDE; supports background agents for suggestions; Cursor Rules for instructions"
     },
     {
       "name": "Factory",
