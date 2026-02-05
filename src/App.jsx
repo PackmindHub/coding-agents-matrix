@@ -5,6 +5,7 @@ import FilterBar from './components/FilterBar'
 import ChangelogDrawer from './components/ChangelogDrawer'
 import GlossaryPage from './components/GlossaryPage'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import useAgentsData from './hooks/useAgentsData'
 import useFiltering from './hooks/useFiltering'
 import useSorting from './hooks/useSorting'
@@ -110,14 +111,7 @@ function MatrixPage({ onChangelogOpen }) {
         />
 
         {/* Footer */}
-        <div className="mt-4 text-center">
-          <div className="inline-block">
-            <p className="text-slate-500 text-sm font-light tracking-wider">
-              Meticulously compiled • {formatMonthYear(lastUpdated) || 'Unknown'}
-            </p>
-            <div className="mt-2 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
-          </div>
-        </div>
+        <Footer />
       </div>
     </div>
   )

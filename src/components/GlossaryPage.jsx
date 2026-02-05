@@ -5,6 +5,7 @@ import GlossaryCard from './GlossaryCard'
 import GlossaryNav from './GlossaryNav'
 import ConceptQuiz from './ConceptQuiz'
 import Header from './Header'
+import Footer from './Footer'
 
 export default function GlossaryPage({ onChangelogOpen }) {
   // Handle initial hash navigation
@@ -68,14 +69,7 @@ export default function GlossaryPage({ onChangelogOpen }) {
           </div>
 
           {/* Footer */}
-          <div className="mt-8 text-center">
-            <div className="inline-block">
-              <p className="text-slate-500 text-sm font-light tracking-wider">
-                Part of the AI Coding Agents Matrix, powered by <a href={"https://packmind.com?utm_source=coding-agents-matrix"}>Packmind</a>
-              </p>
-              <div className="mt-2 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
-            </div>
-          </div>
+          <Footer />
         </div>
       </div>
     </>
