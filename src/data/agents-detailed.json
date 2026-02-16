@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-02-09"
+    "lastUpdated": "2026-02-16"
   },
   "agents": [
     {
@@ -11,8 +11,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 40435,
-        "detail": "Last updated: 2026-02-09"
+        "value": 40666,
+        "detail": "Last updated: 2026-02-16"
       },
       "website": {
         "value": "https://aider.chat/",
@@ -287,8 +287,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 65360,
-        "detail": "Last updated: 2026-02-09"
+        "value": 67017,
+        "detail": "Last updated: 2026-02-16"
       },
       "website": {
         "value": "https://claude.com/product/claude-code",
@@ -356,8 +356,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 57713,
-        "detail": "Last updated: 2026-02-09"
+        "value": 58017,
+        "detail": "Last updated: 2026-02-16"
       },
       "website": {
         "value": "https://cline.bot",
@@ -425,8 +425,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 31295,
-        "detail": "Last updated: 2026-02-09"
+        "value": 31406,
+        "detail": "Last updated: 2026-02-16"
       },
       "website": {
         "value": "https://www.continue.dev/",
@@ -494,8 +494,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 19619,
-        "detail": "Last updated: 2026-02-09"
+        "value": 20009,
+        "detail": "Last updated: 2026-02-16"
       },
       "website": {
         "value": "https://github.com/charmbracelet/crush",
@@ -700,8 +700,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 93969,
-        "detail": "Last updated: 2026-02-09"
+        "value": 94586,
+        "detail": "Last updated: 2026-02-16"
       },
       "website": {
         "value": "https://geminicli.com/",
@@ -838,8 +838,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 30084,
-        "detail": "Last updated: 2026-02-09"
+        "value": 30487,
+        "detail": "Last updated: 2026-02-16"
       },
       "website": {
         "value": "https://block.github.io/goose/",
@@ -976,8 +976,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 15096,
-        "detail": "Last updated: 2026-02-09"
+        "value": 15448,
+        "detail": "Last updated: 2026-02-16"
       },
       "website": {
         "value": "https://kilocode.ai/",
@@ -1114,8 +1114,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 3005,
-        "detail": "Last updated: 2026-02-09"
+        "value": 3089,
+        "detail": "Last updated: 2026-02-16"
       },
       "website": {
         "value": "https://docs.mistral.ai/mistral-vibe/introduction",
@@ -1251,8 +1251,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 100386,
-        "detail": "Last updated: 2026-02-09"
+        "value": 105113,
+        "detail": "Last updated: 2026-02-16"
       },
       "website": {
         "value": "https://opencode.ai/",
@@ -1320,8 +1320,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 22151,
-        "detail": "Last updated: 2026-02-09"
+        "value": 22236,
+        "detail": "Last updated: 2026-02-16"
       },
       "website": {
         "value": "https://roocode.com",
@@ -1389,8 +1389,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 10764,
-        "detail": "Last updated: 2026-02-09"
+        "value": 10817,
+        "detail": "Last updated: 2026-02-16"
       },
       "website": {
         "value": "https://www.trae.ai",
@@ -1596,8 +1596,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 74972,
-        "detail": "Last updated: 2026-02-09"
+        "value": 75403,
+        "detail": "Last updated: 2026-02-16"
       },
       "website": {
         "value": "https://zed.dev/",
