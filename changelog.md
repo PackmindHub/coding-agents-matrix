@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026-02-18]
+### Updated
+- OpenAI Codex: hooks "no" → "yes" (AfterToolUse hook in Codex CLI 0.100.0)
+- OpenAI Codex: subagentsSupport "no" → "yes" (customizable multi-agent roles via config)
+- Cline: subagentsSupport null → "yes" (native `use_subagents` tool)
+- Cursor: added `additionalInfo` for Marketplace plugins
+
 ## [2026-02-04]
 ### Updated
 - Add hooks property in the matrix

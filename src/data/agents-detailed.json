@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-02-16"
+    "lastUpdated": "2026-02-18"
   },
   "agents": [
     {
@@ -404,8 +404,8 @@
         "detail": "Cline has built-in slash commands but custom ones cannot be created"
       },
       "subagentsSupport": {
-        "value": null,
-        "detail": null
+        "value": "yes",
+        "detail": "Read more: https://docs.cline.bot/features/subagents#subagents"
       },
       "planMode": {
         "value": "yes",
@@ -621,7 +621,8 @@
       "hooks": {
         "value": "yes",
         "detail": "Read more: https://cursor.com/docs/agent/hooks"
-      }
+      },
+      "additionalInfo": "Supports Marketplace plugins bundling skills, subagents, MCP, hooks, and rules: https://cursor.com/docs/plugins"
     },
     {
       "name": "Factory",
@@ -1230,16 +1231,16 @@
         "detail": "Through custom prompts: https://developers.openai.com/codex/custom-prompts"
       },
       "subagentsSupport": {
-        "value": "no",
-        "detail": "Not in the sense of Claude sub-agents"
+        "value": "yes",
+        "detail": "Customizable multi-agent roles via config"
       },
       "planMode": {
         "value": "no",
         "detail": null
       },
       "hooks": {
-        "value": "no",
-        "detail": "GitHub discussion opened: https://github.com/openai/codex/discussions/2150"
+        "value": "yes",
+        "detail": "Supports AfterToolUse hook: https://developers.openai.com/codex/changelog/"
       },
       "additionalInfo": "AI code generation model (now succeeded by GitHub Copilot's use of GPT models); API only, not a standalone agent"
     },
