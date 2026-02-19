@@ -1,5 +1,9 @@
 # Changelog
 
+## [2026-02-19]
+### Updated
+- GitHub Copilot: added `additionalInfo` for CLI plugins support (bundling agents, skills, hooks, and MCP)
+
 ## [2026-02-18]
 ### Updated
 - OpenAI Codex: hooks "no" → "yes" (AfterToolUse hook in Codex CLI 0.100.0)

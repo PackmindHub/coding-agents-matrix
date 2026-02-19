@@ -829,7 +829,7 @@
         "value": "yes",
         "detail": "Read more: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/use-hooks"
       },
-      "additionalInfo": "Supports BYOK for enterprise; memory features to retain context across sessions"
+      "additionalInfo": "Supports BYOK for enterprise; memory features to retain context across sessions; supports CLI plugins bundling agents, skills, hooks, and MCP: https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-creating"
     },
     {
       "name": "Goose",
