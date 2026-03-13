@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-03-09"
+    "lastUpdated": "2026-03-13"
   },
   "agents": [
     {
@@ -583,8 +583,8 @@
         "detail": "Cursor is a standalone VS Code-fork IDE"
       },
       "ideExtension": {
-        "value": "no",
-        "detail": null
+        "value": "yes",
+        "detail": "Available in JetBrains IDEs via Agent Client Protocol (ACP)"
       },
       "byoLlm": {
         "value": "no",
@@ -1304,14 +1304,14 @@
         "detail": "Customizable multi-agent roles via config"
       },
       "planMode": {
-        "value": "no",
-        "detail": null
+        "value": "yes",
+        "detail": "Read more: https://developers.openai.com/codex/learn/best-practices/#plan-first-for-difficult-tasks"
       },
       "hooks": {
         "value": "yes",
-        "detail": "Supports AfterToolUse hook: https://developers.openai.com/codex/changelog/"
+        "detail": "Supports AfterToolUse, SessionStart, and SessionStop hooks: https://developers.openai.com/codex/changelog/"
       },
-      "additionalInfo": "AI code generation model (now succeeded by GitHub Copilot's use of GPT models); API only, not a standalone agent"
+      "additionalInfo": "Supports plugins (skills, MCP, app connectors), multi-agent orchestration, worktrees, automations, web search, and voice dictation; available as app, CLI, and IDE extension"
     },
     {
       "name": "OpenCode",

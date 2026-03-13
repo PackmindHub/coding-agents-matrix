@@ -4,6 +4,12 @@
 ### Added
 - GitLab Duo added to the database
 
+### Updated
+- Cursor: ideExtension "no" → "yes" (available in JetBrains IDEs via Agent Client Protocol)
+- OpenAI Codex: planMode "no" → "yes" (plan-first workflow for difficult tasks)
+- OpenAI Codex: hooks detail updated (added SessionStart and SessionStop hooks)
+- OpenAI Codex: updated `additionalInfo` (plugins, multi-agent orchestration, worktrees, automations, web search, voice dictation)
+
 ## [2026-02-19]
 ### Updated
 - GitHub Copilot: added `additionalInfo` for CLI plugins support (bundling agents, skills, hooks, and MCP)
