@@ -832,6 +832,75 @@
       "additionalInfo": "Supports BYOK for enterprise; memory features to retain context across sessions; supports CLI plugins bundling agents, skills, hooks, and MCP: https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-creating"
     },
     {
+      "name": "GitLab Duo",
+      "type": "Proprietary",
+      "github": {
+        "value": null,
+        "detail": null
+      },
+      "ghStars": {
+        "value": null,
+        "detail": null
+      },
+      "website": {
+        "value": "https://about.gitlab.com/gitlab-duo/",
+        "detail": null
+      },
+      "firstRelease": {
+        "value": "2026-01",
+        "detail": null
+      },
+      "cli": {
+        "value": "yes",
+        "detail": "https://docs.gitlab.com/cli/duo/cli/"
+      },
+      "dedicatedIde": {
+        "value": "no",
+        "detail": null
+      },
+      "ideExtension": {
+        "value": "yes",
+        "detail": "https://docs.gitlab.com/user/duo_agent_platform/code_suggestions/set_up/#turn-on-code-suggestions"
+      },
+      "byoLlm": {
+        "value": "yes",
+        "detail": "https://docs.gitlab.com/administration/gitlab_duo_self_hosted/supported_llm_serving_platforms/"
+      },
+      "mcpSupport": {
+        "value": "yes",
+        "detail": null
+      },
+      "customRules": {
+        "value": "yes",
+        "detail": "Through `.gitlab/duo/chat-rules.md`. https://docs.gitlab.com/user/duo_agent_platform/customize/custom_rules/#update-custom-rules"
+      },
+      "agentsMdSupport": {
+        "value": "yes",
+        "detail": "https://docs.gitlab.com/user/duo_agent_platform/customize/agents_md/"
+      },
+      "agentSkillsSupport": {
+        "value": "no",
+        "detail": null
+      },
+      "commandsReusablePrompts": {
+        "value": "no",
+        "detail": null
+      },
+      "subagentsSupport": {
+        "value": "no",
+        "detail": null
+      },
+      "planMode": {
+        "value": "no",
+        "detail": null
+      },
+      "hooks": {
+        "value": "no",
+        "detail": null
+      },
+      "additionalInfo": "GitLab-native AI assistant integrated across the DevSecOps platform; supports self-hosted LLM deployments and custom rules via chat-rules.md"
+    },
+    {
       "name": "Goose",
       "type": "Open Source",
       "github": {

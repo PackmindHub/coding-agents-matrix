@@ -1,5 +1,9 @@
 # Changelog
 
+## [2026-03-13]
+### Added
+- GitLab Duo added to the database
+
 ## [2026-02-19]
 ### Updated
 - GitHub Copilot: added `additionalInfo` for CLI plugins support (bundling agents, skills, hooks, and MCP)
