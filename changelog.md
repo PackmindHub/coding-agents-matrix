@@ -1,5 +1,9 @@
 # Changelog
 
+## [2026-03-18]
+### Updated
+- GitLab Duo: agentSkillsSupport "no" → "yes" (agent skills for domain expertise)
+
 ## [2026-03-13]
 ### Added
 - GitLab Duo added to the database

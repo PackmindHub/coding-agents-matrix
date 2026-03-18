@@ -879,8 +879,8 @@
         "detail": "https://docs.gitlab.com/user/duo_agent_platform/customize/agents_md/"
       },
       "agentSkillsSupport": {
-        "value": "no",
-        "detail": null
+        "value": "yes",
+        "detail": "https://docs.gitlab.com/user/duo_agent_platform/customize/agent_skills/"
       },
       "commandsReusablePrompts": {
         "value": "no",
