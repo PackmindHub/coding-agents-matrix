@@ -1246,14 +1246,14 @@
     },
     {
       "name": "OpenAI Codex",
-      "type": "Proprietary",
+      "type": "Open Source",
       "github": {
-        "value": null,
+        "value": "https://github.com/openai/codex",
         "detail": null
       },
       "ghStars": {
-        "value": null,
-        "detail": null
+        "value": 68391,
+        "detail": "Last updated: 2026-03-30"
       },
       "website": {
         "value": "https://developers.openai.com/codex/skills/",

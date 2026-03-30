@@ -1,5 +1,10 @@
 # Changelog
 
+## [2026-03-30]
+### Updated
+- OpenAI Codex: type "Proprietary" → "Open Source" (open-sourced under MIT license)
+- OpenAI Codex: added GitHub repo (https://github.com/openai/codex)
+
 ## [2026-03-18]
 ### Updated
 - GitLab Duo: agentSkillsSupport "no" → "yes" (agent skills for domain expertise)
