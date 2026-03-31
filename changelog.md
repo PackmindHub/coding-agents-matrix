@@ -1,5 +1,9 @@
 # Changelog
 
+## [2026-03-31]
+### Updated
+- OpenAI Codex: hooks detail updated to link to dedicated hooks documentation
+
 ## [2026-03-30]
 ### Updated
 - OpenAI Codex: type "Proprietary" → "Open Source" (open-sourced under MIT license)

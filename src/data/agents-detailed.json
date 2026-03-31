@@ -1309,7 +1309,7 @@
       },
       "hooks": {
         "value": "yes",
-        "detail": "Supports AfterToolUse, SessionStart, and SessionStop hooks: https://developers.openai.com/codex/changelog/"
+        "detail": "Read more: https://developers.openai.com/codex/hooks"
       },
       "additionalInfo": "Supports plugins (skills, MCP, app connectors), multi-agent orchestration, worktrees, automations, web search, and voice dictation; available as app, CLI, and IDE extension"
     },
