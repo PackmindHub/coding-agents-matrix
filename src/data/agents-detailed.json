@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-05-11"
+    "lastUpdated": "2026-05-18"
   },
   "agents": [
     {
@@ -11,8 +11,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 44628,
-        "detail": "Last updated: 2026-05-11"
+        "value": 44941,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://aider.chat/",
@@ -287,8 +287,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 122266,
-        "detail": "Last updated: 2026-05-11"
+        "value": 124394,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://claude.com/product/claude-code",
@@ -356,8 +356,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 61591,
-        "detail": "Last updated: 2026-05-11"
+        "value": 61942,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://cline.bot",
@@ -425,8 +425,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 33100,
-        "detail": "Last updated: 2026-05-11"
+        "value": 33236,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://www.continue.dev/",
@@ -494,8 +494,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 24113,
-        "detail": "Last updated: 2026-05-11"
+        "value": 24366,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://github.com/charmbracelet/crush",
@@ -701,8 +701,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 103633,
-        "detail": "Last updated: 2026-05-11"
+        "value": 104193,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://geminicli.com/",
@@ -908,8 +908,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 44954,
-        "detail": "Last updated: 2026-05-11"
+        "value": 45414,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://block.github.io/goose/",
@@ -1046,8 +1046,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 19137,
-        "detail": "Last updated: 2026-05-11"
+        "value": 19364,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://kilocode.ai/",
@@ -1184,8 +1184,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 4144,
-        "detail": "Last updated: 2026-05-11"
+        "value": 4223,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://docs.mistral.ai/mistral-vibe/introduction",
@@ -1252,8 +1252,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 81596,
-        "detail": "Last updated: 2026-05-11"
+        "value": 83306,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://developers.openai.com/codex/skills/",
@@ -1321,8 +1321,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 157999,
-        "detail": "Last updated: 2026-05-11"
+        "value": 161704,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://opencode.ai/",
@@ -1390,8 +1390,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 23977,
-        "detail": "Last updated: 2026-05-11"
+        "value": 24097,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://roocode.com",
@@ -1459,8 +1459,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 11509,
-        "detail": "Last updated: 2026-05-11"
+        "value": 11553,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://www.trae.ai",
@@ -1666,8 +1666,8 @@
         "detail": null
       },
       "ghStars": {
-        "value": 82407,
-        "detail": "Last updated: 2026-05-11"
+        "value": 83099,
+        "detail": "Last updated: 2026-05-18"
       },
       "website": {
         "value": "https://zed.dev/",
